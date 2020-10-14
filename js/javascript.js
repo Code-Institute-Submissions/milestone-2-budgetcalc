@@ -1,6 +1,14 @@
 /* REF: Adding two numbers together SRC: https://code-maven.com/slides/javascript/solution-add-two-numbers */
 
 "use strict";
+function addCurrentAccounts() {
+    var accountBankValue = Number(document.getElementById('accountBankValue').value);
+    var accountSavingsValue = Number(document.getElementById('accountSavingsValue').value);
+
+    document.getElementById('totalAccountsValue').innerHTML = accountBankValue+accountSavingsValue
+}
+
+
 function addCosts() {
     var rentMortageValue = Number(document.getElementById('rentMortageValue').value);
     var energyValue = Number(document.getElementById('energyValue').value);

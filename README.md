@@ -13,13 +13,18 @@ In particular, as part of this section we recommend that you provide a list of U
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-## Process
+## Process / Methodolgy
 
-This project will be based on the principals of [form follows function](https://en.wikipedia.org/wiki/Form_follows_function#Software_engineering).
+This project will be based on two main principals during development;
+1. [Form follows function](https://en.wikipedia.org/wiki/Form_follows_function#Software_engineering).
 
 Therefore the main focus will be on HTML elements interacting with each other through JavaScript with basic formatting. The information architecture will use a basic structured layout through the utilisation of Bootstrap.
 
 Once the basic function of the web app has been achieved CSS will be implimented alongside HTML and JavaScript utilising good UX design practices to make the web enjoyable to use by users.
+
+1. The [SCRUM](https://www.scrum.org/) principle of always delivering a [Potentially Shippable Product](https://less.works/less/framework/potentially-shippable-product-increment) during the entire process and every each change.
+
+After each change the product should still work.
 
 ## Features
 
