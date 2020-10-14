@@ -1,3 +1,5 @@
+/* REF: Adding two numbers together SRC: https://code-maven.com/slides/javascript/solution-add-two-numbers */
+
 "use strict";
 function addCosts() {
     var rentMortageValue = Number(document.getElementById('rentMortageValue').value);
