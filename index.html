@@ -61,10 +61,15 @@
 
 <div class="container-fluid sidebar col-4">
     <a href="#current-accounts">Current Accounts</a>
-    <p>Current Accounts</p>
-    <p>Current Debts</p>
-    <p>Monthly Income</p>
-    <p>Monthly Costs (Fixed)</p>
+    <a href="#current-income">Current Debts</a>
+    <a href="#current-debts">Monthly Income</a>
+    <a href="#current-fixed-costs">Monthly Costs (Fixed)</a>
+    <a class="sidebar-sub-section" href="#fixed-costs-home">Home</a>
+    <a class="sidebar-sub-section" href="#fixed-costs-transport">Transport</a>
+    <a class="sidebar-sub-section" href="#fixed-costs-insurance">Insurance</a>
+    <a class="sidebar-sub-section" href="#fixed-costs-subscriptions">Subscriptions</a>
+    <a class="sidebar-sub-section" href="#fixed-costs-credit-card-payments">Credit Card Payments</a>
+
 </div>
 
 
@@ -87,7 +92,7 @@
 </div>
     
 <!------------------------------ CURRENT DEBT CALCULATION -->
-    <div class="container-fluid">
+    <div class="container-fluid current-debts-container" id="current-debts">
         <div class="row"><h4>Current Debts</h4></div>
             <div class="row current-account-item">
                 <div class="col-md-7 col-sm-12">Loans</div>
@@ -113,8 +118,8 @@
     <br>
 
 
-<!------------------------------ INCOME CALCULATION -->
-    <div class="container-fluid">
+<!------------------------------ MONTHLY INCOME CALCULATION -->
+    <div class="container-fluid current-income-container" id="current-income">
         <div class="row"><h4>Monthly Income</h4></div>
             <div class="row income-item">
                 <div class="col-md-7 col-sm-12">Salary (After Taxes)</div>
@@ -135,10 +140,10 @@
     </div> 
 
 <!------------------------------ FIXED COSTS CALCULATION -->
-    <div class="container-fluid">
+    <div class="container-fluid current-fixed-costs-container" id="current-fixed-costs">
         <div class="row"><h4>Monthly Costs (Fixed)</h4></div>
 <!------------------------------ FIXED COSTS CALCULATION --- HOME-->
-        <div class="row"><h5>Home</h5></div>
+        <div class="row" id="fixed-costs-home"><h5>Home</h5></div>
             <div class="row costs-item">
                 <div class="col-md-7 col-sm-12">Drinking Water</div>
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="waterValue" maxlength="10" placeholder="0"></div>
@@ -173,7 +178,7 @@
             </div>
 
 <!------------------------------ FIXED COSTS CALCULATION --- TRANSPORT -->
-        <div class="row"><h5>Transport</h5></div>
+        <div class="row" id="fixed-costs-transport"><h5>Transport</h5></div>
             <div class="row costs-item">
                 <div class="col-md-7 col-sm-12">Car Payments (Loan, Lease)</div>
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="transportCarPaymentValue" maxlength="10" placeholder="0"></div>
@@ -192,7 +197,7 @@
             </div>
 
 <!------------------------------ FIXED COSTS CALCULATION --- INSURANCE -->
-         <div class="row"><h5>Insurance</h5></div>
+         <div class="row" id="fixed-costs-insurance"><h5>Insurance</h5></div>
             <div class="row costs-item">
                 <div class="col-md-7 col-sm-12">Car Insurance</div>
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="insuranceCarValue" maxlength="10" placeholder="0"></div>
@@ -219,7 +224,7 @@
             </div>
 
 <!------------------------------ FIXED COSTS CALCULATION --- SUBSCRIPTIONS -->
-        <div class="row"><h5>Subscriptions</h5></div>
+        <div class="row" id="fixed-costs-subscriptions"><h5>Subscriptions</h5></div>
             <div class="row costs-item">
                 <div class="col-md-7 col-sm-12">Donations</div>
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="donationsValue" maxlength="10" placeholder="0"></div>
@@ -245,7 +250,7 @@
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="totalSubscriptionCostValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
 <!------------------------------ FIXED COSTS CALCULATION --- CREDITCARDS -->
-            <div class="row"><h5>Credit Card Payment</h5></div>
+            <div class="row" id="fixed-costs-credit-card-payments"><h5>Credit Card Payment</h5></div>
             <div class="row costs-item">
                 <div class="col-md-7 col-sm-12">American Express</div>
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="amexValue" maxlength="10" placeholder="0"></div>

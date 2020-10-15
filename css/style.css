@@ -27,7 +27,7 @@ body {
 .sidebar {
     min-height: 300px;
     background-color: #39826c;
-    height: 100%; /* Full-height: remove this if you want "auto" height */
+    height: 100vh; /* Full-height: remove this if you want "auto" height */
     width: 160px; /* Set the width of the sidebar */
     position: sticky; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -37,6 +37,15 @@ body {
     color: white;
 }
 
+.sidebar a {
+    color: white;
+    display: block;
+    padding-top: 20px;
+}
+
+.sidebar-sub-section{
+    margin-left: 10px;
+}
 
 /* ---------------------------------------------- Buttons */
 /* The following buttons has been adapted from the Code Institute Bootcamp module */
