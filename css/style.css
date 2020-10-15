@@ -1,0 +1,42 @@
+/* ---------------------------------------------- Fonts */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------------------------------------- Headers */
+
+
+
+
+
+
+/* ---------------------------------------------- Footer */
+
+.footer-container {
+    text-align: center;
+    background-color: #c62223;
+    color: #FBF9F5;
+    min-height: 100px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-container i{
+    font-size: 30px;
+    letter-spacing: 30px;
+}
+
+.footer-container small{
+    font-size: 8px;
+}
+
+.footer-icons a{
+    color: black;
+}

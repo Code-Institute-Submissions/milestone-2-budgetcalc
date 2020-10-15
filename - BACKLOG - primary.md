@@ -1,11 +1,11 @@
 # BACKLOG primary
 
-## CURRENT SPRINT
-- [ ] Add auto calculation method to all sections
-- [ ] Add placeholders instead of values
+## CURRENT SPRINT (Highest priority is on top)
+- [ ] Calculate left overs
+
 - [ ] Check the following site for entering currency information https://codepen.io/559wade/pen/LRzEjj
 
-## BACKLOG
+## BACKLOG (Highest priority is on top)
 - [ ] Calculate yearly overview (if things stay the same, expected income over the whole year)
 
 - [ ] Show and hide sections when boxes are checked - this can be expanded by asking users questions
@@ -19,5 +19,11 @@
 - [ ] Select the amount of people in the household 1 or 2
 - [ ] Add checkboxes next to elements for joint/shared costs or not
 
-## DONE
-- [x] remove calculate button and make the results populate an input field
+## DONE (Latest done is on top)
+
+
+- [x] Add placeholders instead of values for the input fields
+- [x] Add auto calculation method to all sections
+- [x] Remove calculate button and make the results populate an input field
+- [x] Add documenation
+- [x] Start basic structure of the site
