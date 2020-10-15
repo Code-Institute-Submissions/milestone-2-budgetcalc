@@ -138,3 +138,21 @@ function totalCreditcardCostValue() {
     totalCreditcardCostValue = (Math.round(totalCreditcardCostValue * 100 / 100).toFixed(2));
     $("input#totalCreditcardCostValue").val(totalCreditcardCostValue);
 }
+
+/* ------------------------------ TOTAL FIXED COSTS CALCULATION */
+document.getElementById('visaValue').addEventListener("input", totalHomeCostValue);
+document.getElementById('visaValue').addEventListener("input", totalTransportCostValue);
+document.getElementById('visaValue').addEventListener("input", totalInsuranceCostValue);
+document.getElementById('visaValue').addEventListener("input", totalSubscriptionCostValue);
+document.getElementById('visaValue').addEventListener("input", totalCreditcardCostValue);
+
+function totalFixedCostsValue() {
+    var totalFixedCostsValue = 
+        Number($("input#totalHomeCostValue").val()) + 
+        Number($("input#totalTransportCostValue").val()) +
+        Number($("input#totalInsuranceCostValue").val()) + 
+        Number($("input#totalSubscriptionCostValue").val()) + 
+        Number($("input#totalCreditcardCostValue").val()); 
+    totalFixedCostsValue = (Math.round(totalFixedCostsValue * 100 / 100).toFixed(2));
+    $("input#totalFixedCostsValue").val(totalFixedCostsValue);
+}

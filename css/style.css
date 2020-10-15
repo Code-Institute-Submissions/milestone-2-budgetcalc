@@ -44,6 +44,13 @@ h5 {
     font-size: 2vw;
 }
 
+/* The following code was adapted to set a maximum font size for larger screens. SRC: https://stackoverflow.com/questions/40528290/how-to-implement-max-font-size */
+
+@media screen and (min-width: 1200px) {
+  .sidebar {
+     font-size: 20px;
+  }
+}
 
 
 .sidebar a {
