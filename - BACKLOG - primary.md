@@ -1,7 +1,7 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] Add sticky sidebar for navigation between sections
+- [ ] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
 
 - [ ] Calculate left overs
 
@@ -26,6 +26,7 @@
 ## DONE (Latest done is on top)
 
 
+- [x] Add sticky sidebar for navigation between sections
 - [x] Add placeholders instead of values for the input fields
 - [x] Add auto calculation method to all sections
 - [x] Remove calculate button and make the results populate an input field

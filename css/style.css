@@ -16,11 +16,16 @@ body {
     color: #262626;
 }
 
+
+h5 {
+    padding-top: 30px;
+}
+
 /* ---------------------------------------------- Containers */
 
 .container-fluid {
     background-color: #e6eeea;
-    padding: 30px 30px;
+    padding: 3vh 3vh;
 }
 
 /* The following fixed sidebar information has been adapted from W3Schools SRC: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
@@ -35,7 +40,11 @@ body {
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
     color: white;
+/* testing vw, check if this is the best method */
+    font-size: 2vw;
 }
+
+
 
 .sidebar a {
     color: white;
