@@ -2,23 +2,33 @@
 
 "use strict";
 /*
-OPTION 1
+OPTION 1 - THIS WILL REQUIRE CLICKING THE BUTTON
 function addCurrentAccounts() {
     var accountBankValue = Number(document.getElementById('accountBankValue').value);
     var accountSavingsValue = Number(document.getElementById('accountSavingsValue').value);
 
     document.getElementById('totalAccountsValue').innerHTML = accountBankValue+accountSavingsValue
+    return false;
 }
+FOLLOWING STATEMENT ON LINE 14 IS INCOMPLETE - THIS IS JUST FOR REFERENCE
+document.getElementById('calcCosts').addEventListener('click', addCurrentAccounts);
 */
 
 /*OPTION 2*/
-fnBC = function() {
+
+document.getElementById('accountBankValue').addEventListener("input", totalAccountsValue);
+document.getElementById('accountSavingsValue').addEventListener("input", totalAccountsValue);
+
+function totalAccountsValue() {
     var totalAccountsValue = Number($("input#accountBankValue").val()) + Number($("input#accountSavingsValue").val());
     totalAccountsValue = (Math.round(totalAccountsValue * 100 / 100).toFixed(2));
     $("input#totalAccountsValue").val(totalAccountsValue);
 }
 
+
+
 /*
+THE FOLLOWING IS FOR REFERENCE AND TAKEN FROM THE SOURCE CODE OF THE BUDGET CALCULATOR I FOUND ONLINE
 fnBC = function() {
         var l = Number($("input#emergencyFund").val()) + Number($("input#investments").val()) + Number($("input#retirement").val());
         l = (Math.round(l * 100) / 100).toFixed(2);
