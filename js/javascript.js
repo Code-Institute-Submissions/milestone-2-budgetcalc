@@ -140,11 +140,11 @@ function totalCreditcardCostValue() {
 }
 
 /* ------------------------------ TOTAL FIXED COSTS CALCULATION */
-document.getElementById('visaValue').addEventListener("input", totalHomeCostValue);
-document.getElementById('visaValue').addEventListener("input", totalTransportCostValue);
-document.getElementById('visaValue').addEventListener("input", totalInsuranceCostValue);
-document.getElementById('visaValue').addEventListener("input", totalSubscriptionCostValue);
-document.getElementById('visaValue').addEventListener("input", totalCreditcardCostValue);
+document.getElementById('totalHomeCostValue').addEventListener("input", totalFixedCostsValue);
+document.getElementById('totalTransportCostValue').addEventListener("input", totalFixedCostsValue);
+document.getElementById('totalInsuranceCostValue').addEventListener("input", totalFixedCostsValue);
+document.getElementById('totalSubscriptionCostValue').addEventListener("input", totalFixedCostsValue);
+document.getElementById('totalCreditcardCostValue').addEventListener("input", totalFixedCostsValue);
 
 function totalFixedCostsValue() {
     var totalFixedCostsValue = 

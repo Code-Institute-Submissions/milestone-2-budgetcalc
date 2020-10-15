@@ -6,9 +6,7 @@ function sendMail(contactForm) {
         "from_email": contactForm.emailaddress.value,
         "accountBankValue": accountBankValue.value,
         "accountSavingsValue": accountSavingsValue.value,
-        "totalAccountsValue": totalAccountsValue,
-
-
+        "totalAccountsValue": totalAccountsValue.value,
     })
     .then(
         function(response) {
