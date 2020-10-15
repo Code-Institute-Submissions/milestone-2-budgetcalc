@@ -53,22 +53,37 @@
     </div>
 </div>
 
-<!------------------------------ CURRENT ACCOUNTS CALCULATION -->
+<!------------------------------ STICKY SIDEBAR -->
 
+<div class="container-fluid">
+    <div class="row">
+
+
+<div class="container-fluid sidebar col-4">
+    <a href="#current-accounts">Current Accounts</a>
+    <p>Current Accounts</p>
+    <p>Current Debts</p>
+    <p>Monthly Income</p>
+    <p>Monthly Costs (Fixed)</p>
+</div>
+
+
+<!------------------------------ CURRENT ACCOUNTS CALCULATION -->
+<div class="col-8">
 <div class="container-fluid current-accounts-container" id="current-accounts">
-    <div class="row"><h4>Current Accounts</h4></div>
-        <div class="row current-account-item">
-            <div class="col-md-7 col-sm-12">Bank Accounts</div>
-            <div class="col-md-5 col-sm-12">€ <input type="number" id="accountBankValue" maxlength="10" placeholder="0"></div>
-        </div>
-        <div class="row current-account-item">
-            <div class="col-md-7 col-sm-12">Savings Accounts</div>
-            <div class="col-md-5 col-sm-12">€ <input type="number" id="accountSavingsValue" maxlength="10" placeholder="0"></div>
-        </div>
-        <div class="row totalCurrentAccounts">
-            <div class="col-md-7 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
-            <div class="col-md-5 col-sm-12">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
-        </div>
+        <div class="row"><h4>Current Accounts</h4></div>
+            <div class="row current-account-item">
+                <div class="col-md-7 col-sm-12">Bank Accounts</div>
+                <div class="col-md-5 col-sm-12">€ <input type="number" id="accountBankValue" maxlength="10" placeholder="0"></div>
+            </div>
+            <div class="row current-account-item">
+                <div class="col-md-7 col-sm-12">Savings Accounts</div>
+                <div class="col-md-5 col-sm-12">€ <input type="number" id="accountSavingsValue" maxlength="10" placeholder="0"></div>
+            </div>
+            <div class="row totalCurrentAccounts">
+                <div class="col-md-7 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
+                <div class="col-md-5 col-sm-12">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+            </div>
 </div>
     
 <!------------------------------ CURRENT DEBT CALCULATION -->
@@ -118,7 +133,6 @@
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="totalIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
     </div> 
-    <br> 
 
 <!------------------------------ FIXED COSTS CALCULATION -->
     <div class="container-fluid">
@@ -249,8 +263,9 @@
                 <div class="col-md-5 col-sm-12">€ <input type="number" id="totalCreditcardCostValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
     </div>
-
-
+</div>
+</div>
+</div>
 <!--
     <div class="container">
         <div class="row">

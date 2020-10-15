@@ -1,6 +1,8 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
+- [ ] Add sticky sidebar for navigation between sections
+
 - [ ] Calculate left overs
 
 - [ ] Check the following site for entering currency information https://codepen.io/559wade/pen/LRzEjj
