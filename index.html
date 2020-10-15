@@ -12,25 +12,64 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-    <h1 class="text-center">Financial Budget Calculator</h1>
+<!------------------------------ NAVBAR -->
+<!-- The following Navbar has been adapted from the Code Institute Bootcamp module. -->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">BudgetCalc</a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Input</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">A</a>
+                            <a class="dropdown-item" href="#">B</a>
+                            <a class="dropdown-item" href="#">C</a>
+                            <a class="dropdown-item" href="#">D</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+<!------------------------------ HERO IMAGE -->
+<div class="container-fluid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+            <section class="callout jumbotron text-center">
+                <h1 class="jumbotron-header">Ready to get control over your finances?</h1> 
+                <p class="lead">Use BudgetCalc to get a clear overview of your spending.</p>
+                <a href="#current-accounts" button class="btn btn-lg btn--cta btn--green" role="button" aria-pressed="true">Start Now!</a>
+            </section>
+        </div>
+    </div>
+</div>
 
 <!------------------------------ CURRENT ACCOUNTS CALCULATION -->
-    <div class="container text-center">
-        <div class="row"><h4>Current Accounts</h4></div>
-            <div class="row current-account-item">
-                <div class="col-7">Bank Accounts</div>
-                <div class="col-5">€ <input type="number" id="accountBankValue" maxlength="10" placeholder="0"></div>
-            </div>
-            <div class="row current-account-item">
-                <div class="col-7">Savings Accounts</div>
-                <div class="col-5">€ <input type="number" id="accountSavingsValue" maxlength="10" placeholder="0"></div>
-            </div>
-            <div class="row totalCurrentAccounts">
-                <div class="col-7">TOTAL CURRENT ACCOUNTS</div>
-                <div class="col-5">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
-            </div>
-    </div>
-    <br>
+
+<div class="container-fluid current-accounts-container" id="current-accounts">
+    <div class="row"><h4>Current Accounts</h4></div>
+        <div class="row current-account-item">
+            <div class="col-7">Bank Accounts</div>
+            <div class="col-5">€ <input type="number" id="accountBankValue" maxlength="10" placeholder="0"></div>
+        </div>
+        <div class="row current-account-item">
+            <div class="col-7">Savings Accounts</div>
+            <div class="col-5">€ <input type="number" id="accountSavingsValue" maxlength="10" placeholder="0"></div>
+        </div>
+        <div class="row totalCurrentAccounts">
+            <div class="col-7">TOTAL CURRENT ACCOUNTS</div>
+            <div class="col-5">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+        </div>
+</div>
     
 <!------------------------------ CURRENT DEBT CALCULATION -->
     <div class="container">

@@ -1,22 +1,134 @@
+/* ---------------------------------------------- Color Pallete */
+/* This color-pallete section is for reference only */
+color-pallete {
+    color: #74b642; /* light green*/
+    color: #39826c; /* aqua green */
+    color: #5ea2ad; /* light blue */
+    color: #5ea2ad; /* Light background color */
+}
+
+
+
 /* ---------------------------------------------- Fonts */
 
 body {
     font-family: 'Montserrat', sans-serif;
+    color: #262626;
 }
 
-/* ---------------------------------------------- Headers */
+/* ---------------------------------------------- Buttons */
+/* The following buttons has been adapted from the Code Institute Bootcamp module */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--green {
+    color: white;
+    background-color: #74b642;
+    border-color: #74b642;
+}
+
+.btn--green:hover,
+.btn--green:active,
+.btn--green:focus,
+.btn--green:active:focus {
+    background-color: #74b642;
+    border-color: #74b642;
+    color: white;
+}
+
+/* ---------------------------------------------- Navbar */
+/* The following navbar has been adapted from the Code Institute Bootcamp module */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    width: 100%;
+    background-color: #39826c;
+    border: 0;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
 
 
+/* ---------------------------------------------- Callout ifo */
+/* The following callout has been adapted from the Code Institute Bootcamp module */
+.callout-container {
+    height: 100vh;
 
+    background: url('../images/ISS_24174_00025-small-edit.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    position: relative;
+}
 
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------------- Callout ifo Jumbotron */
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.jumbotron .lead {
+    color: white;
+    margin: 25px 0;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
 
 /* ---------------------------------------------- Footer */
 
 .footer-container {
     text-align: center;
-    background-color: #c62223;
-    color: #FBF9F5;
+    background-color: #adca9c;
+    color: #262626;
     min-height: 100px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
