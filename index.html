@@ -19,15 +19,15 @@
         <div class="row"><h4>Current Accounts</h4></div>
             <div class="row current-account-item">
                 <div class="col-7">Bank Accounts</div>
-                <div class="col-5">€ <input type="text" id="accountBankValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="number" id="accountBankValue" maxlength="10" value="0"></div>
             </div>
             <div class="row current-account-item">
                 <div class="col-7">Savings Accounts</div>
-                <div class="col-5">€ <input type="text" id="accountSavingsValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="number" id="accountSavingsValue" maxlength="10" value="0"></div>
             </div>
             <div class="row totalCurrentAccounts">
                 <div class="col-7">TOTAL CURRENT ACCOUNTS</div>
-                <div class="col-5">€ <input type="text" id="totalAccountsValue" maxlength="7" readonly="readOnly" value="0"></div>
+                <div class="col-5">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" value="0"></div>
             </div>
     </div>
     <br>
@@ -38,19 +38,19 @@
         <div class="row"><h4>Income</h4></div>
             <div class="row income-item">
                 <div class="col-7">Salary (After Taxes)</div>
-                <div class="col-5">€ <input type="text" id="netSalary" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="netSalary" maxlength="10" value="0"></div>
             </div> 
             <div class="row income-item">
                 <div class="col-7">Extra income - Bonuses</div>
-                <div class="col-5">€ <input type="text" id="bonusSalary" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="bonusSalary" maxlength="10" value="0"></div>
             </div> 
             <div class="row income-item">
                 <div class="col-7">Extra income - Side Gigs</div>
-                <div class="col-5">€ <input type="text" id="gigSalary" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="gigSalary" maxlength="10" value="0"></div>
             </div>
             <div class="row totalIncome">
                 <div class="col-7">TOTAL INCOME </div>
-                <div class="col-5">€ <input type="text" id="totalIncomeValue" maxlength="7" readonly="readOnly" value="0"></div>
+                <div class="col-5">€ <input type="text" id="totalIncomeValue" maxlength="10" readonly="readOnly" value="0"></div>
             </div>
     </div> 
     <br> 
@@ -61,98 +61,98 @@
         <div class="row"><h5>Home</h5></div>
             <div class="row costs-item">
                 <div class="col-7">Rent / Mortgage Payment</div>
-                <div class="col-5">€ <input type="text" id="rentMortageValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="rentMortageValue" maxlength="10" value="0"></div>
             </div> 
             <div class="row costs-item">
                 <div class="col-7">Service Costs</div>
-                <div class="col-5">€ <input type="text" id="homeServiceCostsValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="homeServiceCostsValue" maxlength="10" value="0"></div>
             </div> 
             <div class="row costs-item">
                 <div class="col-7">Energy (Electricty/Heating)</div>
-                <div class="col-5">€ <input type="text" id="energyValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="energyValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Drinking Water</div>
-                <div class="col-5">€ <input type="text" id="waterValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="waterValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Mobile Phone</div>
-                <div class="col-5">€ <input type="text" id="mobileValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="mobileValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Internet, TV, & Home Phone</div>
-                <div class="col-5">€ <input type="text" id="internetValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="internetValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Property Taxes</div>
-                <div class="col-5">€ <input type="text" id="propertyTaxValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="propertyTaxValue" maxlength="10" value="0"></div>
             </div>
         <div class="row"><h5>Car</h5></div>
             <div class="row costs-item">
                 <div class="col-7">Car Payments (Loan, Lease)</div>
-                <div class="col-5">€ <input type="text" id="carPaymentsValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="carPaymentsValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Parking Permit</div>
-                <div class="col-5">€ <input type="text" id="carParkingPermitValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="carParkingPermitValue" maxlength="10" value="0"></div>
             </div>
 
          <div class="row"><h5>Insurance</h5></div>
             <div class="row costs-item">
                 <div class="col-7">Car Insurance</div>
-                <div class="col-5">€ <input type="text" id="insuranceCarValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="insuranceCarValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Health Insurance</div>
-                <div class="col-5">€ <input type="text" id="insuranceHealthValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="insuranceHealthValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Liability Insurance</div>
-                <div class="col-5">€ <input type="text" id="insuranceLiabilityValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="insuranceLiabilityValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Life Insurance</div>
-                <div class="col-5">€ <input type="text" id="insuranceLifeValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="insuranceLifeValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Legal Insurance</div>
-                <div class="col-5">€ <input type="text" id="insuranceLegalValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="insuranceLegalValue" maxlength="10" value="0"></div>
             </div>
 
         <div class="row"><h5>Subscriptions</h5></div>
             <div class="row costs-item">
                 <div class="col-7">Donations</div>
-                <div class="col-5">€ <input type="text" id="donationsValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="donationsValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Gym</div>
-                <div class="col-5">€ <input type="text" id="subscriptionsGymValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="subscriptionsGymValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Newspapers and Magazines</div>
-                <div class="col-5">€ <input type="text" id="subscriptionsNewsValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="subscriptionsNewsValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Streaming Services (Netflix, etc)</div>
-                <div class="col-5">€ <input type="text" id="subscriptionsStreamingValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="subscriptionsStreamingValue" maxlength="10" value="0"></div>
             </div>
 
             <div class="row costs-item">
                 <div class="col-7">Total Costs</div>
-                <div class="col-5">€ <output type="text" id="totalCosts" maxlength="7" value="0"></output></div>
+                <div class="col-5">€ <output type="text" id="totalCosts" maxlength="10" value="0"></output></div>
             </div>
             <div class="row"><h5>Credit Card Payment</h5></div>
             <div class="row costs-item">
                 <div class="col-7">Visa</div>
-                <div class="col-5">€ <input type="text" id="visaValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="visaValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">Mastercard</div>
-                <div class="col-5">€ <input type="text" id="mastercardValue" maxlength="7" value="0"></div>
+                <div class="col-5">€ <input type="text" id="mastercardValue" maxlength="10" value="0"></div>
             </div>
             <div class="row costs-item">
                 <div class="col-7">American Express</div>
-                <div class="col-5">€ <output type="text" id="amaxValue" maxlength="7" value="0"></output></div>
+                <div class="col-5">€ <output type="text" id="amaxValue" maxlength="10" value="0"></output></div>
             </div>
     </div>
 
@@ -168,7 +168,7 @@
     <div class="container">
         <div class="row">
             <div class="col-7">Left Over</div>
-            <div class="col-5">€<output type="text" id="result" maxlength="7" value="0"></output></div>
+            <div class="col-5">€<output type="text" id="result" maxlength="10" value="0"></output></div>
         </div>
     </div>
     
