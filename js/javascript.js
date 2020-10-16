@@ -15,9 +15,18 @@ document.getElementById('accountSavingsValue').addEventListener("input", functio
     totalCurrentAccountsValue();
     netWorthValue();
 });
+document.getElementById('accountCashValue').addEventListener("input", function(){
+    totalAccountsValue();
+    totalCurrentAccountsValue();
+    netWorthValue();
+});
+
 
 function totalAccountsValue() {
-    var totalAccountsValue = Number($("input#accountBankValue").val()) + Number($("input#accountSavingsValue").val());
+    var totalAccountsValue = 
+        Number($("input#accountBankValue").val()) + 
+        Number($("input#accountSavingsValue").val()) +
+        Number($("input#accountCashValue").val());
     totalAccountsValue = (Math.round(totalAccountsValue * 100 / 100).toFixed(2));
     $("input#totalAccountsValue").val(totalAccountsValue);
 }
@@ -61,14 +70,17 @@ function totalDebtsValue() {
 document.getElementById('netSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('bonusSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('gigSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
+    netFixedLeftOverValue();
 });
 
 function totalIncomeValue() {
@@ -84,32 +96,39 @@ function totalIncomeValue() {
 /* ------------------------------ FIXED COSTS CALCULATION --- HOME */
 
 document.getElementById('waterValue').addEventListener("input", function(){
-totalHomeCostValue();
-totalFixedCostsValue();
+    totalHomeCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('energyValue').addEventListener("input", function(){
-totalHomeCostValue();
-totalFixedCostsValue();
+    totalHomeCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('internetValue').addEventListener("input", function(){
-totalHomeCostValue();
-totalFixedCostsValue();
+    totalHomeCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('mobileValue').addEventListener("input", function(){
-totalHomeCostValue();
-totalFixedCostsValue();
+    totalHomeCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('propertyTaxValue').addEventListener("input", function(){
-totalHomeCostValue();
-totalFixedCostsValue();
+    totalHomeCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('rentMortageValue').addEventListener("input", function(){
-totalHomeCostValue();
-totalFixedCostsValue();
+    totalHomeCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('homeServiceCostsValue').addEventListener("input", function(){
-totalHomeCostValue();
-totalFixedCostsValue();
+    totalHomeCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 
 function totalHomeCostValue() {
@@ -128,16 +147,19 @@ function totalHomeCostValue() {
 /* ------------------------------ FIXED COSTS CALCULATION --- TRANSPORT */
 
 document.getElementById('transportCarPaymentValue').addEventListener("input", function(){
-totalTransportCostValue();
-totalFixedCostsValue();
+    totalTransportCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('transportParkingPermitPermitValue').addEventListener("input", function(){
-totalTransportCostValue();
-totalFixedCostsValue();
+    totalTransportCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('transportPublicValue').addEventListener("input", function(){
-totalTransportCostValue();
-totalFixedCostsValue();
+    totalTransportCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 
 function totalTransportCostValue() {
@@ -152,24 +174,29 @@ function totalTransportCostValue() {
 /* ------------------------------ FIXED COSTS CALCULATION --- INSURANCE */
 
 document.getElementById('insuranceCarValue').addEventListener("input", function(){
-totalInsuranceCostValue();
-totalFixedCostsValue();
+    totalInsuranceCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('insuranceHealthValue').addEventListener("input", function(){
-totalInsuranceCostValue();
-totalFixedCostsValue();
+    totalInsuranceCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('insuranceLiabilityValue').addEventListener("input", function(){
-totalInsuranceCostValue();
-totalFixedCostsValue();
+    totalInsuranceCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('insuranceLifeValue').addEventListener("input", function(){
-totalInsuranceCostValue();
-totalFixedCostsValue();
+    totalInsuranceCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('insuranceLegalValue').addEventListener("input", function(){
-totalInsuranceCostValue();
-totalFixedCostsValue();
+    totalInsuranceCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 
 function totalInsuranceCostValue() {
@@ -186,24 +213,29 @@ function totalInsuranceCostValue() {
 /* ------------------------------ FIXED COSTS CALCULATION --- SUBSCRIPTIONS */
 
 document.getElementById('donationsValue').addEventListener("input", function(){
-totalSubscriptionCostValue();
-totalFixedCostsValue();
+    totalSubscriptionCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('subscriptionsGymValue').addEventListener("input", function(){
-totalSubscriptionCostValue();
-totalFixedCostsValue();
+    totalSubscriptionCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('subscriptionsLotteryValue').addEventListener("input", function(){
-totalSubscriptionCostValue();
-totalFixedCostsValue();
+    totalSubscriptionCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('subscriptionsNewsValue').addEventListener("input", function(){
-totalSubscriptionCostValue();
-totalFixedCostsValue();
+    totalSubscriptionCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('subscriptionsStreamingValue').addEventListener("input", function(){
-totalSubscriptionCostValue();
-totalFixedCostsValue();
+    totalSubscriptionCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 
 function totalSubscriptionCostValue() {
@@ -220,16 +252,19 @@ function totalSubscriptionCostValue() {
 /* ------------------------------ FIXED COSTS CALCULATION --- CREDIT CARDS */
 
 document.getElementById('amexValue').addEventListener("input", function(){
-totalCreditcardCostValue();
-totalFixedCostsValue();
+    totalCreditcardCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('mastercardValue').addEventListener("input", function(){
-totalCreditcardCostValue();
-totalFixedCostsValue();
+    totalCreditcardCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 document.getElementById('visaValue').addEventListener("input", function(){
-totalCreditcardCostValue();
-totalFixedCostsValue();
+    totalCreditcardCostValue();
+    totalFixedCostsValue();
+    netFixedLeftOverValue();
 });
 
 function totalCreditcardCostValue() {
@@ -302,4 +337,15 @@ function totalFixedCostsValue() {
 
     totalFixedCostsValue = (Math.round(totalFixedCostsValue * 100 / 100).toFixed(2));
     $("input#totalFixedCostsValue").val(totalFixedCostsValue);
+}
+
+/* ------------------------------ NET FIXED LEFT OVER CALCULATION */
+
+function netFixedLeftOverValue() {
+    var netFixedLeftOverValue = 
+        Number($("input#totalMonthlyIncomeValue").val()) -
+        Number($("input#totalFixedCostsValue").val());
+
+    netFixedLeftOverValue = (Math.round(netFixedLeftOverValue * 100 / 100).toFixed(2));
+    $("input#netFixedLeftOverValue").val(netFixedLeftOverValue);
 }

@@ -59,8 +59,12 @@ h5 {
     padding-top: 10px;
 }
 
-.sidebar-sub-section{
+.sidebar-sub-section {
     margin-left: 10px;
+}
+
+.net-amount {
+    font-weight: bold;
 }
 
 /* ---------------------------------------------- Buttons */

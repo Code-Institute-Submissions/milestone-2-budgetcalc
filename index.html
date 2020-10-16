@@ -72,8 +72,8 @@
 <div class="container-fluid sidebar col-4">
     <a href="#current-accounts">Current Accounts</a>
     <a href="#current-debts">Current Debts</a>
-    <a href="#current-income">Monthly Income</a>
-    <a href="#current-fixed-costs">Monthly Costs (Fixed)</a>
+    <a href="#current-income">Income (Monthly)</a>
+    <a href="#current-fixed-costs">Fixed Costs (Monthly)</a>
         <a class="sidebar-sub-section" href="#fixed-costs-home">Home</a>
         <a class="sidebar-sub-section" href="#fixed-costs-transport">Transport</a>
         <a class="sidebar-sub-section" href="#fixed-costs-insurance">Insurance</a>
@@ -83,8 +83,9 @@
         <a class="sidebar-sub-section" href="#total-current-accounts">Total Current Accounts</a>
         <a class="sidebar-sub-section" href="#total-current-debts">Total Current Debts</a>
         <a class="sidebar-sub-section" href="#net-worth">Net Worth</a>
-        <a class="sidebar-sub-section" href="#total-monthly-income">Total Monthly Income</a>
-        <a class="sidebar-sub-section" href="#total-fixed-costs">Total Fixed Costs</a>
+        <a class="sidebar-sub-section" href="#total-fixed-income">Total Fixed Income (Monthly)</a>
+        <a class="sidebar-sub-section" href="#total-fixed-costs">Total Fixed Costs (Monthly)</a>
+        <a class="sidebar-sub-section" href="#net-fixed-leftover">Net Left Over (Monthly)</a>
 </div>
 
 
@@ -99,6 +100,10 @@
             <div class="row current-account-item">
                 <div class="col-md-6 col-sm-12">Savings Accounts</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="accountSavingsValue" maxlength="10" placeholder="0"></div>
+            </div>
+            <div class="row current-account-item">
+                <div class="col-md-6 col-sm-12">Cash-on-hand</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" id="accountCashValue" maxlength="10" placeholder="0"></div>
             </div>
             <div class="row totalCurrentAccounts">
                 <div class="col-md-6 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
@@ -134,7 +139,8 @@
 
 <!------------------------------ MONTHLY INCOME CALCULATION -->
     <div class="container-fluid current-income-container" id="current-income">
-        <div class="row"><h4>Monthly Income</h4></div>
+        <div class="row"><h4> Income (Monthly)</h4>
+        </div>
             <div class="row income-item">
                 <div class="col-md-6 col-sm-12">Salary (After Taxes)</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="netSalary" maxlength="10" placeholder="0"></div>
@@ -155,9 +161,11 @@
 
 <!------------------------------ FIXED COSTS CALCULATION -->
     <div class="container-fluid current-fixed-costs-container" id="current-fixed-costs">
-        <div class="row"><h4>Monthly Costs (Fixed)</h4></div>
+        <div class="row"><h4>Fixed Costs (Monthly)</h4>
+        </div>
 <!------------------------------ FIXED COSTS CALCULATION --- HOME-->
-        <div class="row" id="fixed-costs-home"><h5>Home</h5></div>
+        <div class="row" id="fixed-costs-home"><h5>Home</h5>
+        </div>
             <div class="row costs-item">
                 <div class="col-md-6 col-sm-12">Drinking Water</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="waterValue" maxlength="10" placeholder="0"></div>
@@ -190,6 +198,7 @@
                 <div class="col-md-6 col-sm-12">TOTAL HOME FIXED COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="totalHomeCostValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
+            
 
 <!------------------------------ FIXED COSTS CALCULATION --- TRANSPORT -->
         <div class="row" id="fixed-costs-transport"><h5>Transport</h5></div>
@@ -281,10 +290,14 @@
                 <div class="col-md-6 col-sm-12">TOTAL CREDITCARD COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCreditcardCostValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
+    </div>
 
 <!-- NOTE FOR MICHAEL Do I need to add an onchange="totalFixedCostsValue()" to the HTML???? -->
-        <!------------------------------ TOTAL FIXED COSTS CALCULATION -->
-        <div class="row" id="fixed-budget-overview"><h5>Fixed Budget Overview</h5></div>
+<!------------------------------ TOTAL FIXED COSTS CALCULATION -->
+
+    <div class="container-fluid fixed-budget-container" id="fixed-budget-overview">
+        <div class="row"><h4>Fixed Budget Overview</h4
+        ></div>
                 <div class="row total-fixed-item">
                     <div class="col-md-6 col-sm-12" id="total-current-accounts">Total Current Accounts</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCurrentAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
@@ -294,19 +307,139 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCurrentDebtsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
                 <div class="row total-fixed-item">
-                    <div class="col-md-6 col-sm-12" id="net-worth">Net Worth</div>
+                    <div class="col-md-6 col-sm-12 net-amount" id="net-worth">Net Worth</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="netWorthValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
                 <br>
                 <div class="row total-fixed-item">
-                    <div class="col-md-6 col-sm-12" id="total-monthly-income">Total Monthly Income</div>
+                    <div class="col-md-6 col-sm-12" id="total-fixed-income">Total Fixed Income (Monthly)</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalMonthlyIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
                 <div class="row total-fixed-item">
-                    <div class="col-md-6 col-sm-12" id="total-fixed-costs">Total Fixed Costs</div>
+                    <div class="col-md-6 col-sm-12" id="total-fixed-costs">Total Fixed Costs (Monthly)</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
+                <div class="row total-fixed-item">
+                    <div class="col-md-6 col-sm-12 net-amount" id="net-fixed-leftover">Net Left Over (Monthly)</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="netFixedLeftOverValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+                </div>
+    </div>
+
+
+<!------------------------------ VARIABLE COSTS CALCULATION -->
+    <div class="container-fluid current-variable-costs-container" id="current-variable-costs">
+        <div class="row"><h4>Variable Costs (Monthly)</h4>
         </div>
+            <div class="row variable-costs" id="food-drink-costs"><h5>Food and Drink</h5>
+            </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Abert Heijn</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketAlbertHeijnValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Aldi</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketAldiValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Coop</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketCoopValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Dirk/Bas</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketDirkBasValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Jumbo</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketJumboValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Lidl</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketLidlValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Makro</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="SupermarketMakroValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Marqt</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketMarqtValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Supermarket - Plus</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketPlusValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Corner Store</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketCornerStoreValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-sm-12">TOTAL SUPERMARKET COSTS </div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSupermarketCostValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+                </div>
+            <div class="row variable-costs" id="socialising-costs"><h5>Socialising / Fun</h5>
+            </div>
+            <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Bars</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingBarsValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Cinemas</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingCinemasValue" maxlength="10" placeholder="0"></div>
+                </div>
+                 <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Night Clubs</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingNightClubsValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Restaurants</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingRestaurantsValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Other</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingOtherValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-sm-12">TOTAL SOCIALISING / FUN COSTS </div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSocialisingFunCostValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+                </div>
+
+            <div class="row variable-costs" id="stuff-costs"><h5>Stuff</h5>
+            </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Clothes</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffClothesValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Shoes</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffShoessValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Toys</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffToysValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Video Games</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffVideoGamesValue" maxlength="10" placeholder="0"></div>
+                </div>
+            <div class="row variable-costs" id="clothes-costs"><h5>Savings</h5>
+            </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Savings</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="savingsValue" maxlength="10" placeholder="0"></div>
+                </div>
+                
+            <div class="row variable-costs" id="total-variable-costs"><h5>Total Variable Costs</h5>
+            </div>
+                <div class="row costs-item">
+                    <div class="col-md-6 col-sm-12">Total Variable Costs</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalVariableCostsValue" maxlength="10" placeholder="0"></div>
+                </div>
+            
+
+    </div>
+
+
+    
 
         <!-- NOTE REMOVED THE readonly function here above in the input: readonly="readOnly" -->
         

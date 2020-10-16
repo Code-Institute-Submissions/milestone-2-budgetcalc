@@ -1,11 +1,11 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] Calulate Networth and Net fixed income
+- [ ] Add javascript code to variable costs
 
-- [ ] Change Monthly income to fixed income ?
+- [ ] Calculate variable costs
 
-- [ ] Calculate left overs
+- [ ] emailJS create top 3 variable costs
 
 - [ ] Add house value - link to calculator for house worth
 
@@ -35,6 +35,9 @@
 
 ## DONE (Latest done is on top)
 
+- [x] Calculate left overs
+- [x] Change Monthly income to fixed income
+- [x] Calulate Networth and Net fixed income
 - [x] Create JavaScript code for Fixed Overview
 - [x] Create Fixed Budget Overview
 - [ ] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
