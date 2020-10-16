@@ -30,7 +30,12 @@
 
 - [ ] Add modal to explain the steps: <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Start Now!</button>
 
+- [ ] Cookies notification if saving data to the browser?
 ## BACKLOG (Highest priority is on top)
+- [ ] Ask questions to user to decide what should be shown or not
+
+- [ ] Use recommended percentages for each section
+
 - [ ] Auto hide sections
 
 - [ ] As user scrolls place is shown in sidebar by making text bold
