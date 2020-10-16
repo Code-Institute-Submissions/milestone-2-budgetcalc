@@ -71,8 +71,8 @@
 
 <div class="container-fluid sidebar col-4">
     <a href="#current-accounts">Current Accounts</a>
-    <a href="#current-income">Current Debts</a>
-    <a href="#current-debts">Monthly Income</a>
+    <a href="#current-debts">Current Debts</a>
+    <a href="#current-income">Monthly Income</a>
     <a href="#current-fixed-costs">Monthly Costs (Fixed)</a>
     <a class="sidebar-sub-section" href="#fixed-costs-home">Home</a>
     <a class="sidebar-sub-section" href="#fixed-costs-transport">Transport</a>
@@ -282,9 +282,11 @@
         <div class="row" id="total-fixed-costs"><h5>Total Fixed Costs</h5></div>
                 <div class="row total-fixed-costs-item">
                     <div class="col-md-6 col-sm-12">Total Fixed Costs</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue" maxlength="10" placeholder="0"></div>
                 </div>
         </div>
+
+        <!-- NOTE REMOVED THE readonly function here above in the input: readonly="readOnly" -->
         
 
         <!------------------------------ SEND OVERVIEW BY EMAIL TO USER -->

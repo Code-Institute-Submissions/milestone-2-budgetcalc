@@ -4,10 +4,10 @@ function sendMail(contactForm) {
     emailjs.send("gmail", "BudgetCalcTemplate", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.emailaddress.value,
-        "accountBankValue": accountBankValue.value,
-        "accountSavingsValue": accountSavingsValue.value,
-        "totalAccountsValue": totalAccountsValue.value,
-        "totalFixedCostsValue": totalFixedCostsValue.value,
+        "accountBankValue": document.getElementById('accountBankValue').value,
+        "accountSavingsValue": document.getElementById('accountSavingsValue').value,
+        "totalAccountsValue": document.getElementById('totalAccountsValue').value,
+        "totalFixedCostsValue": document.getElementById('totalFixedCostsValue').value,
     })
     .then(
         function(response) {
