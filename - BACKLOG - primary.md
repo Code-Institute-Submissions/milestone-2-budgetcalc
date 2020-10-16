@@ -5,6 +5,10 @@
 
 - [ ] Calculate variable costs
 
+- [ ] Add variable costs to sendEmail.js and emailJS
+
+- [ ] Add net calulcations to sendEmail.js and emailJS
+
 - [ ] emailJS create top 3 variable costs
 
 - [ ] Create settings button to select which parameters will be used
