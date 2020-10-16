@@ -8,10 +8,12 @@ and support from Michael - Code Institute Tutor Support */
 document.getElementById('accountBankValue').addEventListener("input", function(){
     totalAccountsValue();
     totalCurrentAccountsValue();
+    netWorthValue();
 });
 document.getElementById('accountSavingsValue').addEventListener("input", function(){
     totalAccountsValue();
     totalCurrentAccountsValue();
+    netWorthValue();
 });
 
 function totalAccountsValue() {
@@ -25,18 +27,22 @@ function totalAccountsValue() {
 document.getElementById('debtLoanValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
+    netWorthValue();
 });
 document.getElementById('debtAmexValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
+    netWorthValue();
 });
 document.getElementById('debtMastercardValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
+    netWorthValue();
 });
 document.getElementById('debtVisaValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
+    netWorthValue();
 });
 
 function totalDebtsValue() {
