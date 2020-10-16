@@ -7,6 +7,7 @@ function sendMail(contactForm) {
         "accountBankValue": accountBankValue.value,
         "accountSavingsValue": accountSavingsValue.value,
         "totalAccountsValue": totalAccountsValue.value,
+        "totalFixedCostsValue": totalFixedCostsValue.value,
     })
     .then(
         function(response) {

@@ -50,13 +50,34 @@ function totalIncomeValue() {
 
 /* ------------------------------ FIXED COSTS CALCULATION --- HOME */
 
-document.getElementById('waterValue').addEventListener("input", totalHomeCostValue);
-document.getElementById('energyValue').addEventListener("input", totalHomeCostValue);
-document.getElementById('internetValue').addEventListener("input", totalHomeCostValue);
-document.getElementById('mobileValue').addEventListener("input", totalHomeCostValue);
-document.getElementById('propertyTaxValue').addEventListener("input", totalHomeCostValue);
-document.getElementById('rentMortageValue').addEventListener("input", totalHomeCostValue);
-document.getElementById('homeServiceCostsValue').addEventListener("input", totalHomeCostValue);
+document.getElementById('waterValue').addEventListener("input", function(){
+totalHomeCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('energyValue').addEventListener("input", function(){
+totalHomeCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('internetValue').addEventListener("input", function(){
+totalHomeCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('mobileValue').addEventListener("input", function(){
+totalHomeCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('propertyTaxValue').addEventListener("input", function(){
+totalHomeCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('rentMortageValue').addEventListener("input", function(){
+totalHomeCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('homeServiceCostsValue').addEventListener("input", function(){
+totalHomeCostValue();
+totalFixedCostsValue();
+});
 
 function totalHomeCostValue() {
     var totalHomeCostValue = 
@@ -73,9 +94,18 @@ function totalHomeCostValue() {
 
 /* ------------------------------ FIXED COSTS CALCULATION --- TRANSPORT */
 
-document.getElementById('transportCarPaymentValue').addEventListener("input", totalTransportCostValue);
-document.getElementById('transportParkingPermitPermitValue').addEventListener("input", totalTransportCostValue);
-document.getElementById('transportPublicValue').addEventListener("input", totalTransportCostValue);
+document.getElementById('transportCarPaymentValue').addEventListener("input", function(){
+totalTransportCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('transportParkingPermitPermitValue').addEventListener("input", function(){
+totalTransportCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('transportPublicValue').addEventListener("input", function(){
+totalTransportCostValue();
+totalFixedCostsValue();
+});
 
 function totalTransportCostValue() {
     var totalTransportCostValue = 
@@ -88,11 +118,26 @@ function totalTransportCostValue() {
 
 /* ------------------------------ FIXED COSTS CALCULATION --- INSURANCE */
 
-document.getElementById('insuranceCarValue').addEventListener("input", totalInsuranceCostValue);
-document.getElementById('insuranceHealthValue').addEventListener("input", totalInsuranceCostValue);
-document.getElementById('insuranceLiabilityValue').addEventListener("input", totalInsuranceCostValue);
-document.getElementById('insuranceLifeValue').addEventListener("input", totalInsuranceCostValue);
-document.getElementById('insuranceLegalValue').addEventListener("input", totalInsuranceCostValue);
+document.getElementById('insuranceCarValue').addEventListener("input", function(){
+totalInsuranceCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('insuranceHealthValue').addEventListener("input", function(){
+totalInsuranceCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('insuranceLiabilityValue').addEventListener("input", function(){
+totalInsuranceCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('insuranceLifeValue').addEventListener("input", function(){
+totalInsuranceCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('insuranceLegalValue').addEventListener("input", function(){
+totalInsuranceCostValue();
+totalFixedCostsValue();
+});
 
 function totalInsuranceCostValue() {
     var totalInsuranceCostValue = 
@@ -107,11 +152,26 @@ function totalInsuranceCostValue() {
 
 /* ------------------------------ FIXED COSTS CALCULATION --- SUBSCRIPTIONS */
 
-document.getElementById('donationsValue').addEventListener("input", totalSubscriptionCostValue);
-document.getElementById('subscriptionsGymValue').addEventListener("input", totalSubscriptionCostValue);
-document.getElementById('subscriptionsLotteryValue').addEventListener("input", totalSubscriptionCostValue);
-document.getElementById('subscriptionsNewsValue').addEventListener("input", totalSubscriptionCostValue);
-document.getElementById('subscriptionsStreamingValue').addEventListener("input", totalSubscriptionCostValue);
+document.getElementById('donationsValue').addEventListener("input", function(){
+totalSubscriptionCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('subscriptionsGymValue').addEventListener("input", function(){
+totalSubscriptionCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('subscriptionsLotteryValue').addEventListener("input", function(){
+totalSubscriptionCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('subscriptionsNewsValue').addEventListener("input", function(){
+totalSubscriptionCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('subscriptionsStreamingValue').addEventListener("input", function(){
+totalSubscriptionCostValue();
+totalFixedCostsValue();
+});
 
 function totalSubscriptionCostValue() {
     var totalSubscriptionCostValue = 
@@ -127,9 +187,18 @@ function totalSubscriptionCostValue() {
 
 /* ------------------------------ FIXED COSTS CALCULATION --- CREDIT CARDS */
 
-document.getElementById('amexValue').addEventListener("input", totalCreditcardCostValue);
-document.getElementById('mastercardValue').addEventListener("input", totalCreditcardCostValue);
-document.getElementById('visaValue').addEventListener("input", totalCreditcardCostValue);
+document.getElementById('amexValue').addEventListener("input", function(){
+totalCreditcardCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('mastercardValue').addEventListener("input", function(){
+totalCreditcardCostValue();
+totalFixedCostsValue();
+});
+document.getElementById('visaValue').addEventListener("input", function(){
+totalCreditcardCostValue();
+totalFixedCostsValue();
+});
 
 function totalCreditcardCostValue() {
     var totalCreditcardCostValue = 
@@ -141,8 +210,6 @@ function totalCreditcardCostValue() {
 }
 
 /* ------------------------------ TOTAL FIXED COSTS CALCULATION */
-document.getElementById('donationsValue').addEventListener("input", totalFixedCostsValue);
-
 document.getElementById('totalHomeCostValue').addEventListener("change", totalFixedCostsValue);
 document.getElementById('totalTransportCostValue').addEventListener("change", totalFixedCostsValue);
 document.getElementById('totalInsuranceCostValue').addEventListener("change", totalFixedCostsValue);
