@@ -74,12 +74,16 @@
     <a href="#current-debts">Current Debts</a>
     <a href="#current-income">Monthly Income</a>
     <a href="#current-fixed-costs">Monthly Costs (Fixed)</a>
-    <a class="sidebar-sub-section" href="#fixed-costs-home">Home</a>
-    <a class="sidebar-sub-section" href="#fixed-costs-transport">Transport</a>
-    <a class="sidebar-sub-section" href="#fixed-costs-insurance">Insurance</a>
-    <a class="sidebar-sub-section" href="#fixed-costs-subscriptions">Subscriptions</a>
-    <a class="sidebar-sub-section" href="#fixed-costs-credit-card-payments">Credit Card Payments</a>
-    <a href="#totalFIxedCostsValue">Total Fixed Costs</a>
+        <a class="sidebar-sub-section" href="#fixed-costs-home">Home</a>
+        <a class="sidebar-sub-section" href="#fixed-costs-transport">Transport</a>
+        <a class="sidebar-sub-section" href="#fixed-costs-insurance">Insurance</a>
+        <a class="sidebar-sub-section" href="#fixed-costs-subscriptions">Subscriptions</a>
+        <a class="sidebar-sub-section" href="#fixed-costs-credit-card-payments">Credit Card Payments</a>
+    <a href="#fixed-budget-overview">Fixed Budget Report</a>
+        <a class="sidebar-sub-section" href="#total-current-accounts">Total Current Accounts</a>
+        <a class="sidebar-sub-section" href="#total-current-debts">Total Current Debts</a>
+        <a class="sidebar-sub-section" href="#total-monthly-income">Total Monthly Income</a>
+        <a class="sidebar-sub-section" href="#total-fixed-costs">Total Fixed Costs</a>
 </div>
 
 
@@ -279,9 +283,21 @@
 
 <!-- NOTE FOR MICHAEL Do I need to add an onchange="totalFixedCostsValue()" to the HTML???? -->
         <!------------------------------ TOTAL FIXED COSTS CALCULATION -->
-        <div class="row" id="total-fixed-costs"><h5>Total Fixed Costs</h5></div>
-                <div class="row total-fixed-costs-item">
-                    <div class="col-md-6 col-sm-12">Total Fixed Costs</div>
+        <div class="row" id="fixed-budget-overview"><h5>Fixed Budget Overview</h5></div>
+                <div class="row total-fixed-item">
+                    <div class="col-md-6 col-sm-12" id="total-current-accounts">Total Current Accounts</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCurrentAccountsValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row total-fixed-item">
+                    <div class="col-md-6 col-sm-12" id="total-current-debts">Total Current Debts</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCurrentDebtsValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row total-fixed-item">
+                    <div class="col-md-6 col-sm-12" id="total-monthly-income">Total Monthly Income</div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalMonthlyIncomeValue" maxlength="10" placeholder="0"></div>
+                </div>
+                <div class="row total-fixed-item">
+                    <div class="col-md-6 col-sm-12" id="total-fixed-costs">Total Fixed Costs</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue" maxlength="10" placeholder="0"></div>
                 </div>
         </div>

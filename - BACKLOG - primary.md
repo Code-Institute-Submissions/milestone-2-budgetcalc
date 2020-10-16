@@ -1,9 +1,13 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] use javascript if code to change the color in the reports - red for negative and green for positive
+- [ ] Create JavaScript code for Fixed Overview
 
 - [ ] Calculate left overs
+
+- [ ] use javascript if code to change the color in the reports - red for negative and green for positive
+
+- [ ] add 'other' for each section
 
 - [ ] Check the following site for entering currency information https://codepen.io/559wade/pen/LRzEjj
 
@@ -25,6 +29,7 @@
 
 ## DONE (Latest done is on top)
 
+- [x] Create Fixed Budget Overview
 - [ ] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
 - [x] Add sticky sidebar for navigation between sections
 - [x] Add placeholders instead of values for the input fields
