@@ -31,6 +31,10 @@
 - [ ] Add modal to explain the steps: <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Start Now!</button>
 
 ## BACKLOG (Highest priority is on top)
+- [ ] Auto hide sections
+
+- [ ] As user scrolls place is shown in sidebar by making text bold
+
 - [ ] Save data locally in browser
 
 - [ ] Calculate yearly overview (if things stay the same, expected income over the whole year)
