@@ -122,6 +122,7 @@ function totalSubscriptionCostValue() {
         Number($("input#subscriptionsStreamingValue").val()); 
     totalSubscriptionCostValue = (Math.round(totalSubscriptionCostValue * 100 / 100).toFixed(2));
     $("input#totalSubscriptionCostValue").val(totalSubscriptionCostValue);
+    console.log('test1');
 }
 
 /* ------------------------------ FIXED COSTS CALCULATION --- CREDIT CARDS */
@@ -140,11 +141,13 @@ function totalCreditcardCostValue() {
 }
 
 /* ------------------------------ TOTAL FIXED COSTS CALCULATION */
-document.getElementById('totalHomeCostValue').addEventListener("input", totalFixedCostsValue);
-document.getElementById('totalTransportCostValue').addEventListener("input", totalFixedCostsValue);
-document.getElementById('totalInsuranceCostValue').addEventListener("input", totalFixedCostsValue);
-document.getElementById('totalSubscriptionCostValue').addEventListener("input", totalFixedCostsValue);
-document.getElementById('totalCreditcardCostValue').addEventListener("input", totalFixedCostsValue);
+document.getElementById('donationsValue').addEventListener("input", totalFixedCostsValue);
+
+document.getElementById('totalHomeCostValue').addEventListener("change", totalFixedCostsValue);
+document.getElementById('totalTransportCostValue').addEventListener("change", totalFixedCostsValue);
+document.getElementById('totalInsuranceCostValue').addEventListener("change", totalFixedCostsValue);
+document.getElementById('totalSubscriptionCostValue').addEventListener("change", totalFixedCostsValue);
+document.getElementById('totalCreditcardCostValue').addEventListener("change", totalFixedCostsValue);
 
 function totalFixedCostsValue() {
     var totalFixedCostsValue = 
@@ -152,7 +155,12 @@ function totalFixedCostsValue() {
         Number($("input#totalTransportCostValue").val()) +
         Number($("input#totalInsuranceCostValue").val()) + 
         Number($("input#totalSubscriptionCostValue").val()) + 
-        Number($("input#totalCreditcardCostValue").val()); 
+        Number($("input#totalCreditcardCostValue").val()) +
+        Number($("input#transportCarPaymentValue").val()) + 
+        Number($("input#transportParkingPermitPermitValue").val()) + 
+        Number($("input#transportPublicValue").val());
+
     totalFixedCostsValue = (Math.round(totalFixedCostsValue * 100 / 100).toFixed(2));
     $("input#totalFixedCostsValue").val(totalFixedCostsValue);
+    console.log('test2')
 }

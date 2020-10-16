@@ -1,7 +1,7 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
+- [ ] use javascript if code to change the color in the reports - red for negative and green for positive
 
 - [ ] Calculate left overs
 
@@ -25,7 +25,7 @@
 
 ## DONE (Latest done is on top)
 
-
+- [ ] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
 - [x] Add sticky sidebar for navigation between sections
 - [x] Add placeholders instead of values for the input fields
 - [x] Add auto calculation method to all sections
