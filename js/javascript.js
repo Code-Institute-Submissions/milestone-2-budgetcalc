@@ -5,8 +5,14 @@ and support from Michael - Code Institute Tutor Support */
 
 "use strict";
 /* ------------------------------ CURRENT ACCOUNTS CALCULATION */
-document.getElementById('accountBankValue').addEventListener("input", totalAccountsValue);
-document.getElementById('accountSavingsValue').addEventListener("input", totalAccountsValue);
+document.getElementById('accountBankValue').addEventListener("input", function(){
+    totalAccountsValue();
+    totalCurrentAccountsValue();
+});
+document.getElementById('accountSavingsValue').addEventListener("input", function(){
+    totalAccountsValue();
+    totalCurrentAccountsValue();
+});
 
 function totalAccountsValue() {
     var totalAccountsValue = Number($("input#accountBankValue").val()) + Number($("input#accountSavingsValue").val());
@@ -16,10 +22,22 @@ function totalAccountsValue() {
 
 /* ------------------------------ CURRENT DEBT CALCULATION */
 
-document.getElementById('debtLoanValue').addEventListener("input", totalDebtsValue);
-document.getElementById('debtAmexValue').addEventListener("input", totalDebtsValue);
-document.getElementById('debtMastercardValue').addEventListener("input", totalDebtsValue);
-document.getElementById('debtVisaValue').addEventListener("input", totalDebtsValue);
+document.getElementById('debtLoanValue').addEventListener("input", function(){
+    totalDebtsValue();
+    totalCurrentDebtsValue();
+});
+document.getElementById('debtAmexValue').addEventListener("input", function(){
+    totalDebtsValue();
+    totalCurrentDebtsValue();
+});
+document.getElementById('debtMastercardValue').addEventListener("input", function(){
+    totalDebtsValue();
+    totalCurrentDebtsValue();
+});
+document.getElementById('debtVisaValue').addEventListener("input", function(){
+    totalDebtsValue();
+    totalCurrentDebtsValue();
+});
 
 function totalDebtsValue() {
     var totalDebtsValue = 
@@ -34,9 +52,18 @@ function totalDebtsValue() {
 
 /* ------------------------------ INCOME CALCULATION */
 
-document.getElementById('netSalary').addEventListener("input", totalIncomeValue);
-document.getElementById('bonusSalary').addEventListener("input", totalIncomeValue);
-document.getElementById('gigSalary').addEventListener("input", totalIncomeValue);
+document.getElementById('netSalary').addEventListener("input", function(){
+    totalIncomeValue();
+    totalMonthlyIncomeValue();
+});
+document.getElementById('bonusSalary').addEventListener("input", function(){
+    totalIncomeValue();
+    totalMonthlyIncomeValue();
+});
+document.getElementById('gigSalary').addEventListener("input", function(){
+    totalIncomeValue();
+    totalMonthlyIncomeValue();
+});
 
 function totalIncomeValue() {
     var totalIncomeValue = 
@@ -208,13 +235,54 @@ function totalCreditcardCostValue() {
     $("input#totalCreditcardCostValue").val(totalCreditcardCostValue);
 }
 
-/* ------------------------------ TOTAL FIXED COSTS CALCULATION */
-document.getElementById('totalHomeCostValue').addEventListener("change", totalFixedCostsValue);
-document.getElementById('totalTransportCostValue').addEventListener("change", totalFixedCostsValue);
-document.getElementById('totalInsuranceCostValue').addEventListener("change", totalFixedCostsValue);
-document.getElementById('totalSubscriptionCostValue').addEventListener("change", totalFixedCostsValue);
-document.getElementById('totalCreditcardCostValue').addEventListener("change", totalFixedCostsValue);
 
+/* ------------------------------ TOTAL CURRENT ACCOUNTS CALCULATION */
+
+function totalCurrentAccountsValue() {
+    var totalCurrentAccountsValue = 
+        Number($("input#totalAccountsValue").val());
+
+    totalCurrentAccountsValue = (Math.round(totalCurrentAccountsValue * 100 / 100).toFixed(2));
+    $("input#totalCurrentAccountsValue").val(totalCurrentAccountsValue);
+}
+
+
+/* ------------------------------ TOTAL CURRENT DEBTS CALCULATION */
+
+function totalCurrentDebtsValue() {
+    var totalCurrentDebtsValue = 
+        Number($("input#totalDebtsValue").val());
+
+    totalCurrentDebtsValue = (Math.round(totalCurrentDebtsValue * 100 / 100).toFixed(2));
+    $("input#totalCurrentDebtsValue").val(totalCurrentDebtsValue);
+}
+
+/* ------------------------------ NET WORTH CALCULATION */
+
+function netWorthValue() {
+    var netWorthValue = 
+        Number($("input#totalCurrentAccountsValue").val()) -
+        Number($("input#totalCurrentDebtsValue").val());
+
+    netWorthValue = (Math.round(netWorthValue * 100 / 100).toFixed(2));
+    $("input#netWorthValue").val(netWorthValue);
+}
+
+
+netWorthValue
+
+/* ------------------------------ TOTAL MONTHLY INCOME CALCULATION */
+
+function totalMonthlyIncomeValue() {
+    var totalMonthlyIncomeValue = 
+        Number($("input#totalIncomeValue").val());
+
+    totalMonthlyIncomeValue = (Math.round(totalMonthlyIncomeValue * 100 / 100).toFixed(2));
+    $("input#totalMonthlyIncomeValue").val(totalMonthlyIncomeValue);
+}
+
+
+/* ------------------------------ TOTAL FIXED COSTS CALCULATION */
 function totalFixedCostsValue() {
     var totalFixedCostsValue = 
         Number($("input#totalHomeCostValue").val()) + 

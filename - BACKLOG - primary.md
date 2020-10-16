@@ -1,9 +1,13 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] Create JavaScript code for Fixed Overview
+- [ ] Calulate Networth and Net fixed income
+
+- [ ] Change Monthly income to fixed income ?
 
 - [ ] Calculate left overs
+
+- [ ] Add house value - link to calculator for house worth
 
 - [ ] use javascript if code to change the color in the reports - red for negative and green for positive
 
@@ -14,6 +18,8 @@
 - [ ] Add modal to explain the steps: <button class="btn btn-lg btn--cta btn--red" data-toggle="modal" data-target="#signUpModal">Start Now!</button>
 
 ## BACKLOG (Highest priority is on top)
+- [ ] Save data locally in browser
+
 - [ ] Calculate yearly overview (if things stay the same, expected income over the whole year)
 
 - [ ] Show and hide sections when boxes are checked - this can be expanded by asking users questions
@@ -29,6 +35,7 @@
 
 ## DONE (Latest done is on top)
 
+- [x] Create JavaScript code for Fixed Overview
 - [x] Create Fixed Budget Overview
 - [ ] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
 - [x] Add sticky sidebar for navigation between sections
