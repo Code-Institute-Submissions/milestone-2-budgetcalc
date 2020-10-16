@@ -457,23 +457,8 @@
     </div>
 
 
-<!-- The following boostrap modal was adapted from the lesson at W3Schools. SRC: https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
 
-<!-- Trigger the modal with a button -->
-<div class="text-center">
-    <button type="button" class="btn-block btn--green" data-toggle="modal" data-target="#modalGenerateReport">Generate Report</button>
-</div>
-<!-- Modal -->
-<div id="modalGenerateReport" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Generate Report</h4>
-      </div>
-      <div class="modal-body">
-        <p class="text-center">Please <strong>check spam</strong> folder if the report doesn't show up in your inbox.</p>
+        <!------------------------------ SEND OVERVIEW BY EMAIL TO USER -->
         <form onsubmit="return sendMail(this);">
             <input type="text" name="name" id="userName" class="form-control" placeholder="Name" required />
             <input type="email" name="email" id="userEmail" class="form-control" placeholder="Email" required />
@@ -481,16 +466,10 @@
             <br>
             <div class="form-row text-center">
                 <div class="col">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="button btn--green btn--cta" data-dismiss="modal">Send Report</button>
+                    <button type="submit" class="button btn--green btn--cta">Send Report</button>
                 </div>
             </div>
         </form>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
 </div>
@@ -513,6 +492,7 @@
         <div class="row footer">
             <div class="col-12 copyright-info block text-center">
                 <p>&copy; 2020 Alexander Forest - v0.1.0 built for Code Institute Milestone Project 2</p>
+                <!-- The following copyright info has been copied and adapted from Wookieepedia: https://starwars.fandom.com/wiki/Wookieepedia:Copyrights -->
                 <small>Technogies used include HTML5, CSS3, and JavaScript 3.5.1</small>
             </div>
         </div>

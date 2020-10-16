@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- External links to cascading stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Internal stylesheet used to override bootstrap components -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+<!-- Email JS scripts -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("user_2JT9fHtbQGmYTwhSkdEwA");
+    })();
+    </script>
+
+</head>
+<body>
+<!------------------------------ NAVBAR -->
+<!-- The following Navbar has been adapted from the Code Institute Bootcamp module. -->
+    <nav class="navbar navbar-dark navbar-expand-sm">
+            <a href="/" class="navbar-brand">BudgetCalc</a>
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Input</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/generate-report.html">Report</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">A</a>
+                            <a class="dropdown-item" href="#">B</a>
+                            <a class="dropdown-item" href="#">C</a>
+                            <a class="dropdown-item" href="#">D</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+<!------------------------------ SEND OVERVIEW BY EMAIL TO USER -->
+    <div class="container-fluid col-12">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" id="userName" class="form-control" placeholder="Name" required />
+                    <input type="email" name="email" id="userEmail" class="form-control" placeholder="Email" required />
+                <!--    <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Please describe the project you had in mind" required></textarea> -->
+                    <br>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="submit" class="button btn--green btn--cta">Send Report</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4 col-sm-12">
+            </div>
+        </div>
+
+    </div>
+
+<!------------------------------ FOOTER -->
+<footer>
+    <div class="container-fluid footer-container text-center">
+        <div class="row footer-icons">
+            <div class="col-12 block">
+                    <a href="https://github.com/asforrest/" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/alexanderforrest/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCO6gDGgZgjtRyAXnpne3WfQ" target="_blank"><i class="fa fa-youtube"></i></a>
+                    <a href="mailto:asforrest@icloud.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-container">
+        <div class="row footer">
+            <div class="col-12 copyright-info block text-center">
+                <p>&copy; 2020 Alexander Forest - v0.1.0 built for Code Institute Milestone Project 2</p>
+                <!-- The following copyright info has been copied and adapted from Wookieepedia: https://starwars.fandom.com/wiki/Wookieepedia:Copyrights -->
+                <small>Technogies used include HTML5, CSS3, and JavaScript 3.5.1</small>
+            </div>
+        </div>
+    </div>
+<!-- External Bootstrap JS CDN scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/javascript.js">></script>
+    <script src="js/sendEmail.js">></script>
+</footer>
+</body>
+</html>
