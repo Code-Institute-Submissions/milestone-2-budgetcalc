@@ -3,7 +3,14 @@
 ## CURRENT SPRINT (Highest priority is on top)
 - [ ] Add javascript code to variable costs
 
+- [ ] In modal > generate report - send error message to the user if the incorrect information is filled in. So only data target exit modal if the information entered is correct.
+
 - [ ] Calculate variable costs
+
+- [ ] Add chart API
+
+!!! ASK MENTOR OR TUTOR !!!
+- [ ] Save information in web app - use across multiple pages? Possibly use show and hide sections in JavaScript????
 
 - [ ] Add variable costs to sendEmail.js and emailJS
 

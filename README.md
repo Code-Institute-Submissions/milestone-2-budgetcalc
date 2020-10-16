@@ -68,6 +68,8 @@ In addition, you may also use this section to discuss plans for additional featu
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 1. [Canva:](https://www.canva.com/colors/color-palette-generator/)
     - Canva was used to extract a color palette from the logo.
+1. [Plotly](https://plotly.com/javascript/)
+    - Plotly was used to generate graphs for the user.
 
 
 
