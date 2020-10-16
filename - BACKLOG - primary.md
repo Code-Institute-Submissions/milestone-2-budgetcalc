@@ -7,6 +7,8 @@
 
 - [ ] emailJS create top 3 variable costs
 
+- [ ] Create settings button to select which parameters will be used
+
 - [ ] Add house value - link to calculator for house worth
 
 - [ ] use javascript if code to change the color in the reports - red for negative and green for positive
