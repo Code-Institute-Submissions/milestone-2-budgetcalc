@@ -182,7 +182,6 @@ function totalSubscriptionCostValue() {
         Number($("input#subscriptionsStreamingValue").val()); 
     totalSubscriptionCostValue = (Math.round(totalSubscriptionCostValue * 100 / 100).toFixed(2));
     $("input#totalSubscriptionCostValue").val(totalSubscriptionCostValue);
-    console.log('test1');
 }
 
 /* ------------------------------ FIXED COSTS CALCULATION --- CREDIT CARDS */
@@ -229,5 +228,4 @@ function totalFixedCostsValue() {
 
     totalFixedCostsValue = (Math.round(totalFixedCostsValue * 100 / 100).toFixed(2));
     $("input#totalFixedCostsValue").val(totalFixedCostsValue);
-    console.log('test2')
 }
