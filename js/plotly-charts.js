@@ -15,7 +15,7 @@ var data = [{
 
 var layout = {
   height: 200,
-  width: 250
+  width: 100
 };
 
 Plotly.newPlot("pieChartFixedCosts", data, layout);

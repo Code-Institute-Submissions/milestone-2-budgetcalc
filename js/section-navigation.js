@@ -12,7 +12,7 @@ $("#next-monthlyIncome, #sideNavIncome").click(function(){
     document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
     document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
-    document.getElementById('fixedCosts').scrollIntoView({
+    document.getElementById('monthlyIncome').scrollIntoView({
         behavior: 'smooth'
     });
 });
