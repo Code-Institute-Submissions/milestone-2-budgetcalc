@@ -1,12 +1,16 @@
 /* Page 1 currentAccounts */
-$("#next-monthlyIncome").click(function(){
+$("#next-monthlyIncome, sideNavIncome").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").show();
     $("#fixedCosts").hide();
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "<strong>Income (Monthly)</strong>";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
-
 
 /* Page 2 monthlyIncome */
 $("#previous-currentAccounts").click(function(){
@@ -15,6 +19,11 @@ $("#previous-currentAccounts").click(function(){
     $("#fixedCosts").hide();
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "<strong>Current Accounts</strong>";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
 $("#next-fixedCosts").click(function(){
@@ -23,6 +32,11 @@ $("#next-fixedCosts").click(function(){
     $("#fixedCosts").show();
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "<strong>Fixed Costs (Monthly)</strong>";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
 
@@ -33,6 +47,11 @@ $("#previous-monthlyIncome").click(function(){
     $("#fixedCosts").hide();
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "<strong>Income (Monthly)</strong>";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
 $("#next-variableCosts").click(function(){
@@ -41,6 +60,11 @@ $("#next-variableCosts").click(function(){
     $("#fixedCosts").hide();
     $("#variableCosts").show();
     $("#budgetOverview").hide();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "<strong>Variable Costs (Monthly)</strong>";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
 
@@ -51,6 +75,11 @@ $("#previous-fixedCosts").click(function(){
     $("#fixedCosts").show();
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "<strong>Fixed Costs (Monthly)</strong>";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
 $("#next-budgetOverview").click(function(){
@@ -59,6 +88,11 @@ $("#next-budgetOverview").click(function(){
     $("#fixedCosts").hide();
     $("#variableCosts").hide();
     $("#budgetOverview").show();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "<strong>Budget Overview</strong>";
 });
 
 
@@ -69,6 +103,11 @@ $("#previous-variableCosts").click(function(){
     $("#fixedCosts").hide();
     $("#variableCosts").show();
     $("#budgetOverview").hide();
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "<strong>Variable Costs (Monthly)</strong>";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 /* NOT CURRENTLY USED
 $("#next-fixedCosts").click(function(){
