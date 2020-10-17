@@ -1,5 +1,5 @@
 /* Page 1 currentAccounts */
-$("#next-monthlyIncome, sideNavIncome").click(function(){
+$("#next-monthlyIncome, #sideNavIncome").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").show();
     $("#fixedCosts").hide();
@@ -13,7 +13,7 @@ $("#next-monthlyIncome, sideNavIncome").click(function(){
 });
 
 /* Page 2 monthlyIncome */
-$("#previous-currentAccounts").click(function(){
+$("#previous-currentAccounts, #sideNavCurrentAccounts").click(function(){
     $("#currentAccounts").show();
     $("#monthlyIncome").hide();
     $("#fixedCosts").hide();
@@ -26,7 +26,7 @@ $("#previous-currentAccounts").click(function(){
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
-$("#next-fixedCosts").click(function(){
+$("#next-fixedCosts, #sideNavFixedCosts").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").hide();
     $("#fixedCosts").show();
@@ -41,7 +41,7 @@ $("#next-fixedCosts").click(function(){
 
 
 /* Page 3 fixedCosts */
-$("#previous-monthlyIncome").click(function(){
+$("#previous-monthlyIncome, #sideNavIncome").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").show();
     $("#fixedCosts").hide();
@@ -54,7 +54,7 @@ $("#previous-monthlyIncome").click(function(){
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
-$("#next-variableCosts").click(function(){
+$("#next-variableCosts, #sideNavVariableCosts").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").hide();
     $("#fixedCosts").hide();
@@ -69,7 +69,7 @@ $("#next-variableCosts").click(function(){
 
 
 /* Page 4 variableCosts */
-$("#previous-fixedCosts").click(function(){
+$("#previous-fixedCosts, #sideNavFixedCosts").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").hide();
     $("#fixedCosts").show();
@@ -82,7 +82,7 @@ $("#previous-fixedCosts").click(function(){
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
 });
 
-$("#next-budgetOverview").click(function(){
+$("#next-budgetOverview, #sideNavBudgetOverview").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").hide();
     $("#fixedCosts").hide();
@@ -97,7 +97,7 @@ $("#next-budgetOverview").click(function(){
 
 
 /* Page 5 budgetOverview */
-$("#previous-variableCosts").click(function(){
+$("#previous-variableCosts, #sideNavVariableCosts").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").hide();
     $("#fixedCosts").hide();
