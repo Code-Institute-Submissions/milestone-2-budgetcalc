@@ -97,7 +97,15 @@
 
 <!------------------------------ CURRENT ACCOUNTS CALCULATION -->
 <div class="col-8">
-<div class="container-fluid current-accounts-container" id="current-accounts">
+<!-- 
+<button onclick="TestsFunction()">Tests</button>
+
+<div id="TestsDiv" style="display:none">
+    tests here!
+</div>
+-->
+<div id="currentAccounts">
+    <div class="container-fluid current-accounts-container" id="current-accounts">
         <div class="row"><h4>Current Accounts</h4></div>
             <div class="row current-account-item">
                 <div class="col-md-6 col-sm-12">Bank Accounts</div>
@@ -115,7 +123,7 @@
                 <div class="col-md-6 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
-</div>
+    </div>
     
 <!------------------------------ CURRENT DEBT CALCULATION -->
     <div class="container-fluid current-debts-container" id="current-debts">
@@ -142,7 +150,8 @@
             </div>
     </div>
 
-    <div class="container-fluid fixed-budget-container" id="fixed-budget-overview">
+<!------------------------------ CURRENT ACCOUNTS OVERVIEW -->
+    <div class="container-fluid fixed-budget-container" id="current-accounts-overview">
         <div class="row"><h4>Net Worth Overview</h4
         ></div>
                 <div class="row total-fixed-item">
@@ -158,9 +167,17 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="netWorthValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
     </div>
-
-
+<!------------------------------ NAVIGATION PAGE 1 CURRENT ACCOUNTS -->
+    <div class="row">
+        <div class="col-6">
+        </div>
+        <div class="col-6">
+            <button class="btn--green btn--standard float-right" id="next-monthlyIncome">Next</button>
+        </div>
+    </div>
+</div>
 <!------------------------------ MONTHLY INCOME CALCULATION -->
+<div id="monthlyIncome" class="hidden-navigation">
     <div class="container-fluid current-income-container" id="current-income">
         <div class="row"><h4> Income (Monthly)</h4>
         </div>
@@ -180,9 +197,20 @@
                 <div class="col-md-6 col-sm-12">TOTAL INCOME </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
-    </div> 
+    </div>
+<!------------------------------ NAVIGATION PAGE 2 INCOME -->
+    <div class="row">
+        <div class="col-6">
+            <button class="btn--green btn--standard float-left" id="previous-currentAccounts">Previous</button>
+        </div>
+        <div class="col-6">
+            <button class="btn--green btn--standard float-right" id="next-fixedCosts">Next</button>
+        </div>
+    </div>
+</div>
 
 <!------------------------------ FIXED COSTS CALCULATION -->
+<div id="fixedCosts" class="hidden-navigation">
     <div class="container-fluid current-fixed-costs-container" id="current-fixed-costs">
         <div class="row"><h4>Fixed Costs (Monthly)</h4>
         </div>
@@ -315,7 +343,6 @@
             </div>
     </div>
 
-<!-- NOTE FOR MICHAEL Do I need to add an onchange="totalFixedCostsValue()" to the HTML???? -->
 <!------------------------------ TOTAL FIXED COSTS CALCULATION -->
 
     <div class="container-fluid fixed-budget-container" id="fixed-income-overview">
@@ -334,9 +361,19 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="netFixedIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
     </div>
-
+    <!------------------------------ NAVIGATION PAGE 3 FIXED COSTS -->
+    <div class="row">
+        <div class="col-6">
+            <button class="btn--green btn--standard float-left" id="previous-monthlyIncome">Previous</button>
+        </div>
+        <div class="col-6">
+            <button class="btn--green btn--standard float-right" id="next-variableCosts">Next</button>
+        </div>
+    </div>
+</div>
 
 <!------------------------------ VARIABLE COSTS CALCULATION -->
+<div id="variableCosts" class="hidden-navigation">
     <div class="container-fluid current-variable-costs-container" id="current-variable-costs">
         <div class="row"><h4>Variable Costs (Monthly)</h4>
         </div>
@@ -462,7 +499,7 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalStuffCostValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
                 
-                
+<!------------------------------ VARIBALE COSTS OVERVIEW -->
             <div class="row variable-costs" id="total-variable-costs"><h5>Total Variable Costs Overview</h5>
             </div>
                 <div class="row costs-item">
@@ -473,28 +510,53 @@
                     <div class="col-md-6 col-sm-12 net-amount" id="net-budget-monthly">Savings</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
+<!------------------------------ NAVIGATION PAGE 4 VARIABLE COSTS -->
+    <div class="row">
+        <div class="col-6">
+            <button class="btn--green btn--standard float-left" id="previous-fixedCosts">Previous</button>
+        </div>
+        <div class="col-6">
+            <button class="btn--green btn--standard float-right" id="next-budgetOverview">Next</button>
+        </div>
+    </div>
+</div>
+</div>
             
 
 <!------------------------------ BUDGET OVERVIEW -->
-            <div class="row variable-costs" id="budget-overview"><h5>Budget Overview</h5>
+<div id="budgetOverview" class="hidden-navigation">
+    <div class="container-fluid budget-overview-container" id="budget-overview">
+        <div class="row"><h5>Budget Overview</h5>
+        </div>
+           <div class="row costs-item">
+                <div class="col-md-6 col-sm-12">Total Income</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
-                <div class="row costs-item">
-                    <div class="col-md-6 col-sm-12">Total Income</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
-                </div>
-                <div class="row costs-item">
-                    <div class="col-md-6 col-sm-12">Total Fixed Costs</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
-                </div>
-                <div class="row costs-item">
-                    <div class="col-md-6 col-sm-12">Total Variable Costs</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalVariableCostsValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
-                </div>
-                <div class="row costs-item">
-                    <div class="col-md-6 col-sm-12">Total Savings</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
-                </div>
+            <div class="row costs-item">
+                <div class="col-md-6 col-sm-12">Total Fixed Costs</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
+            </div>
+            <div class="row costs-item">
+                <div class="col-md-6 col-sm-12">Total Variable Costs</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalVariableCostsValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
+            </div>
+            <div class="row costs-item">
+                <div class="col-md-6 col-sm-12">Total Savings</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
+            </div>
     </div>
+<!------------------------------ NAVIGATION PAGE 5 BUDGET OVERVIEW -->
+   <div class="row">
+        <div class="col-6">
+            <button class="btn--green btn--standard float-left" id="previous-variableCosts">Previous</button>
+        </div>
+<!-- CURRENT NOT USED
+        <div class="col-6">
+            <button class="btn--green btn--standard float-right" id="next-GRAPHS">Next</button>
+        </div>
+-->
+    </div>
+</div>
 
 
 <!-- The following boostrap modal was adapted from the lesson at W3Schools. SRC: https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
@@ -573,6 +635,7 @@
     <script src="js/javascript.js"></script>
     <script src="js/sendEmail.js"></script>
     <script src="js/plotly-charts.js"></script>
+    <script src="js/section-navigation.js"></script>
     
 </footer>
 </body>

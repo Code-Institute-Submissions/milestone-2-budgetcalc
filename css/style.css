@@ -7,6 +7,12 @@ color-pallete {
     color: #e6eeea; /* Light background color */
 }
 
+/* ---------------------------------------------- Hide content for previous-next navigation */
+/* The following has been adapted from information on W3Schools REF: https://www.w3schools.com/css/css_display_visibility.asp */
+
+div.hidden-navigation {
+    display: none;
+}
 
 
 /* ---------------------------------------------- Fonts */
