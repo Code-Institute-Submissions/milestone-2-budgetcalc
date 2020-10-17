@@ -1,11 +1,7 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] Add javascript code to variable costs
-
 - [ ] In modal > generate report - send error message to the user if the incorrect information is filled in. So only data target exit modal if the information entered is correct.
-
-- [ ] Calculate variable costs
 
 - [ ] Add chart API
 
@@ -57,6 +53,8 @@
 
 ## DONE (Latest done is on top)
 
+- [x] Calculate variable costs
+- [x] Add javascript code to variable costs
 - [x] Calculate left overs
 - [x] Change Monthly income to fixed income
 - [x] Calulate Networth and Net fixed income

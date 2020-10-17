@@ -71,16 +71,19 @@ document.getElementById('netSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('bonusSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('gigSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 
 function totalIncomeValue() {
@@ -99,36 +102,43 @@ document.getElementById('waterValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('energyValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('internetValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('mobileValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('propertyTaxValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('rentMortageValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('homeServiceCostsValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 
 function totalHomeCostValue() {
@@ -150,16 +160,19 @@ document.getElementById('transportCarPaymentValue').addEventListener("input", fu
     totalTransportCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('transportParkingPermitPermitValue').addEventListener("input", function(){
     totalTransportCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('transportPublicValue').addEventListener("input", function(){
     totalTransportCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 
 function totalTransportCostValue() {
@@ -177,26 +190,31 @@ document.getElementById('insuranceCarValue').addEventListener("input", function(
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('insuranceHealthValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('insuranceLiabilityValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('insuranceLifeValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('insuranceLegalValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 
 function totalInsuranceCostValue() {
@@ -216,26 +234,31 @@ document.getElementById('donationsValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('subscriptionsGymValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('subscriptionsLotteryValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('subscriptionsNewsValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('subscriptionsStreamingValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 
 function totalSubscriptionCostValue() {
@@ -255,16 +278,19 @@ document.getElementById('amexValue').addEventListener("input", function(){
     totalCreditcardCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('mastercardValue').addEventListener("input", function(){
     totalCreditcardCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 document.getElementById('visaValue').addEventListener("input", function(){
     totalCreditcardCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
+    totalSavingsValue();
 });
 
 function totalCreditcardCostValue() {
@@ -339,7 +365,7 @@ function totalFixedCostsValue() {
     $("input#totalFixedCostsValue").val(totalFixedCostsValue);
 }
 
-/* ------------------------------ NET FIXED INCOME CALCULATION */
+/* ------------------------------ NET FIXED INCOME (MONTHLY) CALCULATION */
 
 function netFixedincomeValue() {
     var netFixedincomeValue = 
@@ -348,4 +374,213 @@ function netFixedincomeValue() {
 
     netFixedincomeValue = (Math.round(netFixedincomeValue * 100 / 100).toFixed(2));
     $("input#netFixedIncomeValue").val(netFixedincomeValue);
+}
+
+
+/* ------------------------------ VARIABLE COSTS CALCULATION --- FOOD AND DRINK */
+
+document.getElementById('supermarketAlbertHeijnValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketAldiValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketCoopValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketDirkBasValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketJumboValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketLidlValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('SupermarketMakroValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketMarqtValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketPlusValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketCornerStoreValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('supermarketLiquorStoreValue').addEventListener("input", function(){
+    totalSupermarketCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+
+function totalSupermarketCostValue() {
+    var totalSupermarketCostValue = 
+        Number($("input#supermarketAlbertHeijnValue").val()) +
+        Number($("input#supermarketAldiValue").val()) +
+        Number($("input#supermarketCoopValue").val()) +
+        Number($("input#supermarketDirkBasValue").val()) +
+        Number($("input#supermarketJumboValue").val()) +
+        Number($("input#supermarketLidlValue").val()) +
+        Number($("input#SupermarketMakroValue").val()) +
+        Number($("input#supermarketMarqtValue").val()) +
+        Number($("input#supermarketPlusValue").val()) +
+        Number($("input#supermarketCornerStoreValue").val()) +
+        Number($("input#supermarketLiquorStoreValue").val());
+    totalSupermarketCostValue = (Math.round(totalSupermarketCostValue * 100 / 100).toFixed(2));
+    $("input#totalSupermarketCostValue").val(totalSupermarketCostValue);
+}
+
+/* ------------------------------ VARIABLE COSTS CALCULATION --- CONSUMABLES */
+
+document.getElementById('consumablesFlowersValue').addEventListener("input", function(){
+    totalConsumablesCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('consumablesPersonalHygieneValue').addEventListener("input", function(){
+    totalConsumablesCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+function totalConsumablesCostValue() {
+    var totalConsumablesCostValue = 
+        Number($("input#consumablesFlowersValue").val()) +
+        Number($("input#consumablesPersonalHygieneValue").val());
+    totalConsumablesCostValue = (Math.round(totalConsumablesCostValue * 100 / 100).toFixed(2));
+    $("input#totalConsumablesCostValue").val(totalConsumablesCostValue);
+}
+
+/* ------------------------------ VARIABLE COSTS CALCULATION --- SOCIALISING AND FUN */
+
+document.getElementById('socialisingBarsValue').addEventListener("input", function(){
+    totalSocialisingFunCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('socialisingCinemasValue').addEventListener("input", function(){
+    totalSocialisingFunCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('socialisingNightClubsValue').addEventListener("input", function(){
+    totalSocialisingFunCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('socialisingRestaurantsValue').addEventListener("input", function(){
+    totalSocialisingFunCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('socialisingOtherValue').addEventListener("input", function(){
+    totalSocialisingFunCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+
+
+function totalSocialisingFunCostValue() {
+    var totalSocialisingFunCostValue = 
+        Number($("input#socialisingBarsValue").val()) +
+        Number($("input#socialisingCinemasValue").val()) +
+        Number($("input#socialisingNightClubsValue").val()) +
+        Number($("input#socialisingRestaurantsValue").val()) +
+        Number($("input#socialisingOtherValue").val());
+    totalSocialisingFunCostValue = (Math.round(totalSocialisingFunCostValue * 100 / 100).toFixed(2));
+    $("input#totalSocialisingFunCostValue").val(totalSocialisingFunCostValue);
+}
+
+/* ------------------------------ VARIABLE COSTS CALCULATION --- STUFF */
+
+document.getElementById('stuffClothesValue').addEventListener("input", function(){
+    totalStuffCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('stuffElectronicsValue').addEventListener("input", function(){
+    totalStuffCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('stuffShoesValue').addEventListener("input", function(){
+    totalStuffCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('stuffToysValue').addEventListener("input", function(){
+    totalStuffCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('stuffVideoGamesValue').addEventListener("input", function(){
+    totalStuffCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+document.getElementById('stuffOtherValue').addEventListener("input", function(){
+    totalStuffCostValue();
+    totalVariableCostsValue();
+    totalSavingsValue();
+});
+
+
+function totalStuffCostValue() {
+    var totalStuffCostValue = 
+        Number($("input#stuffClothesValue").val()) +
+        Number($("input#stuffElectronicsValue").val()) +
+        Number($("input#stuffShoesValue").val()) +
+        Number($("input#stuffToysValue").val()) +
+        Number($("input#stuffVideoGamesValue").val()) +
+        Number($("input#stuffOtherValue").val());
+    totalStuffCostValue = (Math.round(totalStuffCostValue * 100 / 100).toFixed(2));
+    $("input#totalStuffCostValue").val(totalStuffCostValue);
+}
+
+
+
+/* ------------------------------ TOTAL VARIABLE COSTS CALULATION */
+
+function totalVariableCostsValue() {
+    var totalVariableCostsValue = 
+        Number($("input#totalSupermarketCostValue").val()) + 
+        Number($("input#totalConsumablesCostValue").val()) +
+        Number($("input#totalSocialisingFunCostValue").val()) + 
+        Number($("input#totalStuffCostValue").val());
+
+    totalVariableCostsValue = (Math.round(totalVariableCostsValue * 100 / 100).toFixed(2));
+    $("input#totalVariableCostsValue").val(totalVariableCostsValue);
+}
+
+/* ------------------------------ NET BUDGET MONTHLY */
+
+function totalSavingsValue() {
+    var totalSavingsValue = 
+        Number($("input#totalMonthlyIncomeValue").val()) -
+        Number($("input#totalFixedCostsValue").val()) -
+        Number($("input#totalVariableCostsValue").val());
+
+    totalSavingsValue = (Math.round(totalSavingsValue * 100 / 100).toFixed(2));
+    $("input#totalSavingsValue").val(totalSavingsValue);
 }
