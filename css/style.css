@@ -1,12 +1,3 @@
-/* ---------------------------------------------- Color Pallete */
-/* This color-pallete section is for reference only */
-color-pallete {
-    color: #74b642; /* light green*/
-    color: #39826c; /* aqua green */
-    color: #5ea2ad; /* light blue */
-    color: #e6eeea; /* Light background color */
-}
-
 /* ---------------------------------------------- Hide content for previous-next navigation */
 /* The following has been adapted from information on W3Schools REF: https://www.w3schools.com/css/css_display_visibility.asp */
 
@@ -137,18 +128,20 @@ h5 {
     color: #39826c;
 }
 
-.btn--blue {
+.btn--blue-sidenav {
     color: white;
     background-color: #0275d8;
     border-color: #0275d8;
     border: none;
     padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-.btn--blue:hover,
-.btn--blue:active,
-.btn--blue:focus,
-.btn--blue:active:focus {
+.btn--blue-sidenav:hover,
+.btn--blue-sidenav:active,
+.btn--blue-sidenav:focus,
+.btn--blue-sidenav:active:focus {
     background-color: #e5e5e5;
     border-color: #e5e5e5;
     color: #0275d8;
@@ -242,7 +235,6 @@ h5 {
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
-    color: white;
 }
 
 .jumbotron .lead {
@@ -260,8 +252,8 @@ h5 {
 
 .footer-container {
     text-align: center;
-    background-color: #adca9c;
-    color: #262626;
+    background-color: #39826c;
+    color: white;
     min-height: 100px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -283,7 +275,7 @@ h5 {
 }
 
 .footer-icons a{
-    color: black;
+    color: white;
 }
 
 /* ---------------------------------------------- Plotly */

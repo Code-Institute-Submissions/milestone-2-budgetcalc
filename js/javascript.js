@@ -405,6 +405,7 @@ function netFixedincomeValue() {
 
     netFixedincomeValue = (Math.round(netFixedincomeValue * 100 / 100).toFixed(2));
     $("input#netFixedIncomeValue").val(netFixedincomeValue);
+    $("span#netMonthlyIncomeForVariablePage").val(netFixedincomeValue);
 }
 
 
