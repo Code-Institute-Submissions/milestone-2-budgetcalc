@@ -2,7 +2,7 @@
 
 var data = [{
   values: [],
-  labels: ['Bank Accounts', 'Savings Accounts', 'Cash-on-Hand'],
+  labels: ['Salary', 'Bonuses', 'Gigs'],
   type: 'pie'
 }];
 
