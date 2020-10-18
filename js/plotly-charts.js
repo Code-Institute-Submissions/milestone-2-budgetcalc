@@ -1,21 +1,36 @@
-TESTER = document.getElementById("tester");
-	Plotly.newPlot( TESTER, [{
-	x: [1, 2, 3, 4, 5],
-	y: [1, 2, 4, 8, 16] }], {
-    margin: { t: 0 } } );
-    
-
-
-    
 var data = [{
-  values: [50, 10, 10, 10, 20],
-  labels: ["Home", "Transport", "Insurance", "Subscriptions", "Credit Card Payments"],
-  type: "pie"
+  values: [19, 26, 55],
+  labels: ['Residential', 'Non-Residential', 'Utility'],
+  type: 'pie'
 }];
 
 var layout = {
-  height: 200,
-  width: 100
+  height: 400,
+  width: 500
 };
 
-Plotly.newPlot("pieChartFixedCosts", data, layout);
+Plotly.newPlot('myDiv', data, layout);
+
+
+
+
+/* TESTING - CALCULATE INCOME PERCENTAGES */
+
+function getPercentageBankValue(){  
+    var accountBankValuePercentage=document.getElementById("accountBankValue").value;
+    var totalAccountsValuePercentage=document.getElementById("totalAccountsValue").value;
+alert(Math.floor((accountBankValuePercentage / totalAccountsValuePercentage) * 100)); 
+}
+
+function getPercentageSavingsValue(){  
+    var accountSavingsValuePercentage=document.getElementById("accountaccountSavingsValueBankValue").value;
+    var totalAccountsValuePercentage=document.getElementById("totalAccountsValue").value;
+alert(Math.floor((accountSavingsValuePercentage / totalAccountsValuePercentage) * 100)); 
+}
+
+
+function getPercentageCashValue(){  
+    var accountCashValuePercentage=document.getElementById("accountCashValue").value;
+    var totalAccountsValuePercentage=document.getElementById("totalAccountsValue").value;
+alert(Math.floor((accountCashValuePercentage / totalAccountsValuePercentage) * 100)); 
+}
