@@ -591,18 +591,3 @@ function totalSavingsValue() {
     $("input#totalSavingsValue").val(totalSavingsValue);
     $("input#totalSavingsValue-BudgetOverview").val(totalSavingsValue);
 }
-
-
-
-
-
-
-
-
-/*PERCENTAGE TEST*/
-function testPER() {
-    var testPER =
-        Number($("input#netSalary").val()) / Number($("input#totalIncomeValue").val()) * 100;
-    $("input#netSalaryPER").val(testPER);
-}
-/*console.log($("input#totalIncomeValue").val())*/

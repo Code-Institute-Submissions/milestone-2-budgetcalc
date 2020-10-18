@@ -12,6 +12,7 @@ var layout = {
 Plotly.newPlot('incomePieChart', data, layout);
 
 function testPER() {
+    console.log("called");
     var netSalaryPER =
         Number($("input#netSalary").val()) / 
         Number($("input#totalIncomeValue").val()) 
@@ -27,4 +28,5 @@ function testPER() {
     data[0].values[0] = netSalaryPER;
     data[0].values[1] = bonusSalaryPER
     data[0].values[2] = gigSalaryPER
+    $("input#netSalaryPER").val(netSalaryPER);
 }
