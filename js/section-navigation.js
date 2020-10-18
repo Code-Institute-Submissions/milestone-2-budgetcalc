@@ -9,10 +9,10 @@ $("#next-currentAccounts, #sideNavCurrentAccounts").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "<strong>Current Accounts</strong>";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "<strong>Net Worth Overview</strong>";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('currentAccounts').scrollIntoView({
         behavior: 'smooth'
@@ -29,10 +29,10 @@ $("#previous-introduction, #sideNavIntroduction").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "<strong>Introduction</strong>";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('introuction').scrollIntoView({
         behavior: 'smooth'
@@ -48,10 +48,10 @@ $("#next-monthlyIncome, #sideNavIncome").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "<strong>Income (Monthly)</strong>";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "<strong>Income Overview</strong>";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('monthlyIncome').scrollIntoView({
         behavior: 'smooth'
@@ -67,10 +67,10 @@ $("#previous-currentAccounts, #sideNavCurrentAccounts").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "<strong>Current Accounts</strong>";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "<strong>Net Worth Overview</strong>";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('currentAccounts').scrollIntoView({
         behavior: 'smooth'
@@ -85,10 +85,10 @@ $("#next-fixedCosts, #sideNavFixedCosts").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "<strong>Fixed Costs (Monthly)</strong>";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "<strong>Fixed Costs</strong>";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('fixedCosts').scrollIntoView({
         behavior: 'smooth'
@@ -105,10 +105,10 @@ $("#previous-monthlyIncome, #sideNavIncome").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "<strong>Income (Monthly)</strong>";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "<strong>Income Overview</strong>";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('monthlyIncome').scrollIntoView({
         behavior: 'smooth'
@@ -123,10 +123,10 @@ $("#next-variableCosts, #sideNavVariableCosts").click(function(){
     $("#variableCosts").show();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "<strong>Variable Costs (Monthly)</strong>";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "<strong>Variable Costs</strong>";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('variableCosts').scrollIntoView({
         behavior: 'smooth'
@@ -143,10 +143,10 @@ $("#previous-fixedCosts, #sideNavFixedCosts").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "<strong>Fixed Costs (Monthly)</strong>";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "<strong>Fixed Costs</strong>";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('fixedCosts').scrollIntoView({
         behavior: 'smooth'
@@ -161,10 +161,10 @@ $("#next-budgetOverview, #sideNavBudgetOverview").click(function(){
     $("#variableCosts").hide();
     $("#budgetOverview").show();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "<strong>Budget Overview</strong>";
     document.getElementById('budgetOverview').scrollIntoView({
         behavior: 'smooth'
@@ -181,10 +181,10 @@ $("#previous-variableCosts, #sideNavVariableCosts").click(function(){
     $("#variableCosts").show();
     $("#budgetOverview").hide();
     document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
-    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
-    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
-    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
-    document.getElementById("sideNavVariableCosts").innerHTML = "<strong>Variable Costs (Monthly)</strong>";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Net Worth Overview";
+    document.getElementById("sideNavIncome").innerHTML = "Income Overview";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
+    document.getElementById("sideNavVariableCosts").innerHTML = "<strong>Variable Costs</strong>";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
     document.getElementById('variableCosts').scrollIntoView({
         behavior: 'smooth'
