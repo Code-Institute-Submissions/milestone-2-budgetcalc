@@ -72,18 +72,21 @@ document.getElementById('netSalary').addEventListener("input", function(){
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
+    testPER();
 });
 document.getElementById('bonusSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
+    testPER();
 });
 document.getElementById('gigSalary').addEventListener("input", function(){
     totalIncomeValue();
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
+    testPER();
 });
 
 function totalIncomeValue() {
@@ -346,6 +349,7 @@ function totalMonthlyIncomeValue() {
 
     totalMonthlyIncomeValue = (Math.round(totalMonthlyIncomeValue * 100 / 100).toFixed(2));
     $("input#totalMonthlyIncomeValue").val(totalMonthlyIncomeValue);
+    $("input#totalIncomeValue-BudgetOverview").val(totalMonthlyIncomeValue);
 }
 
 
@@ -363,6 +367,7 @@ function totalFixedCostsValue() {
 
     totalFixedCostsValue = (Math.round(totalFixedCostsValue * 100 / 100).toFixed(2));
     $("input#totalFixedCostsValue").val(totalFixedCostsValue);
+    $("input#totalFixedCostsValue-BudgetOverview").val(totalFixedCostsValue);
 }
 
 /* ------------------------------ NET FIXED INCOME (MONTHLY) CALCULATION */
@@ -571,9 +576,10 @@ function totalVariableCostsValue() {
 
     totalVariableCostsValue = (Math.round(totalVariableCostsValue * 100 / 100).toFixed(2));
     $("input#totalVariableCostsValue").val(totalVariableCostsValue);
+    $("input#totalVariableCostsValue-BudgetOverview").val(totalVariableCostsValue);
 }
 
-/* ------------------------------ NET BUDGET MONTHLY */
+/* ------------------------------ TOTAL SAVINGS VALUE */
 
 function totalSavingsValue() {
     var totalSavingsValue = 
@@ -583,4 +589,28 @@ function totalSavingsValue() {
 
     totalSavingsValue = (Math.round(totalSavingsValue * 100 / 100).toFixed(2));
     $("input#totalSavingsValue").val(totalSavingsValue);
+    $("input#totalSavingsValue-BudgetOverview").val(totalSavingsValue);
+}
+
+
+
+
+
+
+
+
+/* PERCENTAGE TEST
+function testPER() {
+    var testPER =
+        Number($("input#netSalary").val()) /
+        Number($("input#bonusSalary").val()) * 100;
+    $("input#netSalaryPER").val(testPER);
+}*/
+
+function testPER() {
+    var testTOTAL = document.getElementById('bonusSalary').value;
+    var testPER =
+        Number($("input#netSalary").val()) /
+        $(testTOTAL) * 100;
+    $("input#netSalaryPER").val(testPER);
 }
