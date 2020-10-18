@@ -599,18 +599,10 @@ function totalSavingsValue() {
 
 
 
-/* PERCENTAGE TEST
+/*PERCENTAGE TEST*/
 function testPER() {
     var testPER =
-        Number($("input#netSalary").val()) /
-        Number($("input#bonusSalary").val()) * 100;
-    $("input#netSalaryPER").val(testPER);
-}*/
-
-function testPER() {
-    var testTOTAL = document.getElementById('bonusSalary').value;
-    var testPER =
-        Number($("input#netSalary").val()) /
-        $(testTOTAL) * 100;
+        Number($("input#netSalary").val()) / Number($("input#totalIncomeValue").val()) * 100;
     $("input#netSalaryPER").val(testPER);
 }
+/*console.log($("input#totalIncomeValue").val())*/

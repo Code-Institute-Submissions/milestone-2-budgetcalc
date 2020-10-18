@@ -1,5 +1,5 @@
 /* TESTING - CALCULATE INCOME PERCENTAGES */
-
+/*
 function getPercentageBankValue(){  
     var accountBankValuePercentage=document.getElementById("accountBankValue").value;
     var totalAccountsValuePercentage=document.getElementById("totalAccountsValue").value;
@@ -45,3 +45,5 @@ var layout = {
 };
 
 Plotly.newPlot('incomePieChart', data, layout);
+
+*/
