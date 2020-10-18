@@ -106,42 +106,49 @@ document.getElementById('waterValue').addEventListener("input", function(){
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('energyValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('internetValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('mobileValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('propertyTaxValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('rentMortageValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('homeServiceCostsValue').addEventListener("input", function(){
     totalHomeCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 
 function totalHomeCostValue() {
@@ -164,18 +171,21 @@ document.getElementById('transportCarPaymentValue').addEventListener("input", fu
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('transportParkingPermitPermitValue').addEventListener("input", function(){
     totalTransportCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('transportPublicValue').addEventListener("input", function(){
     totalTransportCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 
 function totalTransportCostValue() {
@@ -194,30 +204,35 @@ document.getElementById('insuranceCarValue').addEventListener("input", function(
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('insuranceHealthValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('insuranceLiabilityValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('insuranceLifeValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('insuranceLegalValue').addEventListener("input", function(){
     totalInsuranceCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 
 function totalInsuranceCostValue() {
@@ -238,30 +253,35 @@ document.getElementById('donationsValue').addEventListener("input", function(){
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('subscriptionsGymValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('subscriptionsLotteryValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('subscriptionsNewsValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('subscriptionsStreamingValue').addEventListener("input", function(){
     totalSubscriptionCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 
 function totalSubscriptionCostValue() {
@@ -282,18 +302,21 @@ document.getElementById('amexValue').addEventListener("input", function(){
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('mastercardValue').addEventListener("input", function(){
     totalCreditcardCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 document.getElementById('visaValue').addEventListener("input", function(){
     totalCreditcardCostValue();
     totalFixedCostsValue();
     netFixedincomeValue();
     totalSavingsValue();
+    fixedCostsPieChart();
 });
 
 function totalCreditcardCostValue() {

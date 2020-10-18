@@ -243,11 +243,14 @@
             <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
         </div>
 
-        <!------------------------------ PLOTLY TESTING -->
+<!------------------------------ PLOTLY PIE CHART - INCOME -->
         <div class="col-12">
             <div class="plotly-formatting" id="incomePieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
         </div>
     </div>
+
+
+    
 <!------------------------------ NAVIGATION PAGE 2 INCOME -->
     <div class="row on-page-navigation">
         <div class="col-6">
@@ -261,12 +264,11 @@
 
 <!------------------------------ PAGE 3: FIXED COSTS CALCULATION -->
 
-
 <div id="fixedCosts" class="hidden-navigation">
     <div class="container-fluid current-fixed-costs-container" id="current-fixed-costs">
         <div class="row"><h3>Fixed Costs</h3></div>
         <div class="row page-explination">
-            <p>Please fill in your fixed costs on this page. These are costs that are <strong>recurring every month</strong> and often automatically deducted from your bank account.</p>
+            <p>Please fill in your fixed costs on this page. These are costs that needs must be paid. Usually these are recurring costs and often automatically deducted from your bank account. These costs are usually the same every month but also may vary, such as credit card payments, or if certain costs are divided over less then 12 installments, such as property taxes.</p>
         </div>
     </div>
 <!------------------------------ FIXED COSTS CALCULATION --- HOME-->
@@ -422,6 +424,12 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="netFixedIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
     </div>
+
+<!------------------------------ PLOTLY PIE CHART - FIXED COSTS -->
+    <div class="col-12">
+        <div class="plotly-formatting" id="fixedCostsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
+    </div>
+
     <!------------------------------ NAVIGATION PAGE 3 FIXED COSTS -->
     <div class="row on-page-navigation">
         <div class="col-6">
@@ -434,6 +442,7 @@
 </div>
 
 
+<!------------------------------ PAGE 4: VARIABLE COSTS CALCULATION -->
 
 <div id="variableCosts" class="hidden-navigation">
     <div class="container-fluid current-variable-costs-container" id="current-variable-costs">
@@ -714,7 +723,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="js/javascript.js"></script>
     <script src="js/sendEmail.js"></script>
-    <script src="js/plotly-charts.js"></script>
+    <!--<script src="js/plotly-charts.js"></script>-->
+    <script src="js/plotly-charts2.js"></script>
     <script src="js/section-navigation.js"></script>
     
 </footer>

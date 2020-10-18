@@ -32,5 +32,6 @@ function incomePieChart() {
     data[0].values[1] = bonusSalaryPER
     data[0].values[2] = gigSalaryPER
     /* TESTING PURPOSES USE THIS TO WRITE PERCENTAGES $("input#netSalaryPER").val(netSalaryPER); */
+    layout.title = 'Income Overview';
     Plotly.newPlot('incomePieChart', data, layout, config );
 }
