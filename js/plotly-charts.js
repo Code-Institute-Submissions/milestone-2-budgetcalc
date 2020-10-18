@@ -1,5 +1,5 @@
 var data = [{
-  values: [50, 30, 20],
+  values: [],
   labels: ['Bank Accounts', 'Savings Accounts', 'Cash-on-Hand'],
   type: 'pie'
 }];
@@ -9,10 +9,9 @@ var layout = {
   width: 500
 };
 
-Plotly.newPlot('incomePieChart', data, layout);
+/* Plotly.newPlot('incomePieChart', data, layout);*/
 
 function testPER() {
-    console.log("called");
     var netSalaryPER =
         Number($("input#netSalary").val()) / 
         Number($("input#totalIncomeValue").val()) 
@@ -29,4 +28,5 @@ function testPER() {
     data[0].values[1] = bonusSalaryPER
     data[0].values[2] = gigSalaryPER
     $("input#netSalaryPER").val(netSalaryPER);
+    Plotly.newPlot('incomePieChart', data, layout);
 }
