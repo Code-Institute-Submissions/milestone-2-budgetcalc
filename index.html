@@ -136,27 +136,32 @@
             <p>In this section you will get an overview of you currently available funds and outstanding debts. By filling in this information you can have a clear overview of your <strong>current net worth </strong>.</p>
             <p>If you wish to skip this section and go straight to calculating your monthly budget click <strong>next</strong> below or select <strong>income</strong> from the <strong>Table of Contents</strong> on the left.</p>
         </div>
+    </div>
+
+
+<!------------------------------ CURRENT DEBT CALCULATION -->
+    <div class="container-fluid current-debts-container" id="current-debts">
         <div class="row"><h4>Current Accounts</h4></div>
-            <div class="row current-account-item">
-                <div class="col-md-6 col-sm-12">Bank Accounts</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="accountBankValue" maxlength="10" placeholder="0"></div>
-            </div>
-            <div class="row current-account-item">
-                <div class="col-md-6 col-sm-12">Savings Accounts</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="accountSavingsValue" maxlength="10" placeholder="0"></div>
-            </div>
-            <div class="row current-account-item">
-                <div class="col-md-6 col-sm-12">Cash-on-hand</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="accountCashValue" maxlength="10" placeholder="0"></div>
-            </div>
-            <div class="row totalCurrentAccounts">
-                <div class="col-md-6 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
-            </div>
+        <div class="row current-account-item">
+            <div class="col-md-6 col-sm-12">Bank Accounts</div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountBankValue" maxlength="10" placeholder="0"></div>
+        </div>
+        <div class="row current-account-item">
+            <div class="col-md-6 col-sm-12">Savings Accounts</div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountSavingsValue" maxlength="10" placeholder="0"></div>
+        </div>
+        <div class="row current-account-item">
+            <div class="col-md-6 col-sm-12">Cash-on-hand</div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountCashValue" maxlength="10" placeholder="0"></div>
+        </div>
+        <div class="row totalCurrentAccounts">
+            <div class="col-md-6 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="totalAccountsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+        </div>
     </div>
     
 <!------------------------------ CURRENT DEBT CALCULATION -->
-    <div class="container-fluid current-debts-container" id="current-debts">
+    <div class="container-fluid current-debts-container" id="current-debts-calculation">
         <div class="row"><h4>Current Debts</h4></div>
             <div class="row current-account-item">
                 <div class="col-md-6 col-sm-12">Loans</div>
@@ -214,24 +219,29 @@
         <div class="row page-explination">
             <p>Please fill in your current income information that you will receieve <strong>this month</strong>. This will be used to calculate your budget.</p>
         </div>
+    </div>
+
+
+<!------------------------------ CURRENT DEBT CALCULATION -->
+    <div class="container-fluid current-debts-container" id="income-debt">
         <div class="row"><h4> Income (Monthly)</h4>
         </div>
-            <div class="row income-item">
-                <div class="col-md-6 col-sm-12">Salary (After Taxes)</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="netSalary" maxlength="10" placeholder="0"></div>
-            </div> 
-            <div class="row income-item">
-                <div class="col-md-6 col-sm-12">Bonuses</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="bonusSalary" maxlength="10" placeholder="0"></div>
-            </div> 
-            <div class="row income-item">
-                <div class="col-md-6 col-sm-12">Side Gigs</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="gigSalary" maxlength="10" placeholder="0"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12">TOTAL INCOME </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
-            </div>
+        <div class="row income-item">
+            <div class="col-md-6 col-sm-12">Salary (After Taxes)</div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="netSalary" maxlength="10" placeholder="0"></div>
+        </div> 
+        <div class="row income-item">
+            <div class="col-md-6 col-sm-12">Bonuses</div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="bonusSalary" maxlength="10" placeholder="0"></div>
+        </div> 
+        <div class="row income-item">
+            <div class="col-md-6 col-sm-12">Side Gigs</div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="gigSalary" maxlength="10" placeholder="0"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">TOTAL INCOME </div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
+        </div>
     </div>
 <!------------------------------ NAVIGATION PAGE 2 INCOME -->
     <div class="row on-page-navigation">
@@ -418,7 +428,8 @@
     </div>
 </div>
 
-<!------------------------------ PAGE 4: VARIABLE COSTS CALCULATION -->
+
+
 <div id="variableCosts" class="hidden-navigation">
     <div class="container-fluid current-variable-costs-container" id="current-variable-costs">
         <div class="row"><h3>Variable Costs</h3></div>
