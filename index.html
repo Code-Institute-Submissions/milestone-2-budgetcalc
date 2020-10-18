@@ -78,36 +78,10 @@
     <button class="button-sidenav" id="sideNavFixedCosts">Fixed Costs</button>
     <button class="button-sidenav" id="sideNavVariableCosts">Variable Costs</button>
     <button class="button-sidenav" id="sideNavBudgetOverview">Budget Overview</button>
-    <div class="row">
-        <p class="small">To locally store numbers you've filled in click save. When reloading the page click Load to load you last stored data.</p>
-    </div>
-    <div class="row">
-    <div class="col-6"><button class="btn btn-primary" id="save" data-toggle="modal" data-target="#modalSave">Save</button></div>
-    <div class="col-6"><button class="btn btn-primary" id="load">Load</button></div>
-    </div>
+    <p class="small">Locally store filled in data by clicking save, to reload click load</p>
+    <button type="button" class="btn-block btn--blue btn--rounded" id="save" data-toggle="modal" data-target="#modalSave">Save</button>
+    <button type="button" class="btn-block btn--blue btn--rounded" id="load">Load</button>
 </div>
-
-
-<!------------------------------ MODAL FOR REPORT GENERATION -->
-    <div id="modalSave" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <h4 class="text-center">The filled in data has been saved!</h4>
-                <p class="text-center" >The data has been saved on <span id="date"></span></p>
-                    <div class="form-row text-center">
-                        <div class="col">
-                            <button type="button" class="button btn--green btn--standard" data-dismiss="modal">Continue</button>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-    </div>
-    </div>
-
-
-
 
 
 <div class="col-8">

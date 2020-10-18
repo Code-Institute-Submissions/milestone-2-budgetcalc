@@ -34,7 +34,7 @@ $("#previous-introduction, #sideNavIntroduction").click(function(){
     document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs";
     document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs";
     document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
-    document.getElementById('introuction').scrollIntoView({
+    document.getElementById('introduction').scrollIntoView({
         behavior: 'smooth'
     });
 });
