@@ -1,7 +1,7 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] Add other charts
+- [ ]!! Important: get charts to use variables locally
 
 - [ ] Add Net Worth data to budget overview
 
@@ -57,6 +57,7 @@
 
 ## DONE (Latest done is on top)
 
+- [x] Add other charts
 - [x] Add chart API
 - [x] !!IMPORTANT!! FIX BUDGET OVERVIEW, CALCULATION NOT WORKING
 - [x] Calculate variable costs

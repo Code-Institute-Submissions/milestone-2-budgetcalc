@@ -78,35 +78,35 @@
     <button class="button-sidenav" id="sideNavFixedCosts">Fixed Costs</button>
     <button class="button-sidenav" id="sideNavVariableCosts">Variable Costs</button>
     <button class="button-sidenav" id="sideNavBudgetOverview">Budget Overview</button>
-
-
-
-    <!--<a href="#current-accounts" id="sideNavCurrentAccountsTEST"><strong>Current Accounts</strong></a>
-    <a href="#current-income" id="sideNavIncome">Income (Monthly)</a>
-    <a href="#current-fixed-costs" id="sideNavFixedCosts">Fixed Costs (Monthly)</a>-->
-
-
-    <!--
-        <a class="sidebar-sub-section" href="#fixed-costs-home">Home</a>
-        <a class="sidebar-sub-section" href="#fixed-costs-transport">Transport</a>
-        <a class="sidebar-sub-section" href="#fixed-costs-insurance">Insurance</a>
-        <a class="sidebar-sub-section" href="#fixed-costs-subscriptions">Subscriptions</a>
-        <a class="sidebar-sub-section" href="#fixed-costs-credit-card-payments">Credit Card Payments</a>
-    -->
-    <!--
-    <a href="#fixed-budget-overview">Fixed Budget Report</a>
-        <a class="sidebar-sub-section" href="#total-current-accounts">Total Current Accounts</a>
-        <a class="sidebar-sub-section" href="#total-current-debts">Total Current Debts</a>
-        <a class="sidebar-sub-section" href="#net-worth">Net Worth</a>
-        <a class="sidebar-sub-section" href="#total-fixed-income">Total Fixed Income (Monthly)</a>
-        <a class="sidebar-sub-section" href="#total-fixed-costs">Total Fixed Costs (Monthly)</a>
-        <a class="sidebar-sub-section" href="#net-fixed-income">Net Fixed Income (Monthly)</a>
-    -->
-
-    <!--
-    <a href="#current-variable-costs" id="sideNavVariableCosts">Variable Costs (Monthly)</a>
-    <a href="#budget-overview" id="sideNavBudgetOverview">Budget Overview</a> -->
+    <div class="row">
+        <p class="small">To locally store numbers you've filled in click save. When reloading the page click Load to load you last stored data.</p>
+    </div>
+    <div class="row">
+    <div class="col-6"><button class="btn btn-primary" id="save" data-toggle="modal" data-target="#modalSave">Save</button></div>
+    <div class="col-6"><button class="btn btn-primary" id="load">Load</button></div>
+    </div>
 </div>
+
+
+<!------------------------------ MODAL FOR REPORT GENERATION -->
+    <div id="modalSave" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4 class="text-center">The filled in data has been saved!</h4>
+                <p class="text-center" >The data has been saved on <span id="date"></span></p>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="button" class="button btn--green btn--standard" data-dismiss="modal">Continue</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
 
 
 
@@ -430,7 +430,7 @@
         <div class="plotly-formatting" id="fixedCostsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
     </div>
 
-    <!------------------------------ NAVIGATION PAGE 3 FIXED COSTS -->
+<!------------------------------ NAVIGATION PAGE 3 FIXED COSTS -->
     <div class="row on-page-navigation">
         <div class="col-6">
             <button class="btn--green btn--standard float-left" id="previous-monthlyIncome">Previous</button>
@@ -593,6 +593,11 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
     </div>
+<!------------------------------ PLOTLY PIE CHART - VARIABLE COSTS -->
+    <div class="col-12">
+        <div class="plotly-formatting" id="variableCostsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
+    </div>
+
 <!------------------------------ NAVIGATION PAGE 4 VARIABLE COSTS -->
     <div class="row on-page-navigation">
         <div class="col-6">
@@ -724,8 +729,9 @@
     <script src="js/javascript.js"></script>
     <script src="js/sendEmail.js"></script>
     <script src="js/plotly-charts.js"></script>
-   <!-- <script src="js/plotly-charts2.js"></script>-->
     <script src="js/section-navigation.js"></script>
+    <script src="js/save-load.js"></script>
+    <script src="js/currentDate.js"></script>
     
 </footer>
 </body>

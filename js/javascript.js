@@ -72,6 +72,7 @@ document.getElementById('netSalary').addEventListener("input", function(){
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
+    incomeTEST();
     incomePieChart();
 });
 document.getElementById('bonusSalary').addEventListener("input", function(){
@@ -79,6 +80,7 @@ document.getElementById('bonusSalary').addEventListener("input", function(){
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
+    incomeTEST();
     incomePieChart();
 });
 document.getElementById('gigSalary').addEventListener("input", function(){
@@ -86,6 +88,7 @@ document.getElementById('gigSalary').addEventListener("input", function(){
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
+    incomeTEST();
     incomePieChart();
 });
 
@@ -411,56 +414,67 @@ document.getElementById('supermarketAlbertHeijnValue').addEventListener("input",
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketAldiValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketCoopValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketDirkBasValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketJumboValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketLidlValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('SupermarketMakroValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketMarqtValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketPlusValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketCornerStoreValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('supermarketLiquorStoreValue').addEventListener("input", function(){
     totalSupermarketCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 
 function totalSupermarketCostValue() {
@@ -486,11 +500,13 @@ document.getElementById('consumablesFlowersValue').addEventListener("input", fun
     totalConsumablesCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('consumablesPersonalHygieneValue').addEventListener("input", function(){
     totalConsumablesCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 function totalConsumablesCostValue() {
     var totalConsumablesCostValue = 
@@ -506,26 +522,31 @@ document.getElementById('socialisingBarsValue').addEventListener("input", functi
     totalSocialisingFunCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('socialisingCinemasValue').addEventListener("input", function(){
     totalSocialisingFunCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('socialisingNightClubsValue').addEventListener("input", function(){
     totalSocialisingFunCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('socialisingRestaurantsValue').addEventListener("input", function(){
     totalSocialisingFunCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('socialisingOtherValue').addEventListener("input", function(){
     totalSocialisingFunCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 
 
@@ -546,31 +567,37 @@ document.getElementById('stuffClothesValue').addEventListener("input", function(
     totalStuffCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('stuffElectronicsValue').addEventListener("input", function(){
     totalStuffCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('stuffShoesValue').addEventListener("input", function(){
     totalStuffCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('stuffToysValue').addEventListener("input", function(){
     totalStuffCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('stuffVideoGamesValue').addEventListener("input", function(){
     totalStuffCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 document.getElementById('stuffOtherValue').addEventListener("input", function(){
     totalStuffCostValue();
     totalVariableCostsValue();
     totalSavingsValue();
+    variableCostsPieChart();
 });
 
 

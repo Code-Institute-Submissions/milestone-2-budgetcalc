@@ -1,20 +1,23 @@
 /* The following charts were created with Plotly and bugs were solved by using the documentation and tutor support SRC: https://plotly.com/javascript/pie-charts/# */
 
-var data = [{
-  values: [],
-  labels: ['Salary', 'Bonuses', 'Gigs'],
-  type: 'pie'
-}];
+/*INCOME PIE CHART*/
+function incomeTEST() {
+    var data = [{
+    values: [],
+    labels: ['Salary', 'Bonuses', 'Gigs'],
+    type: 'pie'
+    }];
 
-var layout = {
-    title: "Please enter data<br>above to graph",
-    font: {size: 12},
-    paper_bgcolor:"#ade7ba"
-};
+    var layout = {
+        title: "Please enter data<br>above to graph",
+        font: {size: 12},
+        paper_bgcolor:"#ade7ba"
+    };
 
-var config = {responsive: true}
+    var config = {responsive: true}
 
-Plotly.newPlot('incomePieChart', data, layout, config );
+    Plotly.newPlot('incomePieChart', data, layout, config );
+}
 
 function incomePieChart() {
     var netSalaryPER =
@@ -38,22 +41,24 @@ function incomePieChart() {
 }
 
 /*FIXED COSTS PIE CHART*/
-var data = [{
-  values: [],
-  labels: ["Home", "Transport", "Insurance", "Subscriptions", "Credit Card Payments"],
-  type: "pie"
-}];
+function fixedTEST2() {
+    var data = [{
+    values: [],
+    labels: ["Home", "Transport", "Insurance", "Subscriptions", "Credit Card Payments"],
+    type: "pie"
+    }];
 
-var layout = {
-    title: "Please enter data<br>above to graph",
-    font: {size: 12},
-    paper_bgcolor:"#ade7ba"
-};
+    var layout = {
+        title: "Please enter data<br>above to graph",
+        font: {size: 12},
+        paper_bgcolor:"#ade7ba"
+    };
 
 
-var config = {responsive: true}
+    var config = {responsive: true}
 
-Plotly.newPlot("fixedCostsPieChart", data, layout, config );
+    Plotly.newPlot("fixedCostsPieChart", data, layout, config );
+}
 
 function fixedCostsPieChart() {
     var totalHomeCostValuePER =
@@ -83,4 +88,49 @@ function fixedCostsPieChart() {
     data[0].values[4] = totalCreditcardCostValuePER;
     layout.title = "Fixed Costs";
     Plotly.newPlot("fixedCostsPieChart", data, layout, config );
+}
+
+/*VARIABLE COSTS PIE CHART*/
+function fixedTEST3() {
+    var data = [{
+    values: [],
+    labels: ["Food and Drink", "Consumables", "Socialising / Fun", "Stuff"],
+    type: "pie"
+    }];
+
+    var layout = {
+        title: "Please enter data<br>above to graph",
+        font: {size: 12},
+        paper_bgcolor:"#ade7ba"
+    };
+
+
+    var config = {responsive: true}
+
+    Plotly.newPlot("variableCostsPieChart", data, layout, config );
+}
+
+function variableCostsPieChart() {
+    var totalSupermarketCostValuePER =
+        Number($("input#totalSupermarketCostValue").val()) / 
+        Number($("input#totalVariableCostsValue").val()) 
+        * 100;
+    var totalConsumablesCostValuePER =
+        Number($("input#totalConsumablesCostValue").val()) / 
+        Number($("input#totalVariableCostsValue").val()) 
+        * 100;
+    var totalSocialisingFunCostValuePER =
+        Number($("input#totalSocialisingFunCostValue").val()) / 
+        Number($("input#totalVariableCostsValue").val()) 
+        * 100;
+    var totalStuffCostValuePER =
+        Number($("input#totalStuffCostValue").val()) / 
+        Number($("input#totalVariableCostsValue").val()) 
+        * 100;
+    data[0].values[0] = totalSupermarketCostValuePER;
+    data[0].values[1] = totalConsumablesCostValuePER;
+    data[0].values[2] = totalSocialisingFunCostValuePER;
+    data[0].values[3] = totalStuffCostValuePER;
+    layout.title = "Fixed Costs";
+    Plotly.newPlot("variableCostsPieChart", data, layout, config );
 }

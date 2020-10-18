@@ -98,24 +98,27 @@ h5 {
     margin-bottom: 50px;
 }
 
-/* ---------------------------------------------- Buttons */
+/* ---------------------------------------------- Main Buttons */
 /* The following buttons has been adapted from the Code Institute Bootcamp module */
 
 .btn--hero {
     font-weight: bold;
     border-radius: 23px;
     width: 160px;
+    border: none;
 }
 
 .btn--standard {
     border-radius: 23px;
     width: 160px;
+    border: none;
 }
 
 .btn--green {
     color: white;
     background-color: #39826c;
     border-color: #39826c;
+    border: none;
 }
 
 .btn--rounded {
