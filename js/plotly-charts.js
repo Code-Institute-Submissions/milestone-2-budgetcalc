@@ -7,8 +7,9 @@ var data = [{
 }];
 
 var layout = {
-  title: 'Please enter data above',
-  font: {size: 12}
+    title: "Please enter data<br>above to graph",
+    font: {size: 12},
+    paper_bgcolor:"#ade7ba"
 };
 
 var config = {responsive: true}
@@ -34,4 +35,52 @@ function incomePieChart() {
     /* TESTING PURPOSES USE THIS TO WRITE PERCENTAGES $("input#netSalaryPER").val(netSalaryPER); */
     layout.title = 'Income Overview';
     Plotly.newPlot('incomePieChart', data, layout, config );
+}
+
+/*FIXED COSTS PIE CHART*/
+var data = [{
+  values: [],
+  labels: ["Home", "Transport", "Insurance", "Subscriptions", "Credit Card Payments"],
+  type: "pie"
+}];
+
+var layout = {
+    title: "Please enter data<br>above to graph",
+    font: {size: 12},
+    paper_bgcolor:"#ade7ba"
+};
+
+
+var config = {responsive: true}
+
+Plotly.newPlot("fixedCostsPieChart", data, layout, config );
+
+function fixedCostsPieChart() {
+    var totalHomeCostValuePER =
+        Number($("input#totalHomeCostValue").val()) / 
+        Number($("input#totalFixedCostsValue").val()) 
+        * 100;
+    var totalTransportCostValuePER =
+        Number($("input#totalTransportCostValue").val()) / 
+        Number($("input#totalFixedCostsValue").val()) 
+        * 100;
+    var totalInsuranceCostValuePER =
+        Number($("input#totalInsuranceCostValue").val()) / 
+        Number($("input#totalFixedCostsValue").val()) 
+        * 100;
+    var totalSubscriptionCostValuePER =
+        Number($("input#totalSubscriptionCostValue").val()) / 
+        Number($("input#totalFixedCostsValue").val()) 
+        * 100;
+    var totalCreditcardCostValuePER =
+        Number($("input#totalCreditcardCostValue").val()) / 
+        Number($("input#totalFixedCostsValue").val()) 
+        * 100;
+    data[0].values[0] = totalHomeCostValuePER;
+    data[0].values[1] = totalTransportCostValuePER;
+    data[0].values[2] = totalInsuranceCostValuePER;
+    data[0].values[3] = totalSubscriptionCostValuePER;
+    data[0].values[4] = totalCreditcardCostValuePER;
+    layout.title = "Fixed Costs";
+    Plotly.newPlot("fixedCostsPieChart", data, layout, config );
 }
