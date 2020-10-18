@@ -58,7 +58,7 @@
             <section class="callout jumbotron text-center">
                 <h1 class="jumbotron-header">Ready to get control over your finances?</h1> 
                 <p class="lead">Use BudgetCalc to get a clear overview of your spending.</p>
-                <a href="#current-accounts" button class="btn btn-lg btn--hero btn--green" role="button" aria-pressed="true">Start Now!</a>
+                <a href="#introduction" button class="btn btn-lg btn--hero btn--green" role="button" aria-pressed="true">Start Now!</a>
             </section>
         </div>
     </div>
@@ -67,11 +67,13 @@
 <!------------------------------ STICKY SIDEBAR -->
 
 <div class="container-fluid">
-    <div class="row">
+<div class="row">
 
 
 <div class="container-fluid sidebar col-4 sidebar-nav">
-    <button class="button-sidenav" id="sideNavCurrentAccounts" ><strong>Current Accounts</strong></button>
+    <h4>Table of Contents</h4>
+    <button class="button-sidenav" id="sideNavIntroduction"><strong>Introduction</strong></button>
+    <button class="button-sidenav" id="sideNavCurrentAccounts" >Current Accounts</button>
     <button class="button-sidenav" id="sideNavIncome">Income (Monthly)</button>
     <button class="button-sidenav" id="sideNavFixedCosts">Fixed Costs (Monthly)</button>
     <button class="button-sidenav" id="sideNavVariableCosts">Variable Costs (Monthly)</button>
@@ -109,8 +111,25 @@
 
 
 <div class="col-8">
+
+<!------------------------------ INTRODUCTION -->
+<div class="introduction">
+    <div class="container-fluid introduction-container" id="introduction">
+        <div class="row"><h4>Welcome to BudgetCalc</h4></div>
+        <p>This is a Web App created by Alexander Forrest to help you get control over your budget and see patterns in your spending.</p>
+        <p>You can use the navigation on the left to jump to a specific section <strong>or</strong> once you've filled the information on the current page you can use the next and previous buttons at the bottom of the page to jump from section to section.</p>
+        <p>Once you've filled in all the relevant data there is an option at the end to generate a report which will be sent to you by email.</p>    
+    <div class="row on-page-navigation">
+        <div class="col-6">
+            <button class="btn--green btn--standard float-right" id="next-currentAccounts">Next</button>
+        </div>
+    </div>
+    </div>
+</div>
+
+
 <!------------------------------ CURRENT ACCOUNTS CALCULATION -->
-<div id="currentAccounts">
+<div id="currentAccounts" class="hidden-navigation">
     <div class="container-fluid current-accounts-container" id="current-accounts">
         <div class="row"><h4>Current Accounts</h4></div>
             <div class="row current-account-item">
@@ -174,8 +193,9 @@
                 </div>
     </div>
 <!------------------------------ NAVIGATION PAGE 1 CURRENT ACCOUNTS -->
-    <div class="row">
+    <div class="row on-page-navigation">
         <div class="col-6">
+            <button class="btn--green btn--standard float-left" id="previous-introduction">Previous</button>
         </div>
         <div class="col-6">
             <button class="btn--green btn--standard float-right" id="next-monthlyIncome">Next</button>
@@ -205,7 +225,7 @@
             </div>
     </div>
 <!------------------------------ NAVIGATION PAGE 2 INCOME -->
-    <div class="row">
+    <div class="row on-page-navigation">
         <div class="col-6">
             <button class="btn--green btn--standard float-left" id="previous-currentAccounts">Previous</button>
         </div>
@@ -368,7 +388,7 @@
                 </div>
     </div>
     <!------------------------------ NAVIGATION PAGE 3 FIXED COSTS -->
-    <div class="row">
+    <div class="row on-page-navigation">
         <div class="col-6">
             <button class="btn--green btn--standard float-left" id="previous-monthlyIncome">Previous</button>
         </div>
@@ -517,7 +537,7 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue" maxlength="10" readonly="readOnly" placeholder="0"></div>
                 </div>
 <!------------------------------ NAVIGATION PAGE 4 VARIABLE COSTS -->
-    <div class="row">
+    <div class="row on-page-navigation">
         <div class="col-6">
             <button class="btn--green btn--standard float-left" id="previous-fixedCosts">Previous</button>
         </div>
@@ -551,23 +571,9 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue-BudgetOverview" maxlength="10" readonly="readOnly" placeholder="0"></div>
             </div>
     </div>
-<!------------------------------ NAVIGATION PAGE 5 BUDGET OVERVIEW -->
-   <div class="row">
-        <div class="col-6">
-            <button class="btn--green btn--standard float-left" id="previous-variableCosts">Previous</button>
-        </div>
-<!-- CURRENT NOT USED
-        <div class="col-6">
-            <button class="btn--green btn--standard float-right" id="next-GRAPHS">Next</button>
-        </div>
--->
-    </div>
-</div>
-
-
 <!-- The following boostrap modal was adapted from the lesson at W3Schools. SRC: https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
 
-<!-- Trigger the modal with a button -->
+<!-- Button to trigger Modal -->
     <div class="text-center">
         <button type="button" class="btn-block btn--green btn--rounded" data-toggle="modal" data-target="#modalGenerateReport">Generate Report</button>
     </div>
@@ -577,7 +583,7 @@
         <!-- Modal content-->
         <div class="modal-content">
         <div class="modal-header">
-            <h4 class="modal-title">Generate Report</h4>
+            <h4 class="modal-title">Generate and Email Report</h4>
         </div>
         <div class="modal-body">
             <p class="text-center">Fill in your name and email address and your BudgetCalc report will be sent to you.</p>
@@ -600,15 +606,24 @@
 
     </div>
     </div>
+<br>
+
+<!------------------------------ NAVIGATION PAGE 5 BUDGET OVERVIEW -->
+   <div class="row on-page-navigation">
+        <div class="col-6">
+            <button class="btn--green btn--standard float-left" id="previous-variableCosts">Previous</button>
+        </div>
+<!-- CURRENT NOT USED
+        <div class="col-6">
+            <button class="btn--green btn--standard float-right" id="next-GRAPHS">Next</button>
+        </div>
+-->
+    </div>
+</div>
 
 <br>
 <br>
 <!------------------------------ PLOTLY TESTING -->
-
-<div id="tester" style="width:200px;height:200px;"></div>
-
-<div id="pieChartFixedCosts"><!-- Plotly chart will be drawn inside this DIV --></div>
-
 </div>
 </div>
 </div>

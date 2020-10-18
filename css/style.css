@@ -34,6 +34,10 @@ h5 {
     padding: 3vh 3vw;
 }
 
+.on-page-navigation {
+    margin-top: 20px;
+}
+
 /* The following fixed sidebar information has been adapted from W3Schools SRC: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 .sidebar {
     min-height: 300px;
@@ -46,13 +50,17 @@ h5 {
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */
     color: white;
-/* testing vw, check if this is the best method */
     font-size: 2vw;
+}
+
+.sidebar h4 {
+    font-size: 2.9vw;
+    margin-bottom: 20px;
 }
 
 /* The following code was adapted to set a maximum font size for larger screens. SRC: https://stackoverflow.com/questions/40528290/how-to-implement-max-font-size */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
   .sidebar {
      font-size: 20px;
   }
@@ -77,6 +85,10 @@ h5 {
 
 .net-amount {
     font-weight: bold;
+}
+
+.button-sidenav {
+    margin-bottom: 50px;
 }
 
 /* ---------------------------------------------- Buttons */

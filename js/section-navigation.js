@@ -1,6 +1,45 @@
-/* Scroll into view has been taken from an answer on StackOverflow SRC: https://stackoverflow.com/questions/13266746/scroll-jump-to-id-without-jquery */
+/* scrollIntoView has been taken from an answer on StackOverflow SRC: https://stackoverflow.com/questions/13266746/scroll-jump-to-id-without-jquery */
+
+/* Page 0 introduction */
+$("#next-currentAccounts, #sideNavCurrentAccounts").click(function(){
+    $("#introduction").hide();
+    $("#currentAccounts").show();
+    $("#monthlyIncome").hide();
+    $("#fixedCosts").hide();
+    $("#variableCosts").hide();
+    $("#budgetOverview").hide();
+    document.getElementById("sideNavIntroduction").innerHTML = "Introduction";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "<strong>Current Accounts</strong>";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
+    document.getElementById('currentAccounts').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
 
 /* Page 1 currentAccounts */
+$("#previous-introduction, #sideNavIntroduction").click(function(){
+    $("#introduction").show();
+    $("#currentAccounts").hide();
+    $("#monthlyIncome").hide();
+    $("#fixedCosts").hide();
+    $("#variableCosts").hide();
+    $("#budgetOverview").hide();
+    document.getElementById("sideNavIntroduction").innerHTML = "<strong>Introduction</strong>";
+    document.getElementById("sideNavCurrentAccounts").innerHTML = "Current Accounts";
+    document.getElementById("sideNavIncome").innerHTML = "Income (Monthly)";
+    document.getElementById("sideNavFixedCosts").innerHTML = "Fixed Costs (Monthly)";
+    document.getElementById("sideNavVariableCosts").innerHTML = "Variable Costs (Monthly)";
+    document.getElementById("sideNavBudgetOverview").innerHTML = "Budget Overview";
+    document.getElementById('introuction').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+
 $("#next-monthlyIncome, #sideNavIncome").click(function(){
     $("#currentAccounts").hide();
     $("#monthlyIncome").show();

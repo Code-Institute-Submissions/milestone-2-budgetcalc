@@ -1,6 +1,8 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
+- [ ] !!IMPORTANT!! FIX BUDGET OVERVIEW, CALCULATION NOT WORKING
+
 - [ ] In modal > generate report - send error message to the user if the incorrect information is filled in. So only data target exit modal if the information entered is correct.
 
 - [ ] Add chart API
