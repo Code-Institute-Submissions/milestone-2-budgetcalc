@@ -38,6 +38,12 @@ h5 {
     margin-top: 20px;
 }
 
+.page-explination {
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------------------- Sidebar */
+
 /* The following fixed sidebar information has been adapted from W3Schools SRC: https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
 .sidebar {
     min-height: 300px;
