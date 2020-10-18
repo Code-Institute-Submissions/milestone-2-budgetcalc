@@ -1,3 +1,5 @@
+/* The following charts were created with Plotly and bugs were solved by using the documentation and tutor support SRC: https://plotly.com/javascript/pie-charts/# */
+
 var data = [{
   values: [],
   labels: ['Bank Accounts', 'Savings Accounts', 'Cash-on-Hand'],
@@ -5,13 +7,15 @@ var data = [{
 }];
 
 var layout = {
-  height: 400,
-  width: 500
+  title: 'Please enter data above',
+  font: {size: 12}
 };
 
-/* Plotly.newPlot('incomePieChart', data, layout);*/
+var config = {responsive: true}
 
-function testPER() {
+Plotly.newPlot('incomePieChart', data, layout, config );
+
+function incomePieChart() {
     var netSalaryPER =
         Number($("input#netSalary").val()) / 
         Number($("input#totalIncomeValue").val()) 
@@ -27,6 +31,6 @@ function testPER() {
     data[0].values[0] = netSalaryPER;
     data[0].values[1] = bonusSalaryPER
     data[0].values[2] = gigSalaryPER
-    $("input#netSalaryPER").val(netSalaryPER);
-    Plotly.newPlot('incomePieChart', data, layout);
+    /* TESTING PURPOSES USE THIS TO WRITE PERCENTAGES $("input#netSalaryPER").val(netSalaryPER); */
+    Plotly.newPlot('incomePieChart', data, layout, config );
 }

@@ -181,7 +181,7 @@ h5 {
 }
 
 
-/* ---------------------------------------------- Callout ifo */
+/* ---------------------------------------------- Callout  */
 /* The following callout has been adapted from the Code Institute Bootcamp module */
 .callout-container {
     height: 100vh;
@@ -208,7 +208,7 @@ h5 {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* ---------------------------------------------- Callout ifo Jumbotron */
+/* ---------------------------------------------- Callout Jumbotron */
 
 .jumbotron {
     background-color: transparent;
@@ -260,4 +260,10 @@ h5 {
 
 .footer-icons a{
     color: black;
+}
+
+/* ---------------------------------------------- Plotly */
+
+.plotly-formatting {
+    margin-top: 30px;
 }

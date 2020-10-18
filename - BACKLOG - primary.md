@@ -1,11 +1,11 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Highest priority is on top)
-- [ ] !!IMPORTANT!! FIX BUDGET OVERVIEW, CALCULATION NOT WORKING
+- [ ] Add other charts
+
+- [ ] Add Net Worth data to budget overview
 
 - [ ] In modal > generate report - send error message to the user if the incorrect information is filled in. So only data target exit modal if the information entered is correct.
-
-- [ ] Add chart API
 
 !!! ASK MENTOR OR TUTOR !!!
 - [ ] Save information in web app - use across multiple pages? Possibly use show and hide sections in JavaScript????
@@ -55,6 +55,8 @@
 
 ## DONE (Latest done is on top)
 
+- [x] Add chart API
+- [x] !!IMPORTANT!! FIX BUDGET OVERVIEW, CALCULATION NOT WORKING
 - [x] Calculate variable costs
 - [x] Add javascript code to variable costs
 - [x] Calculate left overs
