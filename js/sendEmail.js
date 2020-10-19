@@ -68,3 +68,10 @@ function sendBugMail(contactForm) {
     );
     return false;  // To block from loading a new page
 }
+
+
+
+/* The following code has been taken SRC: https://www.tutorialspoint.com/trigger-a-button-click-and-generate-alert-on-form-submission-in-javascript*/
+$("#submitFormContact").click(function() {
+   alert("The Form has been submitted and a copy has been sent to your email address.");
+});
