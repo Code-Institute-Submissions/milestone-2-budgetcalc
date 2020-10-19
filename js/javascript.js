@@ -97,7 +97,7 @@ function totalIncomeValue() {
         Number($("input#netSalary").val()) + 
         Number($("input#bonusSalary").val()) + 
         Number($("input#gigSalary").val());
-    totalIncomeValue = (Math.round(totalIncomeValue * 100 / 100).toFixed(2));
+    totalIncomeValue =  (Math.round(totalIncomeValue * 100 / 100).toFixed(2));
     $("input#totalIncomeValue").val(totalIncomeValue);
 }
 
