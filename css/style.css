@@ -25,6 +25,22 @@ h5 {
     padding: 3vh 3vw;
 }
 
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    background-color: #e6eeea;
+    padding: 0vh 3vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .padding-mobile{
+    padding-top: 3vh;
+    }
+}
+
+
+
+
 .on-page-navigation {
     margin-top: 20px;
 }
@@ -219,6 +235,9 @@ h5 {
 /* The following callout has been adapted from the Code Institute Bootcamp module */
 .callout-container {
     height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 
     background: url('../images/ISS_24174_00025-edit-h867-w1400.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
