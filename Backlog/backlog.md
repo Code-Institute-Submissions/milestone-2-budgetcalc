@@ -1,31 +1,21 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Higher > Lower Priority)
-- [ ] readme.md finish deployment and testing
 
-- [ ] Possibly change contain-fluid CSS into a new class to seperate main content from other content
 
-- [ ] readme.md check spelling and sentance structure
-
-- [ ] emailJS create top 3 variable costs
-
+## BACKLOG (Higher > Lower Priority)
 - [ ] Add house value - link to calculator for house worth
 
 - [ ] use javascript if code to change the color in the reports - red for negative and green for positive
 
 - [ ] add 'other' for each section
 
-- [ ] check introductions and explinations for each section
-
-- [ ] Cookies notification if saving data to the browser?
-
 - [ ] Add charts to email
 
-- [ ] !!IMPORTANT Add screen reader support for all elements (including image tags) aria and alt tags!
+- [ ] emailJS create top 3 variable costs
 
 - [ ] Check bug with hero image on iOS devices
 
-## BACKLOG (Higher > Lower Priority)
 - [ ] Hide sidebar on mobile devices
 
 - [ ] Change currency information within the input field to account for global usage. Check the following site for entering currency information https://codepen.io/559wade/pen/LRzEjj
@@ -47,7 +37,10 @@
 - [ ] Select the amount of people in the household 1 or 2 and add checkboxes next to elements for joint/shared costs or not
 
 ## DONE (Newest > Oldest)
-
+- [x] readme.md finish deployment and testing
+- [x] Possibly change contain-fluid CSS into a new class to seperate main content from other content
+- [x] readme.md check spelling and sentance structure
+- [x] check introductions and explinations for each section
 - [x] Add introductions and explinations of each section.
 - [x] Add Net Worth data to budget overview
 - [x] In modal > generate report - close modal when sending report
