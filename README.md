@@ -111,7 +111,12 @@ When taking the methodology into account the following process has been created:
 
 ## Features
 
-### Features implemented
+### Existing Features
+- Feature 1 - allows users X to achieve Y, by having them fill out Z
+- ...
+For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+
+### Existing Features
 - #### Net worth calulcation: This provides an overview of the current state of someones net worth. This can be a great indicator of financial health in the long-run.
 - #### Income calculation: There are many different types of income, these have all been accounted for: salary, bonuses, gig jobs.
 - #### Fixed costs calculation: In order to know how much budget remains for spending first all the fixed costs need to be calculated to understand what remains for the variables costs.
@@ -120,25 +125,17 @@ When taking the methodology into account the following process has been created:
 - #### Export of data: Just filling the data into the app is not sufficient, if a user wants to keep or send the data to someone else then it's important to have a method for exporting the data. Email with use of EmailJS was the fastest and most efficient way to effictively export the data.
 - #### Savings and loading data: To ensure that users return to the app and don't use it as a once-off experience it's important to save any progress that the user has made. By offering users a method for saving and retrieving data users are then able to come back to the product and edit any information they've filled in.
 
-### Features to implement
-- #### 
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
-### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-- Another feature idea
+### Features Left To implement
+- #### Add global support: mMltiple currencies and languages.
+- #### Create a settings button and/or questions: Allow users to turn on and off elements in the calculator that do or don't relate to them.
+- #### Save data on a central server: Allow users to use the product from different terminals.
+- #### Budget recommendations for users: Give users more tips and tricks to improve their budgeting, such as percentages of their bugets they should idealistically be spending on different costs.
+- #### Multi-month budgeting: Extrapolate data into a yearly overview so that users can track their spendings over a longer period of time and also having more infromation on budget forecats into the future.
+- #### Household budgeting: Provide budgeting info for multi-person households, such as which costs are shared and which are individual to the user.
 
 ## Technologies Used
 
-### Languages User
+### Languages Used
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
