@@ -126,6 +126,7 @@ For some/all of your features, you may choose to reference the specific project 
 - #### Savings and loading data: To ensure that users return to the app and don't use it as a once-off experience it's important to save any progress that the user has made. By offering users a method for saving and retrieving data users are then able to come back to the product and edit any information they've filled in.
 
 ### Features Left To implement
+- #### Refactoring: Part of the code used can be cleaned up and refactored into shorter code that has the same outcome as code that is currently being used.
 - #### Add global support: mMltiple currencies and languages.
 - #### Create a settings button and/or questions: Allow users to turn on and off elements in the calculator that do or don't relate to them.
 - #### Save data on a central server: Allow users to use the product from different terminals.
@@ -146,22 +147,26 @@ For some/all of your features, you may choose to reference the specific project 
     - Bootstrap was used to assist with the responsiveness and styling of the website.
 1. [Google Fonts:](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
     - jQuery came with Bootstrap to make the modals work properly, as well as simplifies DOM manipulation.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
+1. [GitPod:](https://gitpod.io/)
+    - GitPod was used for the bulk of development and as a local server for testing.
+1. [StackOverflow](https://stackoverflow.com/)
+    - Stack Overflow was used as a reference and to ask questions about issues that were difficult to code.
 1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
+    - Photoshop was used for resizing images and editing photos for the website.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
-1. [Canva:](https://www.canva.com/colors/color-palette-generator/)
-    - Canva was used to extract a color palette from the logo.
 1. [Plotly](https://plotly.com/javascript/)
     - Plotly was used to generate graphs for the user.
+
+???
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 
 
 
@@ -199,12 +204,17 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
+
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+All sources used have been documented in the code through the use of comments, starting with an explination of what has been done and then denoting the source with a SRC= tag
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos used in this site were obtained from stockphotosecrets.com and we're purchased for use in this project.
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+I would like to thank:
+- my mentor Jonathan for his patentience, knowledge, experience and support.
+- Kevin and Michael, mentors at Code Institute, who took the time to check my workspace, my project and lead me towards the answers I was looking for without giving me the answers.
+- My wife, Alba, for het patience and taking care of our newborn baby, Zoë, while finishing up this project.
+- Code Institute Student Care for checking in with me, keeping me motivated, and being understanding about the fact that becoming a new father meant that my priorities were split between my studies, work and childcare duties.
