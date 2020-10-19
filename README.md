@@ -204,12 +204,15 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
+The following is an overview of credits for the different people and sources used.
 
 ### Content
+
 All sources used have been documented in the code through the use of comments, starting with an explination of what has been done and then denoting the source with a SRC= tag
 
 ### Media
-- The photos used in this site were obtained from stockphotosecrets.com and we're purchased for use in this project.
+
+The photos used in this site were obtained from stockphotosecrets.com and we're purchased for use in this project.
 
 ### Acknowledgements
 
