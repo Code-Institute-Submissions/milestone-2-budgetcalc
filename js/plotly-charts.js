@@ -8,14 +8,19 @@ type: 'pie'
 }];
 
 var layoutIncome = {
-    title: "Please enter data<br>above to graph",
-    font: {size: 12},
-    paper_bgcolor:"#ade7ba"
+    title: "Income<br>Overview",
+    font: {size: 10},
+    paper_bgcolor:"#ade7ba",
+    margin: {
+    l: 5,
+    r: 5,
+    b: 20,
+    t: 100,
+    pad: 0
+  },
 };
 
 var configIncome = {responsive: true}
-
-Plotly.newPlot('incomePieChart', dataIncome, layoutIncome, configIncome );
 
 /*INCOME PIE CHART DATA*/
 function incomePieChart() {
@@ -34,8 +39,6 @@ function incomePieChart() {
     dataIncome[0].values[0] = netSalaryPER;
     dataIncome[0].values[1] = bonusSalaryPER
     dataIncome[0].values[2] = gigSalaryPER
-    /* TESTING PURPOSES USE THIS TO WRITE PERCENTAGES $("input#netSalaryPER").val(netSalaryPER); */
-    layoutIncome.title = 'Income Overview';
     Plotly.newPlot('incomePieChart', dataIncome, layoutIncome, configIncome );
 }
 
@@ -52,15 +55,20 @@ type: "pie"
 }];
 
 var layoutFixed = {
-    title: "Please enter data<br>above to graph",
+    title: "Fixed<br>Costs",
     font: {size: 12},
-    paper_bgcolor:"#ade7ba"
+    paper_bgcolor:"#ade7ba",
+    margin: {
+    l: 5,
+    r: 5,
+    b: 20,
+    t: 100,
+    pad: 0
+  },
 };
 
 
 var configFixed = {responsive: true}
-
-Plotly.newPlot("fixedCostsPieChart", dataFixed, layoutFixed, configFixed );
 
 /*FIXED COSTS PIE CHART DATA*/
 
@@ -90,7 +98,6 @@ function fixedCostsPieChart() {
     dataFixed[0].values[2] = totalInsuranceCostValuePER;
     dataFixed[0].values[3] = totalSubscriptionCostValuePER;
     dataFixed[0].values[4] = totalCreditcardCostValuePER;
-    layoutFixed.title = "Fixed Costs";
     Plotly.newPlot("fixedCostsPieChart", dataFixed, layoutFixed, configFixed );
 }
 
@@ -107,15 +114,20 @@ type: "pie"
 }];
 
 var layoutVariable = {
-    title: "Please enter data<br>above to graph",
+    title: "Variable<br>Costs",
     font: {size: 12},
-    paper_bgcolor:"#ade7ba"
+    paper_bgcolor:"#ade7ba",
+    margin: {
+    l: 5,
+    r: 5,
+    b: 20,
+    t: 100,
+    pad: 0
+  },
 };
 
 
 var configVariable = {responsive: true}
-
-Plotly.newPlot("variableCostsPieChart", dataVariable, layoutVariable, configVariable );
 
 /*VARIABLE COSTS PIE CHART DATA*/
 
@@ -140,6 +152,5 @@ function variableCostsPieChart() {
     dataVariable[0].values[1] = totalConsumablesCostValuePER;
     dataVariable[0].values[2] = totalSocialisingFunCostValuePER;
     dataVariable[0].values[3] = totalStuffCostValuePER;
-    layoutVariable.title = "Fixed Costs";
     Plotly.newPlot("variableCostsPieChart", dataVariable, layoutVariable, configVariable );
 }

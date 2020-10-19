@@ -146,46 +146,46 @@
 <!------------------------------ CURRENT ACCOUNTS CALCULATION -->
     <div class="container-fluid current-debts-container" id="current-debts">
         <div class="row"><h4>Current Accounts</h4></div>
-        <div class="row current-account-item">
+        <div class="row input-item">
             <div class="col-md-6 col-sm-12">Bank Accounts</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountBankValue" placeholder="0" step="0.01" data-type="currency"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="accountBankValue" placeholder="0" step="0.01"></div>
         </div>
-        <div class="row current-account-item">
+        <div class="row input-item">
             <div class="col-md-6 col-sm-12">Savings Accounts</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountSavingsValue" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="accountSavingsValue" placeholder="0" step="0.01"></div>
         </div>
-        <div class="row current-account-item">
+        <div class="row input-item">
             <div class="col-md-6 col-sm-12">Cash-on-hand</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountCashValue" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="accountCashValue" placeholder="0" step="0.01"></div>
         </div>
-        <div class="row totalCurrentAccounts">
+        <div class="row input-item totalCurrentAccounts">
             <div class="col-md-6 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="totalAccountsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalAccountsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
         </div>
     </div>
     
 <!------------------------------ CURRENT DEBT CALCULATION -->
     <div class="container-fluid current-debts-container" id="current-debts-calculation">
         <div class="row"><h4>Current Debts</h4></div>
-            <div class="row current-account-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Loans</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="debtLoanValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="debtLoanValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row current-account-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">American Express</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="debtAmexValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="debtAmexValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row current-account-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Mastercard</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="debtMastercardValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="debtMastercardValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row current-account-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Visa</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="debtVisaValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="debtVisaValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row totalCurrentAccounts">
+            <div class="row input-item totalCurrentAccounts">
                 <div class="col-md-6 col-sm-12">TOTAL CURRENT DEBTS</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalDebtsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalDebtsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 
@@ -193,17 +193,17 @@
     <div class="container-fluid fixed-budget-container" id="current-accounts-overview">
         <div class="row"><h4>Net Worth Overview</h4
         ></div>
-                <div class="row total-fixed-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12" id="total-current-accounts">Total Current Accounts</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCurrentAccountsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalCurrentAccountsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
-                <div class="row total-fixed-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12" id="total-current-debts">Total Current Debts</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCurrentDebtsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalCurrentDebtsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
-                <div class="row total-fixed-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12 net-amount" id="net-worth">Net Worth Current</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="netWorthValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netWorthValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
     </div>
 <!------------------------------ NAVIGATION PAGE 1 CURRENT ACCOUNTS -->
@@ -232,19 +232,19 @@
         </div>
         <div class="row income-item">
             <div class="col-md-6 col-sm-12">Salary (After Taxes)</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="netSalary" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netSalary" placeholder="0" step="0.01"></div>
         </div>
         <div class="row income-item">
             <div class="col-md-6 col-sm-12">Bonuses</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="bonusSalary" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="bonusSalary" placeholder="0" step="0.01"></div>
         </div> 
         <div class="row income-item">
             <div class="col-md-6 col-sm-12">Side Gigs</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="gigSalary" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="gigSalary" placeholder="0" step="0.01"></div>
         </div>
-        <div class="row">
+        <div class="row input-item">
             <div class="col-md-6 col-sm-12">TOTAL INCOME </div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
         </div>
 
 <!------------------------------ PLOTLY PIE CHART - INCOME -->
@@ -278,37 +278,37 @@
 <!------------------------------ FIXED COSTS CALCULATION --- HOME-->
     <div class="container-fluid current-debts-container" id="fixed-costs-home">
         <div class="row"><h4>Home</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Drinking Water</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="waterValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="waterValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Energy (Electricty/Heating)</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="energyValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="energyValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Internet, TV, & Home Phone</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="internetValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="internetValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Mobile Phone</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="mobileValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="mobileValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Property Taxes</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="propertyTaxValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="propertyTaxValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Rent / Mortgage Payment</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="rentMortageValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="rentMortageValue" placeholder="0" step="0.01"></div>
             </div> 
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Service Costs</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="homeServiceCostsValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="homeServiceCostsValue" placeholder="0" step="0.01"></div>
             </div> 
-            <div class="row">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL HOME COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalHomeCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalHomeCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
             
@@ -316,116 +316,116 @@
 <!------------------------------ FIXED COSTS CALCULATION --- TRANSPORT -->
     <div class="container-fluid current-debts-container" id="fixed-costs-transport">
         <div class="row"><h4>Transport</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Car Payments (Loan, Lease)</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="transportCarPaymentValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="transportCarPaymentValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Parking Permit</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="transportParkingPermitPermitValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="transportParkingPermitPermitValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Public Transport</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="transportPublicValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="transportPublicValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL TRANSPORT COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalTransportCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalTransportCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 
 <!------------------------------ FIXED COSTS CALCULATION --- INSURANCE -->
     <div class="container-fluid current-debts-container" id="fixed-costs-insurance">
          <div class="row"><h4>Insurance</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Car Insurance</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="insuranceCarValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="insuranceCarValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Health Insurance</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="insuranceHealthValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="insuranceHealthValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Liability Insurance</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="insuranceLiabilityValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="insuranceLiabilityValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Life Insurance</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="insuranceLifeValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="insuranceLifeValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Legal Insurance</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="insuranceLegalValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="insuranceLegalValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12">TOTAL INSURANCE COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalInsuranceCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalInsuranceCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 
 <!------------------------------ FIXED COSTS CALCULATION --- SUBSCRIPTIONS -->
     <div class="container-fluid current-debts-container" id="fixed-costs-subscriptions">
         <div class="row"><h4>Subscriptions</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Donations</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="donationsValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="donationsValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Gym</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="subscriptionsGymValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="subscriptionsGymValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Lotteries</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="subscriptionsLotteryValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="subscriptionsLotteryValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Newspapers and Magazines</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="subscriptionsNewsValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="subscriptionsNewsValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Streaming Services (Netflix, etc)</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="subscriptionsStreamingValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="subscriptionsStreamingValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12">TOTAL SUBSCRIPTION COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSubscriptionCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSubscriptionCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 <!------------------------------ FIXED COSTS CALCULATION --- CREDITCARDS -->
     <div class="container-fluid current-debts-container" id="fixed-costs-credit-card-payments">
             <div class="row"><h4>Credit Card Payment</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">American Express</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="amexValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="amexValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Mastercard</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="mastercardValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="mastercardValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Visa</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="visaValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="visaValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL CREDITCARD COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalCreditcardCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalCreditcardCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 
 <!------------------------------ TOTAL FIXED COSTS CALCULATION -->
     <div class="container-fluid current-debts-container" id="fixed-income-overview">
         <div class="row"><h4>Fixed Income Overview</h4></div>
-                <div class="row total-fixed-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12" id="total-fixed-income">Total Fixed Income (Monthly)</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalMonthlyIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalMonthlyIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
-                <div class="row total-fixed-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12" id="total-fixed-costs">Total Fixed Costs (Monthly)</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalFixedCostsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
-                <div class="row total-fixed-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12 net-amount" id="net-fixed-income">Net Fixed Income (Monthly)</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="netFixedIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netFixedIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
     </div>
 
@@ -459,143 +459,143 @@
 <!------------------------------ VARIABLE COSTS CALCULATION --- FOOD AND DRINK-->
     <div class="container-fluid current-debts-container" id="food-drink-costs">
         <div class="row"><h4>Food and Drink</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Abert Heijn</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketAlbertHeijnValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketAlbertHeijnValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Aldi</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketAldiValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketAldiValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Coop</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketCoopValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketCoopValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Dirk/Bas</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketDirkBasValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketDirkBasValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Jumbo</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketJumboValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketJumboValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Lidl</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketLidlValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketLidlValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Makro</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="SupermarketMakroValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="SupermarketMakroValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Marqt</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketMarqtValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketMarqtValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Plus</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketPlusValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketPlusValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Corner Store</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketCornerStoreValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketCornerStoreValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Liquor Store</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="supermarketLiquorStoreValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketLiquorStoreValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row ">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL SUPERMARKET COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSupermarketCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSupermarketCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 
 <!------------------------------ VARIABLE COSTS CALCULATION --- CONSUMABLES-->
     <div class="container-fluid current-debts-container" id="consumables-costs">
         <div class="row"><h4>Consumables</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                     <div class="col-md-6 col-sm-12">Flowers</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="consumablesFlowersValue" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="consumablesFlowersValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                     <div class="col-md-6 col-sm-12">Personal Hygiene</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="consumablesPersonalHygieneValue" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="consumablesPersonalHygieneValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row ">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL CONSUMABLES COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalConsumablesCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalConsumablesCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 <!------------------------------ VARIABLE COSTS CALCULATION --- SOCIALISING / FUN-->
     <div class="container-fluid current-debts-container" id="socialising-costs">
         <div class="row"><h4>Socialising / Fun</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Bars</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingBarsValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="socialisingBarsValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Cinemas</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingCinemasValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="socialisingCinemasValue" placeholder="0" step="0.01"></div>
             </div>
-                <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Night Clubs</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingNightClubsValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="socialisingNightClubsValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Restaurants</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingRestaurantsValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="socialisingRestaurantsValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Other</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="socialisingOtherValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="socialisingOtherValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row ">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL SOCIALISING / FUN COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSocialisingFunCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSocialisingFunCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 <!------------------------------ VARIABLE COSTS CALCULATION --- STUFF -->
     <div class="container-fluid current-debts-container" id="stuff-costs">
         <div class="row"><h4>Stuff</h4></div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Clothes</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffClothesValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="stuffClothesValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Electronics</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffElectronicsValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="stuffElectronicsValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Shoes</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffShoesValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="stuffShoesValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Toys</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffToysValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="stuffToysValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Video Games</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffVideoGamesValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="stuffVideoGamesValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Other Stuff</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="stuffOtherValue" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="stuffOtherValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row ">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL STUFF COSTS </div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalStuffCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalStuffCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
                 
 <!------------------------------ TOTAL VARIABLE COSTS OVERVIEW -->
     <div class="container-fluid current-debts-container" id="total-variable-costs">
         <div class="row"><h4>Total Variable Costs Overview</h4></div>
-                <div class="row total-variable-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12">Total Variable Costs</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalVariableCostsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalVariableCostsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
-                <div class="row total-variable-item">
+                <div class="row input-item">
                     <div class="col-md-6 col-sm-12 net-amount" id="net-budget-monthly">Savings</div>
-                    <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
+                    <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSavingsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
     </div>
 <!------------------------------ PLOTLY PIE CHART - VARIABLE COSTS -->
@@ -620,21 +620,21 @@
     <div class="container-fluid budget-overview-container" id="budget-overview">
         <div class="row"><h4>Budget Overview</h4>
         </div>
-           <div class="row costs-item">
+           <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Income</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalIncomeValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalIncomeValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Fixed Costs</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalFixedCostsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalFixedCostsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Variable Costs</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalVariableCostsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalVariableCostsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row costs-item">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Savings</div>
-                <div class="col-md-6 col-sm-12">€ <input type="number" id="totalSavingsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSavingsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
 
@@ -734,8 +734,6 @@
     <script src="js/save-load.js"></script>
     <script src="js/currentDate.js"></script>
     <script src="js/modal.js"></script>
-    <script src="js/currencyInput.js"></script>
-    <script src="js/sidebar.js"></script>
 </footer>
 </body>
 </html>
