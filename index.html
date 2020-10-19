@@ -629,11 +629,26 @@
 <!------------------------------ PAGE 5: BUDGET OVERVIEW -->
 <div id="budgetOverview" class="hidden-navigation">
     <div class="container-fluid budget-overview-container" id="budget-overview">
-        <div class="row"><h4>Budget Overview</h4></div>
+        <div class="row"><h3>Budget Overview</h3></div>
             <div class="row page-explination">
                 <p>In this complete budget overview you can see an overview of the end totals of each page. If you want to go back and change any of your inputs please use either the previous and next buttons at the bottom of the page or alternatively you can use the sidebar navigation to jump straight to a particular page.</p>
             </div>
-           <div class="row input-item">
+            <div class="row"><h4>Net Worth Overview</h4></div>
+            <div class="row input-item">
+                <div class="col-md-6 col-sm-12">Total Current Accounts</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalAccountsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
+            </div>
+            <div class="row input-item">
+                <div class="col-md-6 col-sm-12">Total Current Debts</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalDebtsValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
+            </div>
+            <div class="row input-item">
+                <div class="col-md-6 col-sm-12">Total Net Worth</div>
+                <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netWorthValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
+            </div>
+
+            <div class="row"><h4>Month Budget Overview</h4></div>
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Income</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalIncomeValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>

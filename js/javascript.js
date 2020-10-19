@@ -32,6 +32,7 @@ function totalAccountsValue() {
         Number($("input#accountCashValue").val());
     totalAccountsValue = (totalAccountsValue).toFixed(2);
     $("input#totalAccountsValue").val(totalAccountsValue);
+    $("input#totalAccountsValue-BudgetOverview").val(totalAccountsValue);
 }
 
 /* ------------------------------ CURRENT DEBT CALCULATION */
@@ -69,6 +70,7 @@ function totalDebtsValue() {
         Number($("input#debtVisaValue").val());
     totalDebtsValue = (totalDebtsValue).toFixed(2);
     $("input#totalDebtsValue").val(totalDebtsValue);
+    $("input#totalDebtsValue-BudgetOverview").val(totalDebtsValue);
 }
 
 
@@ -366,6 +368,7 @@ function netWorthValue() {
 
     netWorthValue = (netWorthValue).toFixed(2);
     $("input#netWorthValue").val(netWorthValue);
+    $("input#netWorthValue-BudgetOverview").val(netWorthValue);
 }
 
 
