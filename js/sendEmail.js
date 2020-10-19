@@ -17,6 +17,8 @@ function sendMail(contactForm) {
         "debtMastercardValue": document.getElementById('debtMastercardValue').value,
         "debtVisaValue": document.getElementById('debtVisaValue').value,
         "totalDebtsValue": document.getElementById('totalDebtsValue').value,
+/* Net worth deatils */
+        "netWorthValue": document.getElementById('netWorthValue').value,
 /* Income details */
         "netSalary": document.getElementById('netSalary').value,
         "bonusSalary": document.getElementById('bonusSalary').value,
@@ -29,6 +31,14 @@ function sendMail(contactForm) {
         "totalSubscriptionCostValue": document.getElementById('totalSubscriptionCostValue').value,
         "totalCreditcardCostValue": document.getElementById('totalCreditcardCostValue').value,
         "totalFixedCostsValue": document.getElementById('totalFixedCostsValue').value,
+/* Fixed costs deatils */
+        "totalSupermarketCostValue": document.getElementById('totalSupermarketCostValue').value,
+        "totalConsumablesCostValue": document.getElementById('totalConsumablesCostValue').value,
+        "totalSocialisingFunCostValue": document.getElementById('totalSocialisingFunCostValue').value,
+        "totalStuffCostValue": document.getElementById('totalStuffCostValue').value,
+        "totalVariableCostsValue": document.getElementById('totalVariableCostsValue').value,
+/* Fixed costs deatils */
+        "totalSavingsValue": document.getElementById('totalSavingsValue').value,
     })
     .then(
         function(response) {
