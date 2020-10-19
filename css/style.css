@@ -21,12 +21,20 @@ h5 {
 /* ---------------------------------------------- Containers */
 .container-fluid-sidebar {
     padding: 3vh 3vw;
-/*    margin: 3vh 3vw */
 }
+
+@media screen and (max-width: 767px) {
+    .container-fluid-sidebar {
+        padding: 6vh 3vw 3vh 3vw;
+    }
+}
+
 
 .container-fluid-main {
     padding: 3vh 3vw;    
 }
+
+
 
 .container-fluid {
     background-color: #e6eeea;
@@ -34,12 +42,28 @@ h5 {
 
 
 @media screen and (max-width: 767px) {
-  .padding-mobile{
-    padding-top: 20px;
+    .padding-mobile{
+        padding-top: 3vw 3vw 0vh 3vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .padding-mobile-sidebar{
+        padding-top: 3vw;
+        margin-left: -1vw;
     }
 }
 
 
+.container-fluid-desktop {
+    padding: 3vh 3vw;
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluid-desktop {
+        padding: 0vh 3vw 0vh 3vw;
+    }
+}
 
 
 .on-page-navigation {
