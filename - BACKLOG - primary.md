@@ -1,11 +1,9 @@
 # BACKLOG primary
 
 ## CURRENT SPRINT (Higher > Lower Priority)
-- [ ] Add Net Worth data to budget overview
+- [ ] readme.md finish deployment and testing
 
-- [ ] In modal > generate report - send error message to the user if the incorrect information is filled in. So only data target exit modal if the information entered is correct.
-
-- [ ] Hide sidebar on mobile devices
+- [ ] readme.md check spelling and sentance structure
 
 - [ ] emailJS create top 3 variable costs
 
@@ -15,17 +13,18 @@
 
 - [ ] add 'other' for each section
 
-- [ ] Add introductions and explinations of each section.
+- [ ] check introductions and explinations for each section
 
 - [ ] Cookies notification if saving data to the browser?
 
 - [ ] Add charts to email
 
-- [ ] Add screen reader support for all elements (including image tags)
+- [ ] !!IMPORTANT Add screen reader support for all elements (including image tags) aria and alt tags!
 
 - [ ] Check bug with hero image on iOS devices
 
 ## BACKLOG (Higher > Lower Priority)
+- [ ] Hide sidebar on mobile devices
 
 - [ ] Change currency information within the input field to account for global usage. Check the following site for entering currency information https://codepen.io/559wade/pen/LRzEjj
 
@@ -47,6 +46,9 @@
 
 ## DONE (Newest > Oldest)
 
+- [x] Add introductions and explinations of each section.
+- [x] Add Net Worth data to budget overview
+- [x] In modal > generate report - close modal when sending report
 - [x] Send email via emailJS to user with budget information
 - [x] Add contact page and report a bug
 - [x]!! Important: get charts to use variables locally

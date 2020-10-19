@@ -133,6 +133,7 @@ For some/all of your features, you may choose to reference the specific project 
 - #### Budget recommendations for users: Give users more tips and tricks to improve their budgeting, such as percentages of their bugets they should idealistically be spending on different costs.
 - #### Multi-month budgeting: Extrapolate data into a yearly overview so that users can track their spendings over a longer period of time and also having more infromation on budget forecats into the future.
 - #### Household budgeting: Provide budgeting info for multi-person households, such as which costs are shared and which are individual to the user.
+- #### Collapsable sidebar on mobile: Possibly experiment with a collapsable sidebar on mobile devices.
 
 ## Technologies Used
 
@@ -172,8 +173,65 @@ For some/all of your features, you may choose to reference the specific project 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### Testing Methodology
+The testing has been rigerous, manually done and an ungoing process while building this Web App. The choice to do testing manually had some benefits in that it also gave an opportunity to constantly revist the site which helped with comming up with new idea and setting priorities.
 
+This was done by hosting a server on GitPod with a live version of the site running at all times while working on the site.
+
+Testing consisted of:
+1. Clicking all the available links and jumping back and forth in an attempt to break the links.
+2. Random site navigation in an atempt to break the many hide/show elements, which revealed many bugs that were then fixed.
+3. Google Chrome's Inspector was used with Conasole open as to catch any errors with pages or elements loading.
+4. Friends and family have been asked to try filling in the website on multiple occassions, this was also beneficial with seeing how another use would used the site.
+5. Since the App was built using the Google Chrome browser, which tends to cache information and often fails to update after changes, the page was constantly force-reloaded using the keyboard shortcut CMD/CTRL + Shift + R **before, during and after** changes were carreid out.
+6. Within Google Chrome's Inspector the mobile view emulation mode was used to test every page, link, button and input with the following emulators:
+    -   iPhone X
+    -   iPhone 7 Plus
+    -   iPhone 7
+    -   iPhone 5
+    -   iPad
+    -   Moto G4
+7. Testing was also done in multiple browsers:
+    -   Google Chrome
+    -   Google Chrome Mobile
+    -   Google Chrome Tablet
+    -   Apple Safari
+    -   Apple Safari Mobile
+    -   Apple Safari Tablet
+    -   Mozilla Firefox
+    -   Mozilla Firefox Mobile
+    -   Mozilla Firefox Tablet
+
+
+### GitHubs Role In Testing
+When looking at the GitHub commits there is a pattern of the commits getting better and more consistent as the project went on. 
+
+After checking the commits for the purpose of this readme an issue was discovered that some of the commits might have run a bit long. However, this was done purposefully so that it was easy to reference changes in the Web App in case something went wrong. 
+
+Luckily, due to rigerous ongoing testing and commiting there was only one time when data needed to be restored after accidently deleting the js folder which contains all of the JavaScript code. It was easy to recover this code by accessing the last commit on GitHub and coppying the data into the current GitPod workspace.
+
+A system of prefixes was used to organise GitHub commits which can be used to get a glimpse of the amount of testing:
+
+1. FEATURE
+    - FEATURE was used when adding new functionality or after major changes to the web app. During implimentation of these features testing was onging. 
+2. BUG
+    - BUG was used when there was an issue discovered during testing and only once the bug has been fixed.
+3. TEST
+    - TEST was used after a more in-depth test, sometimes bugs were also fixed before these commits.
+4. UPDATE
+    - UPDATE was used for small changes, primarily to supplemental material like the backlog and readme.
+5. BACKUP
+    - BACKUP was used for large backups before starting implementation of a new feature.
+6. Various others
+    - Other prefixes or text have also been used at times, however the goal for the future is to stick to the prefixes mentioned here above (1-5) as to give evaluators, colleagues, employers and users a clear overview of changes that have been made.
+
+### Interesting bugs
+
+TODOTODOTDO
+You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+
+
+NOTESTODOTODOTDOTO
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
@@ -186,7 +244,6 @@ For any scenarios that have not been automated, test the user stories manually a
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
@@ -217,7 +274,7 @@ The photos used in this site were obtained from stockphotosecrets.com and we're 
 ### Acknowledgements
 
 I would like to thank:
-- my mentor Jonathan for his patentience, knowledge, experience and support.
+- My mentor Jonathan for his patentience, knowledge, experience and support.
 - Kevin and Michael, mentors at Code Institute, who took the time to check my workspace, my project and lead me towards the answers I was looking for without giving me the answers.
 - My wife, Alba, for het patience and taking care of our newborn baby, Zoë, while finishing up this project.
 - Code Institute Student Care for checking in with me, keeping me motivated, and being understanding about the fact that becoming a new father meant that my priorities were split between my studies, work and childcare duties.
