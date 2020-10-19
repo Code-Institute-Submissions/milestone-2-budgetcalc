@@ -91,31 +91,37 @@ When taking the methodology into account the following process has been created:
     4. Discussing the project with friends and family to get input.
     5. Drawing out the structure on paper and creating wireframes to server as a guideline for repsonsive development.
 
-- #### Creating basic functionality
+- #### Creating basic functionality (focus on JavaScript)
     1. For this project it made sense to first start with some basic functionality, as BudgetCalc essentially is a complicated calculator with many moving parts, getting those parts to work together is essential before moving on to the final design.
     2. Showing working calculations makes all following brainstorming sessions and mentor contact moments more effecient as the product is starting to develope funcationality.
-    3. Creates boundaries 
+    3. This creates boundaries for design, and gives a clearer vision about what is possible and what isn't.
 
+- #### Creating basic user interface and structure (focus on HTML/CSS)
+    1. At this point it's important to start selecting a color pallete and injecting imagery as this will assist with planning and building out the funcationality of the product.
+    2. Understanding how a user will interact with the product may trigger new ideas to create a better user experience.
 
+- #### Evaluation
+    1. More brainstorming about potential user interactivity elements.
+    2. More brainstorming about potential feature and functions, such as incorporating new potential API elements that benefit the product.
+    3. Discussion with the Code Institute appointed mentor to see what areas need improvement.
 
-Frist function.
-
-Then form.
-
-Then expanding on function.
-
-Therefore the main focus will be on HTML elements interacting with each other through JavaScript with basic formatting. The information architecture will use a basic structured layout through the utilisation of Bootstrap.
-
-Once the basic function of the web app has been achieved CSS will be implimented alongside HTML and JavaScript utilising good UX design practices to make the web enjoyable to use by users.
-
-
-After each change the product should still work.
-
-
-
-During the coding proces app responsiveness is important - mobile development will take place alongside desktop development.
+- #### Creating advanced functionality simultaneously to user interactity (focus on JavaScript/HTML/CSS)
+    1. During this final step it's important to have a prioritised overview as to first focus on elements that either are quick-wins or have the greatest impact.
+    2. Working on both functionality and user interactivity interchangably allows for both to grow together into a product that is both useful and enjoyable to use.
 
 ## Features
+
+### Features implemented
+- #### Net worth calulcation: This provides an overview of the current state of someones net worth. This can be a great indicator of financial health in the long-run.
+- #### Income calculation: There are many different types of income, these have all been accounted for: salary, bonuses, gig jobs.
+- #### Fixed costs calculation: In order to know how much budget remains for spending first all the fixed costs need to be calculated to understand what remains for the variables costs.
+- #### Variable costs calculation: These are things that are not recurring or changing month-to-month. Items that fall into this category could be food and drink, socialising, and purchasing new things.
+- #### Intuitive navigation: User's expect a good product to have easy navigation. It was important to not only give people the means for moving forwards and backwards through the project, but also to give them the ability to jump around and have a clear understanding about how far along and where they are in the web app.
+- #### Export of data: Just filling the data into the app is not sufficient, if a user wants to keep or send the data to someone else then it's important to have a method for exporting the data. Email with use of EmailJS was the fastest and most efficient way to effictively export the data.
+- #### Savings and loading data: To ensure that users return to the app and don't use it as a once-off experience it's important to save any progress that the user has made. By offering users a method for saving and retrieving data users are then able to come back to the product and edit any information they've filled in.
+
+### Features to implement
+- #### 
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
