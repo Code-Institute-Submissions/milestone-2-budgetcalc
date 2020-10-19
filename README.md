@@ -1,8 +1,9 @@
 # Interactive Front End Development: BudgetCalc
+This project has been [deployed to GitHub Pages](https://asforrest.github.io/milestone-2-budgetcalc/) and the source code is available in a [repository on GitHub](https://github.com/asforrest/milestone-2-budgetcalc)
 
-This is a web app created for the 2nd Milestone Project for [Code Insitute course: Full Stack Developement](https://codeinstitute.net/full-stack-software-development-diploma/).
+This is a web app created for the 2nd Milestone Project for [Code Institute course: Full Stack Development](https://codeinstitute.net/full-stack-software-development-diploma/).
 
-This web app will make use of technologies covered in the course up to this point inlcuding HTML, CSS, and JavaScript in order to demonstrate an understanding of these technologies.
+This web app will make use of technologies covered in the course up to this point including HTML, CSS, and JavaScript in order to demonstrate an understanding of these technologies.
 
 This web app aims to solve a real-world problem.
 
@@ -33,7 +34,7 @@ Here is an overview of different types of potential users and what they may want
 
 - #### As the site owner:
     1. I want to create a web app that I can be proud off.
-    2. I want to minimalise or elimate bugs to provide a seemless experience to users.
+    2. I want to minimalise or eliminate bugs to provide a seemless experience to users.
     3. I want to impress potential employers with my work.
 
 
@@ -67,37 +68,37 @@ As a user of his own web app, BudgetCalc, Alexander will easily be able to put h
 This methodology of this project will be based on three core principals during development;
 
 - #### That [Form follows function](https://en.wikipedia.org/wiki/Form_follows_function#Software_engineering).
-    1. The form of the web app should follow it's goals and core functionality.
+    1. The form of the web app should follow its goals and core functionality.
     2. Represent first and foremost the engineering requirements during construction.
-    3. If the architecture dictates how the software should work it's likely to suffer from inflexibitly and adaptation to change and new ideas during the developement process.
+    3. If the architecture dictates how the software should work it's likely to suffer from inflexibly and adaptation to change and new ideas during the development process.
 
 - #### The principle of always delivering a [Potentially Shippable Product](https://less.works/less/framework/potentially-shippable-product-increment)
-    1. This means that the product is always working after a sprint (coding session), albiet in a basic form.
+    1. This means that the product is always working after a sprint (coding session), albeit in a basic form.
     2. The product could potentially be submitted at any time.
     3. Working elements in the project allow more room for evaluation.
     4. Working elements also allow more room for evolution as new ideas are added.
 
 - #### Working with a [Product Backlog](https://en.wikipedia.org/wiki/Scrum_(software_development)#Product_backlog)
-    1. As software developement is an ongoing process a product backlog allows for the prioritisating of information.
+    1. As software development is an ongoing process a product backlog allows for the prioritising of information.
     2. A product backlog provides a roadmap for future development.
-    3. Iteams completeded on the product backlog will not be removed by moved to a done section as to see progress through the elements.
+    3. Items completed on the product backlog will not be removed by moved to a done section as to see progress through the elements.
 
 ## Process
 When taking the methodology into account the following process has been created:
 - #### Planning
     1. Brainstorming about core elements to make the web app work.
     2. Brainstorming about stretch goals and the future of the web app.
-    3. Contact with the Code Institute appointed mentor for guidance and real world experience when tackelling some of the different challenges.
+    3. Contact with the Code Institute appointed mentor for guidance and real world experience when tackling some of the different challenges.
     4. Discussing the project with friends and family to get input.
-    5. Drawing out the structure on paper and creating wireframes to server as a guideline for repsonsive development.
+    5. Drawing out the structure on paper and creating wireframes to server as a guideline for responsive development.
 
 - #### Creating basic functionality (focus on JavaScript)
     1. For this project it made sense to first start with some basic functionality, as BudgetCalc essentially is a complicated calculator with many moving parts, getting those parts to work together is essential before moving on to the final design.
-    2. Showing working calculations makes all following brainstorming sessions and mentor contact moments more effecient as the product is starting to develope funcationality.
+    2. Showing working calculations makes all following brainstorming sessions and mentor contact moments more efficient as the product is starting to develop functionality.
     3. This creates boundaries for design, and gives a clearer vision about what is possible and what isn't.
 
 - #### Creating basic user interface and structure (focus on HTML/CSS)
-    1. At this point it's important to start selecting a color pallete and injecting imagery as this will assist with planning and building out the funcationality of the product.
+    1. At this point it's important to start selecting a color palette and injecting imagery as this will assist with planning and building out the functionality of the product.
     2. Understanding how a user will interact with the product may trigger new ideas to create a better user experience.
 
 - #### Evaluation
@@ -105,24 +106,19 @@ When taking the methodology into account the following process has been created:
     2. More brainstorming about potential feature and functions, such as incorporating new potential API elements that benefit the product.
     3. Discussion with the Code Institute appointed mentor to see what areas need improvement.
 
-- #### Creating advanced functionality simultaneously to user interactity (focus on JavaScript/HTML/CSS)
+- #### Creating advanced functionality simultaneously to user interactivity (focus on JavaScript/HTML/CSS)
     1. During this final step it's important to have a prioritised overview as to first focus on elements that either are quick-wins or have the greatest impact.
-    2. Working on both functionality and user interactivity interchangably allows for both to grow together into a product that is both useful and enjoyable to use.
+    2. Working on both functionality and user interactivity interchangeably allows for both to grow together into a product that is both useful and enjoyable to use.
 
 ## Features
 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-### Existing Features
-- #### Net worth calulcation: This provides an overview of the current state of someones net worth. This can be a great indicator of financial health in the long-run.
+- #### Net worth calculation: This provides an overview of the current state of someones net worth. This can be a great indicator of financial health in the long-run.
 - #### Income calculation: There are many different types of income, these have all been accounted for: salary, bonuses, gig jobs.
 - #### Fixed costs calculation: In order to know how much budget remains for spending first all the fixed costs need to be calculated to understand what remains for the variables costs.
 - #### Variable costs calculation: These are things that are not recurring or changing month-to-month. Items that fall into this category could be food and drink, socialising, and purchasing new things.
 - #### Intuitive navigation: User's expect a good product to have easy navigation. It was important to not only give people the means for moving forwards and backwards through the project, but also to give them the ability to jump around and have a clear understanding about how far along and where they are in the web app.
-- #### Export of data: Just filling the data into the app is not sufficient, if a user wants to keep or send the data to someone else then it's important to have a method for exporting the data. Email with use of EmailJS was the fastest and most efficient way to effictively export the data.
+- #### Export of data: Just filling the data into the app is not sufficient, if a user wants to keep or send the data to someone else then it's important to have a method for exporting the data. Email with use of EmailJS was the fastest and most efficient way to effectively export the data.
 - #### Savings and loading data: To ensure that users return to the app and don't use it as a once-off experience it's important to save any progress that the user has made. By offering users a method for saving and retrieving data users are then able to come back to the product and edit any information they've filled in.
 
 ### Features Left To implement
@@ -131,7 +127,7 @@ For some/all of your features, you may choose to reference the specific project 
 - #### Create a settings button and/or questions: Allow users to turn on and off elements in the calculator that do or don't relate to them.
 - #### Save data on a central server: Allow users to use the product from different terminals.
 - #### Budget recommendations for users: Give users more tips and tricks to improve their budgeting, such as percentages of their bugets they should idealistically be spending on different costs.
-- #### Multi-month budgeting: Extrapolate data into a yearly overview so that users can track their spendings over a longer period of time and also having more infromation on budget forecats into the future.
+- #### Multi-month budgeting: Extrapolate data into a yearly overview so that users can track their spendings over a longer period of time and also having more information on budget forecast into the future.
 - #### Household budgeting: Provide budgeting info for multi-person households, such as which costs are shared and which are individual to the user.
 - #### Collapsable sidebar on mobile: Possibly experiment with a collapsable sidebar on mobile devices.
 
@@ -164,26 +160,26 @@ For some/all of your features, you may choose to reference the specific project 
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
 1. [Plotly](https://plotly.com/javascript/)
     - Plotly was used to generate graphs for the user.
-
-???
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. [EmaiJS](https://www.emailjs.com/)
+    - EmailJS was used for the contact form and to send a generated report to users.
 
 
 
 ## Testing
 
 ### Testing Methodology
-The testing has been rigerous, manually done and an ungoing process while building this Web App. The choice to do testing manually had some benefits in that it also gave an opportunity to constantly revist the site which helped with comming up with new idea and setting priorities.
+The testing has been rigorous, manually done and an ongoing process while building this Web App. The choice to do testing manually had some benefits in that it also gave an opportunity to constantly revisit the site which helped with coming up with new idea and setting priorities.
 
 This was done by hosting a server on GitPod with a live version of the site running at all times while working on the site.
 
 Testing consisted of:
 1. Clicking all the available links and jumping back and forth in an attempt to break the links.
-2. Random site navigation in an atempt to break the many hide/show elements, which revealed many bugs that were then fixed.
-3. Google Chrome's Inspector was used with Conasole open as to catch any errors with pages or elements loading.
-4. Friends and family have been asked to try filling in the website on multiple occassions, this was also beneficial with seeing how another use would used the site.
-5. Since the App was built using the Google Chrome browser, which tends to cache information and often fails to update after changes, the page was constantly force-reloaded using the keyboard shortcut CMD/CTRL + Shift + R **before, during and after** changes were carreid out.
+2. Random site navigation in an attempt to break the many hide/show elements, which revealed many bugs that were then fixed.
+3. Google Chrome's Inspector was used with Console open as to catch any errors with pages or elements loading.
+4. Friends and family have been asked to try filling in the website on multiple occasions, this was also beneficial with seeing how another use would used the site.
+5. Since the App was built using the Google Chrome browser, which tends to cache information and often fails to update after changes, the page was constantly force-reloaded using the keyboard shortcut CMD/CTRL + Shift + R **before, during and after** changes were carried out.
 6. Within Google Chrome's Inspector the mobile view emulation mode was used to test every page, link, button and input with the following emulators:
     -   iPhone X
     -   iPhone 7 Plus
@@ -208,12 +204,12 @@ When looking at the GitHub commits there is a pattern of the commits getting bet
 
 After checking the commits for the purpose of this readme an issue was discovered that some of the commits might have run a bit long. However, this was done purposefully so that it was easy to reference changes in the Web App in case something went wrong. 
 
-Luckily, due to rigerous ongoing testing and commiting there was only one time when data needed to be restored after accidently deleting the js folder which contains all of the JavaScript code. It was easy to recover this code by accessing the last commit on GitHub and coppying the data into the current GitPod workspace.
+Luckily, due to rigorous ongoing testing and committing there was only one time when data needed to be restored after accidentally deleting the js folder which contains all of the JavaScript code. It was easy to recover this code by accessing the last commit on GitHub and copying the data into the current GitPod workspace.
 
 A system of prefixes was used to organise GitHub commits which can be used to get a glimpse of the amount of testing:
 
 1. FEATURE
-    - FEATURE was used when adding new functionality or after major changes to the web app. During implimentation of these features testing was onging. 
+    - FEATURE was used when adding new functionality or after major changes to the web app. During implementation of these features testing was ongoing. 
 2. BUG
     - BUG was used when there was an issue discovered during testing and only once the bug has been fixed.
 3. TEST
@@ -253,13 +249,13 @@ This project is saved to a [BudgetCalc repository on GitHub](https://github.com/
 
 This project has also been [published to GitHub Pages](https://asforrest.github.io/milestone-2-budgetcalc/) both for evaluation by Code Institute and so that users can access and use the Web App as intended. This is made possible by GitHub by going to the settings page and choosing a branch to publish.
 
-The branch currently being hosted is the master branch. The developement version is currently the same as the deployed version, however this project is a work in progress and will branched for continuous development while waiting for a final grade during Code Institues evaluation process. After the evaluation period has been completed any changes made to the project will then be commited back to the master branch and will be directly available to users.
+The branch currently being hosted is the master branch. The development version is currently the same as the deployed version, however this project is a work in progress and will branched for continuous development while waiting for a final grade during Code Institute’s evaluation process. After the evaluation period has been completed any changes made to the project will then be committed back to the master branch and will be directly available to users.
 
 If you have any questions about this project or updates then you can contact the developer [Alexander Forrest via his GitHub user profile](https://github.com/asforrest) or alternatively you can send an email to [mailto](mailto:asforrest@icloud.com).
 
 ### Running The Code Locally
 
-If you wish to download a copy of the code in order to run the code locally, this is also possible. To do this go to the [BudgetCalc repository on GitHub](https://github.com/asforrest/milestone-2-budgetcalc) click on 'Code' in the top right and select the method you want to use to donwload and run the code locally.
+If you wish to download a copy of the code in order to run the code locally, this is also possible. To do this go to the [BudgetCalc repository on GitHub](https://github.com/asforrest/milestone-2-budgetcalc) click on 'Code' in the top right and select the method you want to use to download and run the code locally.
 
 ### Running The Code Online In Your Own Environment
 
@@ -272,7 +268,7 @@ The following is an overview of credits for the different people and sources use
 
 ### Content
 
-All sources used have been documented in the code through the use of comments, starting with an explination of what has been done and then denoting the source with a SRC= tag
+All sources used have been documented in the code through the use of comments, starting with an explanation of what has been done and then denoting the source with a SRC= tag
 
 ### Media
 
@@ -281,7 +277,7 @@ The photos used in this site were obtained from stockphotosecrets.com and we're 
 ### Acknowledgements
 
 I would like to thank:
-- My mentor Jonathan for his patentience, knowledge, experience and support.
+- My mentor Jonathan for his patience, knowledge, experience and support.
 - Kevin and Michael, mentors at Code Institute, who took the time to check my workspace, my project and lead me towards the answers I was looking for without giving me the answers.
 - My wife, Alba, for het patience and taking care of our newborn baby, Zoë, while finishing up this project.
 - Code Institute Student Care for checking in with me, keeping me motivated, and being understanding about the fact that becoming a new father meant that my priorities were split between my studies, work and childcare duties.
