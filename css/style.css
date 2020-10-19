@@ -102,6 +102,13 @@ h5 {
     margin-bottom: 30px;
 }
 
+.sidebar hr {
+    height:2px;
+    border-width:0;
+    color:white;
+    background-color:white;
+}
+
 /* ---------------------------------------------- Main Buttons */
 /* The following buttons has been adapted from the Code Institute Bootcamp module */
 
@@ -232,7 +239,7 @@ h5 {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.35);
 }
 
 /* ---------------------------------------------- Callout Jumbotron */

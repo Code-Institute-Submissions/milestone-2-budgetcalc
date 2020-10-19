@@ -57,21 +57,19 @@
 
 <div class="container-fluid">
 <div class="row">
-
-
     <div class="container-fluid sidebar col-4 sidebar-nav">
         <h4 id="table-of-contents">Table of Contents</h4>
+        <hr>
         <button class="button-sidenav" id="sideNavIntroduction"><strong>Introduction</strong></button>
         <button class="button-sidenav" id="sideNavCurrentAccounts" >Net Worth</button>
         <button class="button-sidenav" id="sideNavIncome">Income</button>
         <button class="button-sidenav" id="sideNavFixedCosts">Fixed Costs</button>
         <button class="button-sidenav" id="sideNavVariableCosts">Variable Costs</button>
         <button class="button-sidenav" id="sideNavBudgetOverview">Budget Overview</button>
-        <br>
+        <hr>
         <p class="small text-center">Store your data locally by clicking save, to reload data click load.</p>
         <button type="button" class="btn--blue-sidenav btn--rounded" id="save" data-toggle="modal" data-target="#modalSave">Save</button>
         <button type="button" class="btn--blue-sidenav btn--rounded" id="load" data-toggle="modal" data-target="#modalLoad">Load</button>
-
     </div>
 
 
@@ -633,6 +631,8 @@
             <div class="row page-explination">
                 <p>In this complete budget overview you can see an overview of the end totals of each page. If you want to go back and change any of your inputs please use either the previous and next buttons at the bottom of the page or alternatively you can use the sidebar navigation to jump straight to a particular page.</p>
             </div>
+    </div>
+    <div class="container-fluid budget-overview-container" id="net-worth-overview">
             <div class="row"><h4>Net Worth Overview</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Current Accounts</div>
@@ -646,7 +646,8 @@
                 <div class="col-md-6 col-sm-12">Total Net Worth</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netWorthValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
-
+    </div>
+    <div class="container-fluid current-debts-container" id="month-budget-overview">
             <div class="row"><h4>Month Budget Overview</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Income</div>
