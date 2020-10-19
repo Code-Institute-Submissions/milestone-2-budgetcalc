@@ -1,11 +1,50 @@
-# BudgetCalc
+# Interactive Front End Development: BudgetCalc
 
-This is the Milestone 2 proejct for the Code Insitute course: Full Stack Developement and will make use of technologies covered in the course up to this point inlcuding HTML, CSS, and JavaScript in order to demonstrate an understanding of these technologies and to solve a real-world problem.
+This is a web app created for the 2nd Milestone Project for [Code Insitute course: Full Stack Developement](https://codeinstitute.net/full-stack-software-development-diploma/).
 
-This web application is a Budget Calculator and based on a budget calculation spreadsheet created by the owner, Alexander Forrest. The goal of this project to to allow users to calculate their monthly budgets based on equity, income, fixed costs and variable costs as too aid in financial planning.
- 
-## UX
- 
+This web app will make use of technologies covered in the course up to this point inlcuding HTML, CSS, and JavaScript in order to demonstrate an understanding of these technologies.
+
+This web app aims to solve a real-world problem.
+
+## UX (User Experience)
+The creator of this web app, Alexander Forrest, currently uses a spreadsheet for budget calculations, however during his JavaScript course modules at [Code Institute](https://codeinstitute.net/) he came to understand the power of JavaScript and it's ability to create an interactive way to deal with budgeting.
+
+There are other solutions and apps currently on the market but they are either not robust enough or too complicated for Alexander's needs. After asking friends and family he realised that many other people are also dealing with the same issues and looking for a solution.
+
+Here is an overview of different types of potential users and what they may want to achieve with BudgetCalc:
+
+### User Stories
+- #### As a first time visitor:
+    1. I want to have a clear understanding about how to use BudgetCalc.
+    2. I want to intuitively be able to move around the site through clear path finding.
+    3. I want to be able to export information from the web app.
+
+- #### A a returning visitor:
+    1. I want to have the data from previous sessions available so I can add to or change elements to recalculate my budget.
+    2. I want to see new features introduced.
+    3. I want to be able to suggest improvements or report bugs.
+
+- #### As a potential employer looking for a software developer:
+    1. I would like to get a sense of Alexander's ability as a Interactive Front End Developer.
+    2. I want to see that Alexander understands the technologies he's working with.
+
+- #### As a fellow Code Institute student:
+    1. I want to see the work of my classmate to gain inspiration and ideas for my own projects.
+
+- #### As the site owner:
+    1. I want to create a web app that I can be proud off.
+    2. I want to minimalise or elimate bugs to provide a seemless experience to users.
+    3. I want to impress potential employers with my work.
+
+
+
+
+If Alexander was having trouble with these things a home-made repsonsive web app seemed like the best solution.
+
+
+has built out the basic structure for the milestone project but plans to continue developing the project as he comes up with new features
+
+
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
@@ -13,18 +52,68 @@ In particular, as part of this section we recommend that you provide a list of U
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-## Process / Methodolgy
 
-This project will be based on two main principals during development;
-1. [Form follows function](https://en.wikipedia.org/wiki/Form_follows_function#Software_engineering).
+
+The goal of this project to to allow users to calculate their net worth and monthly budgets. The net worth calculation will take into account current accounts and current debts. The monthly budgets will take into account income, fixed costs and variable costs as too aid in financial planning.
+ 
+
+
+
+
+## Methodolgy
+
+As a user of his own web app, BudgetCalc, Alexander will easily be able to put himself in the shoes of potential user and can use this benefit to develop useful features. He also has a background in video production which gives him a unique perspective when trying to look at a problem from multiple viewpoints as video production is often for an audience with a wide range of tastes.
+
+This methodology of this project will be based on three core principals during development;
+
+- #### That [Form follows function](https://en.wikipedia.org/wiki/Form_follows_function#Software_engineering).
+    1. The form of the web app should follow it's goals and core functionality.
+    2. Represent first and foremost the engineering requirements during construction.
+    3. If the architecture dictates how the software should work it's likely to suffer from inflexibitly and adaptation to change and new ideas during the developement process.
+
+- #### The principle of always delivering a [Potentially Shippable Product](https://less.works/less/framework/potentially-shippable-product-increment)
+    1. This means that the product is always working after a sprint (coding session), albiet in a basic form.
+    2. The product could potentially be submitted at any time.
+    3. Working elements in the project allow more room for evaluation.
+    4. Working elements also allow more room for evolution as new ideas are added.
+
+- #### Working with a [Product Backlog](https://en.wikipedia.org/wiki/Scrum_(software_development)#Product_backlog)
+    1. As software developement is an ongoing process a product backlog allows for the prioritisating of information.
+    2. A product backlog provides a roadmap for future development.
+    3. Iteams completeded on the product backlog will not be removed by moved to a done section as to see progress through the elements.
+
+## Process
+When taking the methodology into account the following process has been created:
+- #### Planning
+    1. Brainstorming about core elements to make the web app work.
+    2. Brainstorming about stretch goals and the future of the web app.
+    3. Contact with the Code Institute appointed mentor for guidance and real world experience when tackelling some of the different challenges.
+    4. Discussing the project with friends and family to get input.
+    5. Drawing out the structure on paper and creating wireframes to server as a guideline for repsonsive development.
+
+- #### Creating basic functionality
+    1. For this project it made sense to first start with some basic functionality, as BudgetCalc essentially is a complicated calculator with many moving parts, getting those parts to work together is essential before moving on to the final design.
+    2. Showing working calculations makes all following brainstorming sessions and mentor contact moments more effecient as the product is starting to develope funcationality.
+    3. Creates boundaries 
+
+
+
+Frist function.
+
+Then form.
+
+Then expanding on function.
 
 Therefore the main focus will be on HTML elements interacting with each other through JavaScript with basic formatting. The information architecture will use a basic structured layout through the utilisation of Bootstrap.
 
 Once the basic function of the web app has been achieved CSS will be implimented alongside HTML and JavaScript utilising good UX design practices to make the web enjoyable to use by users.
 
-1. The [SCRUM](https://www.scrum.org/) principle of always delivering a [Potentially Shippable Product](https://less.works/less/framework/potentially-shippable-product-increment) during the entire process and every each change.
 
 After each change the product should still work.
+
+
+
+During the coding proces app responsiveness is important - mobile development will take place alongside desktop development.
 
 ## Features
 
