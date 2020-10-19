@@ -3,12 +3,12 @@ This project has been [deployed to GitHub Pages](https://asforrest.github.io/mil
 
 This is a web app created for the 2nd Milestone Project for [Code Institute course: Full Stack Development](https://codeinstitute.net/full-stack-software-development-diploma/).
 
-This web app will make use of technologies covered in the course up to this point including HTML, CSS, and JavaScript in order to demonstrate an understanding of these technologies.
+This web app will make use of technologies covered in the course up to this point including HTML, CSS, and JavaScript (including JQuery and connecting with APIs) in order to demonstrate an understanding of these technologies.
 
-This web app aims to solve a real-world problem.
+This web app aims to solve a real-world problem by assisting users with their financial planning.
 
 ## UX (User Experience)
-The creator of this web app, Alexander Forrest, currently uses a spreadsheet for budget calculations, however during his JavaScript course modules at [Code Institute](https://codeinstitute.net/) he came to understand the power of JavaScript and it's ability to create an interactive way to deal with budgeting.
+This project was chosen because the creator of this web app, Alexander Forrest, currently uses a spreadsheet for budget calculations, however during the JavaScript course modules at [Code Institute](https://codeinstitute.net/) he came to understand the power of JavaScript and it's ability to create an interactive way to deal with budgeting.
 
 There are other solutions and apps currently on the market but they are either not robust enough or too complicated for Alexander's needs. After asking friends and family he realised that many other people are also dealing with the same issues and looking for a solution.
 
@@ -17,48 +17,45 @@ Here is an overview of different types of potential users and what they may want
 ### User Stories
 - #### As a first time visitor:
     1. I want to have a clear understanding about how to use BudgetCalc.
-    2. I want to intuitively be able to move around the site through clear path finding.
-    3. I want to be able to export information from the web app.
+    1. I want to understand how to move around the Web App intuitively through clear path finding.
+    1. I want to be able to easily enter my budgeting data.
+    1. I want to see a visual breakdown of my monthly expenses.
+    1. I want to be able to save the information I enter in a budgeting program.
+    1. I want to be able to send a copy of my budget to myself.
 
 - #### A a returning visitor:
     1. I want to have the data from previous sessions available so I can add to or change elements to recalculate my budget.
-    2. I want to see new features introduced.
-    3. I want to be able to suggest improvements or report bugs.
+    1. I want to see new features introduced.
+    1. I want to be able to provide feedback about the the web app.
 
 - #### As a potential employer looking for a software developer:
-    1. I would like to get a sense of Alexander's ability as a Interactive Front End Developer.
-    2. I want to see that Alexander understands the technologies he's working with.
+    1. I want to get a sense of Alexander's ability as a Interactive Front End Developer.
+    1. I want to see that Alexander understands the technologies he's working with.
 
 - #### As a fellow Code Institute student:
-    1. I want to see the work of my classmate to gain inspiration and ideas for my own projects.
+    1. I want to see the work of my classmates to be inspired for my own projects.
 
 - #### As the site owner:
     1. I want to create a web app that I can be proud off.
-    2. I want to minimalise or eliminate bugs to provide a seemless experience to users.
-    3. I want to impress potential employers with my work.
+    1. I want to minimalise or eliminate bugs to provide a seemless experience to users.
+    1. I want to demonstrate to the Code Insitute evaluator that I have an understanding of the technologies that I'm working with.
+    1. I want to impress potential employers with my work.
 
+### Wireframes
+![Wireframes Computer Tablet & Phone](images/readme-images/Wireframes-Computer-TabletPortrait-Phone.png "Wireframes Computer Tablet & Phone")
 
+### Hero Image/Callout
+It's important to have an attention grabber that directly explains to potential users what the Web App is and what they can expect from it. Selecting an image was also the basis for choosing a complimentary color pallete.
 
+![Money Growing Green](images/ISS_24174_00025-edit-h867-w1400.jpg "Money Growing Green")
 
-If Alexander was having trouble with these things a home-made repsonsive web app seemed like the best solution.
+### Colors
+The color pallete was choosen as complimentary to the hero image. Since green is often associated with money this seemed like the best starting point for choosing colors. It was important to have contrasting colors, so 1 main light color and one main dark color.
 
+After looking at multiple light and dark shades of green the following colors were selected:
 
-has built out the basic structure for the milestone project but plans to continue developing the project as he comes up with new features
-
-
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
-
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
-
-
-The goal of this project to to allow users to calculate their net worth and monthly budgets. The net worth calculation will take into account current accounts and current debts. The monthly budgets will take into account income, fixed costs and variable costs as too aid in financial planning.
- 
-
-
+![Dark Green 39826C](images/readme-images/darkgreen39826C.png "Dark Green 39826C")
+![Light Green E6EEEA](images/readme-images/lightgreenE6EEEA.png "Light Green E6EEEA")
 
 
 ## Methodolgy
