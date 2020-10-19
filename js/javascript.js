@@ -27,7 +27,7 @@ function totalAccountsValue() {
         Number($("input#accountBankValue").val()) + 
         Number($("input#accountSavingsValue").val()) +
         Number($("input#accountCashValue").val());
-    totalAccountsValue = (Math.round(totalAccountsValue * 100 / 100).toFixed(2));
+    totalAccountsValue = (totalAccountsValue).toFixed(2);
     $("input#totalAccountsValue").val(totalAccountsValue);
 }
 
@@ -60,7 +60,7 @@ function totalDebtsValue() {
         Number($("input#debtAmexValue").val()) + 
         Number($("input#debtMastercardValue").val()) + 
         Number($("input#debtVisaValue").val());
-    totalDebtsValue = (Math.round(totalDebtsValue * 100 / 100).toFixed(2));
+    totalDebtsValue = (totalDebtsValue).toFixed(2);
     $("input#totalDebtsValue").val(totalDebtsValue);
 }
 
@@ -97,7 +97,7 @@ function totalIncomeValue() {
         Number($("input#netSalary").val()) + 
         Number($("input#bonusSalary").val()) + 
         Number($("input#gigSalary").val());
-    totalIncomeValue =  (Math.round(totalIncomeValue * 100 / 100).toFixed(2));
+    totalIncomeValue =  (totalIncomeValue).toFixed(2);
     $("input#totalIncomeValue").val(totalIncomeValue);
 }
 
@@ -163,7 +163,7 @@ function totalHomeCostValue() {
         Number($("input#propertyTaxValue").val()) + 
         Number($("input#rentMortageValue").val()) + 
         Number($("input#homeServiceCostsValue").val()); 
-    totalHomeCostValue = (Math.round(totalHomeCostValue * 100 / 100).toFixed(2));
+    totalHomeCostValue = (totalHomeCostValue).toFixed(2);
     $("input#totalHomeCostValue").val(totalHomeCostValue);
 }
 
@@ -196,7 +196,7 @@ function totalTransportCostValue() {
         Number($("input#transportCarPaymentValue").val()) + 
         Number($("input#transportParkingPermitPermitValue").val()) + 
         Number($("input#transportPublicValue").val()); 
-    totalTransportCostValue = (Math.round(totalTransportCostValue * 100 / 100).toFixed(2));
+    totalTransportCostValue = (totalTransportCostValue).toFixed(2);
     $("input#totalTransportCostValue").val(totalTransportCostValue);
 }
 
@@ -245,7 +245,7 @@ function totalInsuranceCostValue() {
         Number($("input#insuranceLiabilityValue").val()) + 
         Number($("input#insuranceLifeValue").val()) + 
         Number($("input#insuranceLegalValue").val()); 
-    totalInsuranceCostValue = (Math.round(totalInsuranceCostValue * 100 / 100).toFixed(2));
+    totalInsuranceCostValue = (totalInsuranceCostValue).toFixed(2);
     $("input#totalInsuranceCostValue").val(totalInsuranceCostValue);
 }
 
@@ -294,7 +294,7 @@ function totalSubscriptionCostValue() {
         Number($("input#subscriptionsLotteryValue").val()) + 
         Number($("input#subscriptionsNewsValue").val()) + 
         Number($("input#subscriptionsStreamingValue").val()); 
-    totalSubscriptionCostValue = (Math.round(totalSubscriptionCostValue * 100 / 100).toFixed(2));
+    totalSubscriptionCostValue = (totalSubscriptionCostValue).toFixed(2);
     $("input#totalSubscriptionCostValue").val(totalSubscriptionCostValue);
 }
 
@@ -327,7 +327,7 @@ function totalCreditcardCostValue() {
         Number($("input#amexValue").val()) + 
         Number($("input#mastercardValue").val()) + 
         Number($("input#visaValue").val()); 
-    totalCreditcardCostValue = (Math.round(totalCreditcardCostValue * 100 / 100).toFixed(2));
+    totalCreditcardCostValue = (totalCreditcardCostValue).toFixed(2);
     $("input#totalCreditcardCostValue").val(totalCreditcardCostValue);
 }
 
@@ -338,7 +338,7 @@ function totalCurrentAccountsValue() {
     var totalCurrentAccountsValue = 
         Number($("input#totalAccountsValue").val());
 
-    totalCurrentAccountsValue = (Math.round(totalCurrentAccountsValue * 100 / 100).toFixed(2));
+    totalCurrentAccountsValue = (totalCurrentAccountsValue).toFixed(2);
     $("input#totalCurrentAccountsValue").val(totalCurrentAccountsValue);
 }
 
@@ -349,7 +349,7 @@ function totalCurrentDebtsValue() {
     var totalCurrentDebtsValue = 
         Number($("input#totalDebtsValue").val());
 
-    totalCurrentDebtsValue = (Math.round(totalCurrentDebtsValue * 100 / 100).toFixed(2));
+    totalCurrentDebtsValue = (totalCurrentDebtsValue).toFixed(2);
     $("input#totalCurrentDebtsValue").val(totalCurrentDebtsValue);
 }
 
@@ -360,7 +360,7 @@ function netWorthValue() {
         Number($("input#totalCurrentAccountsValue").val()) -
         Number($("input#totalCurrentDebtsValue").val());
 
-    netWorthValue = (Math.round(netWorthValue * 100 / 100).toFixed(2));
+    netWorthValue = (netWorthValue).toFixed(2);
     $("input#netWorthValue").val(netWorthValue);
 }
 
@@ -373,7 +373,7 @@ function totalMonthlyIncomeValue() {
     var totalMonthlyIncomeValue = 
         Number($("input#totalIncomeValue").val());
 
-    totalMonthlyIncomeValue = (Math.round(totalMonthlyIncomeValue * 100 / 100).toFixed(2));
+    totalMonthlyIncomeValue = (totalMonthlyIncomeValue).toFixed(2);
     $("input#totalMonthlyIncomeValue").val(totalMonthlyIncomeValue);
     $("input#totalIncomeValue-BudgetOverview").val(totalMonthlyIncomeValue);
 }
@@ -391,7 +391,7 @@ function totalFixedCostsValue() {
         Number($("input#transportParkingPermitPermitValue").val()) + 
         Number($("input#transportPublicValue").val());
 
-    totalFixedCostsValue = (Math.round(totalFixedCostsValue * 100 / 100).toFixed(2));
+    totalFixedCostsValue = (totalFixedCostsValue).toFixed(2);
     $("input#totalFixedCostsValue").val(totalFixedCostsValue);
     $("input#totalFixedCostsValue-BudgetOverview").val(totalFixedCostsValue);
 }
@@ -403,7 +403,7 @@ function netFixedincomeValue() {
         Number($("input#totalMonthlyIncomeValue").val()) -
         Number($("input#totalFixedCostsValue").val());
 
-    netFixedincomeValue = (Math.round(netFixedincomeValue * 100 / 100).toFixed(2));
+    netFixedincomeValue = (netFixedincomeValue).toFixed(2);
     $("input#netFixedIncomeValue").val(netFixedincomeValue);
     $("span#netMonthlyIncomeForVariablePage").val(netFixedincomeValue);
 }
@@ -491,7 +491,7 @@ function totalSupermarketCostValue() {
         Number($("input#supermarketPlusValue").val()) +
         Number($("input#supermarketCornerStoreValue").val()) +
         Number($("input#supermarketLiquorStoreValue").val());
-    totalSupermarketCostValue = (Math.round(totalSupermarketCostValue * 100 / 100).toFixed(2));
+    totalSupermarketCostValue = (totalSupermarketCostValue).toFixed(2);
     $("input#totalSupermarketCostValue").val(totalSupermarketCostValue);
 }
 
@@ -513,7 +513,7 @@ function totalConsumablesCostValue() {
     var totalConsumablesCostValue = 
         Number($("input#consumablesFlowersValue").val()) +
         Number($("input#consumablesPersonalHygieneValue").val());
-    totalConsumablesCostValue = (Math.round(totalConsumablesCostValue * 100 / 100).toFixed(2));
+    totalConsumablesCostValue = (totalConsumablesCostValue).toFixed(2);
     $("input#totalConsumablesCostValue").val(totalConsumablesCostValue);
 }
 
@@ -558,7 +558,7 @@ function totalSocialisingFunCostValue() {
         Number($("input#socialisingNightClubsValue").val()) +
         Number($("input#socialisingRestaurantsValue").val()) +
         Number($("input#socialisingOtherValue").val());
-    totalSocialisingFunCostValue = (Math.round(totalSocialisingFunCostValue * 100 / 100).toFixed(2));
+    totalSocialisingFunCostValue = (totalSocialisingFunCostValue).toFixed(2);
     $("input#totalSocialisingFunCostValue").val(totalSocialisingFunCostValue);
 }
 
@@ -610,7 +610,7 @@ function totalStuffCostValue() {
         Number($("input#stuffToysValue").val()) +
         Number($("input#stuffVideoGamesValue").val()) +
         Number($("input#stuffOtherValue").val());
-    totalStuffCostValue = (Math.round(totalStuffCostValue * 100 / 100).toFixed(2));
+    totalStuffCostValue = (totalStuffCostValue).toFixed(2);
     $("input#totalStuffCostValue").val(totalStuffCostValue);
 }
 
@@ -625,7 +625,7 @@ function totalVariableCostsValue() {
         Number($("input#totalSocialisingFunCostValue").val()) + 
         Number($("input#totalStuffCostValue").val());
 
-    totalVariableCostsValue = (Math.round(totalVariableCostsValue * 100 / 100).toFixed(2));
+    totalVariableCostsValue = (totalVariableCostsValue).toFixed(2);
     $("input#totalVariableCostsValue").val(totalVariableCostsValue);
     $("input#totalVariableCostsValue-BudgetOverview").val(totalVariableCostsValue);
 }
@@ -638,7 +638,7 @@ function totalSavingsValue() {
         Number($("input#totalFixedCostsValue").val()) -
         Number($("input#totalVariableCostsValue").val());
 
-    totalSavingsValue = (Math.round(totalSavingsValue * 100 / 100).toFixed(2));
+    totalSavingsValue = (totalSavingsValue).toFixed(2);
     $("input#totalSavingsValue").val(totalSavingsValue);
     $("input#totalSavingsValue-BudgetOverview").val(totalSavingsValue);
 }

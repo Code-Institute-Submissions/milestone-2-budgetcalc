@@ -34,6 +34,8 @@
 ## BACKLOG (Highest priority is on top)
 - [ ] Ask questions to user to decide what should be shown or not
 
+- [ ] Save data with time stamp in data, when loading data give the time stamp of the data that has been loaded.
+
 - [ ] Use recommended percentages for each section
 
 - [ ] Auto hide sections

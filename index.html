@@ -80,18 +80,37 @@
     <button class="button-sidenav" id="sideNavBudgetOverview">Budget Overview</button>
     <p class="small text-center">Locally store filled in data by clicking save, to reload click load</p>
     <button type="button" class="btn--blue-sidenav btn--rounded" id="save" data-toggle="modal" data-target="#modalSave">Save</button>
-    <button type="button" class="btn--blue-sidenav btn--rounded" id="load">Load</button>
+    <button type="button" class="btn--blue-sidenav btn--rounded" id="load" data-toggle="modal" data-target="#modalLoad">Load</button>
 </div>
 
 
-<!------------------------------ MODAL  -->
+<!------------------------------ MODAL SAVE -->
     <div id="modalSave" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-body">
-                <h4 class="text-center">The filled in data has been saved!</h4>
+                <h4 class="text-center">Your data has been saved</h4>
                 <p class="text-center" >The data has been saved on <span id="date"></span></p>
-                    <div class="form-row text-center">
+                    <div class="text-center">
+                        <div class="col">
+                            <button type="button" class="button btn--green btn--standard" data-dismiss="modal">Continue</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+<!------------------------------ MODAL LOAD  -->
+    <div id="modalLoad" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4 class="text-center">Your data has been loaded</h4>
+                    <p class="text-center" >The data you saved during your previous session has been loaded and automatically filled in.</p>
+                    <div class="text-center">
                         <div class="col">
                             <button type="button" class="button btn--green btn--standard" data-dismiss="modal">Continue</button>
                         </div>
