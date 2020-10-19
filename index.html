@@ -175,7 +175,7 @@
             <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="accountCashValue" placeholder="0" step="0.01"></div>
         </div>
         <div class="row input-item totalCurrentAccounts">
-            <div class="col-md-6 col-sm-12">TOTAL CURRENT ACCOUNTS</div>
+            <div class="col-md-6 col-sm-12 total-emphasis">TOTAL CURRENT ACCOUNTS</div>
             <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalAccountsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
         </div>
     </div>
@@ -200,7 +200,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="debtVisaValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item totalCurrentAccounts">
-                <div class="col-md-6 col-sm-12">TOTAL CURRENT DEBTS</div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL CURRENT DEBTS</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalDebtsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -218,7 +218,7 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalCurrentDebtsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
                 <div class="row input-item">
-                    <div class="col-md-6 col-sm-12 net-amount" id="net-worth">Net Worth Current</div>
+                    <div class="col-md-6 col-sm-12 total-emphasis" id="net-worth">NET WORTH CURRENT</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netWorthValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
 <!-- PLOTLY PIE CHART - Debts -->
@@ -273,7 +273,7 @@
             <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="gigSalary" placeholder="0" step="0.01"></div>
         </div>
         <div class="row input-item">
-            <div class="col-md-6 col-sm-12">TOTAL INCOME </div>
+            <div class="col-md-6 col-sm-12 total-emphasis">TOTAL INCOME </div>
             <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
         </div>
 
@@ -339,7 +339,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="homeServiceCostsValue" placeholder="0" step="0.01"></div>
             </div> 
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL HOME COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL HOME COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalHomeCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -361,7 +361,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="transportPublicValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL TRANSPORT COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL TRANSPORT COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalTransportCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -390,7 +390,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="insuranceLegalValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL INSURANCE COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL INSURANCE COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalInsuranceCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -419,7 +419,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="subscriptionsStreamingValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL SUBSCRIPTION COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL SUBSCRIPTION COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSubscriptionCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -439,7 +439,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="visaValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL CREDITCARD COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL CREDITCARD COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalCreditcardCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -448,15 +448,15 @@
     <div class="container-fluid container-fluid-main current-debts-container" id="fixed-income-overview">
         <div class="row"><h4>Fixed Income Overview</h4></div>
                 <div class="row input-item">
-                    <div class="col-md-6 col-sm-12" id="total-fixed-income">Total Fixed Income (Monthly)</div>
+                    <div class="col-md-6 col-sm-12" id="total-fixed-income">Total Fixed Income</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalMonthlyIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
                 <div class="row input-item">
-                    <div class="col-md-6 col-sm-12" id="total-fixed-costs">Total Fixed Costs (Monthly)</div>
+                    <div class="col-md-6 col-sm-12" id="total-fixed-costs">Total Fixed Costs</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalFixedCostsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
                 <div class="row input-item">
-                    <div class="col-md-6 col-sm-12 net-amount" id="net-fixed-income">Net Fixed Income (Monthly)</div>
+                    <div class="col-md-6 col-sm-12 total-emphasis" id="net-fixed-income">NET FIXED INCOME</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netFixedIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
     </div>
@@ -537,7 +537,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="supermarketLiquorStoreValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL SUPERMARKET COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL SUPERMARKET COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSupermarketCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -554,7 +554,7 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="consumablesPersonalHygieneValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL CONSUMABLES COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL CONSUMABLES COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalConsumablesCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -582,7 +582,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="socialisingOtherValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL SOCIALISING / FUN COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL SOCIALISING / FUN COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSocialisingFunCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -614,7 +614,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="stuffOtherValue" placeholder="0" step="0.01"></div>
             </div>
             <div class="row input-item">
-                <div class="col-md-6 col-sm-12">TOTAL STUFF COSTS </div>
+                <div class="col-md-6 col-sm-12 total-emphasis">TOTAL STUFF COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalStuffCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
@@ -627,7 +627,7 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalVariableCostsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
                 <div class="row input-item">
-                    <div class="col-md-6 col-sm-12 net-amount" id="net-budget-monthly">Savings</div>
+                    <div class="col-md-6 col-sm-12 total-emphasis" id="net-budget-monthly">SAVINGS</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSavingsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
     </div>
@@ -701,12 +701,12 @@
     </div>
 
 <br>
-
-
-
-
-
-
+    <div class="container-fluid container-fluid-main budget-overview-container">
+        <div class="row"><h4>Send Yourself a Report</h4></div>
+            <div class="row page-explination">
+                <p>Now that you've completed filling in all your information you can send yourself a report by email. If you would like to locally save the data you filled in for next time you visit BudgetCalc you can use the Save button on the left..</p>
+            </div>
+    </div>
 <br>
 
 <!-- The following boostrap modal was adapted from the lesson at W3Schools. SRC: https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
