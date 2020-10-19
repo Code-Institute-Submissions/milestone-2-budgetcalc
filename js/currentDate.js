@@ -3,13 +3,13 @@
 2. an answer on github by useres "Sirko" and "Bambam" SRC: https://stackoverflow.com/questions/8935414/getminutes-0-9-how-to-display-two-digit-numbers
 3. https://tecadmin.net/get-current-date-time-javascript/ */
 
-curretDateTime =  new Date();
-day = curretDateTime.getDate();
-month = curretDateTime.getMonth() + 1;
-year = curretDateTime.getFullYear();
-hour = ("0"+curretDateTime.getHours()).slice(-2);
-minutes = ("0"+curretDateTime.getMinutes()).slice(-2);
-seconds = ("0"+curretDateTime.getSeconds()).slice(-2);
+var curretDateTime =  new Date();
+var day = curretDateTime.getDate();
+var month = curretDateTime.getMonth() + 1;
+var year = curretDateTime.getFullYear();
+var hour = ("0"+curretDateTime.getHours()).slice(-2);
+var minutes = ("0"+curretDateTime.getMinutes()).slice(-2);
+var seconds = ("0"+curretDateTime.getSeconds()).slice(-2);
 
 document.getElementById("date").innerHTML = 
 "<strong>" + day + "/" + month + "/" + year + "</strong>" + " at " + "<strong>" + hour + ":" + minutes + ":" + seconds + "</strong>";

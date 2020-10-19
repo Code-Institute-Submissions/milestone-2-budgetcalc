@@ -20,25 +20,22 @@ var layoutAccounts = {
   },
 };
 
-var configAccounts = {responsive: true}
+var configAccounts = {responsive: true};
 
 /*INCOME PIE CHART DATA*/
 function accountsPieChart() {
     var accountBankValuePER =
         Number($("input#accountBankValue").val()) / 
-        Number($("input#totalAccountsValue").val()) 
-        * 100;
+        Number($("input#totalAccountsValue").val()) * 100;
     var accountSavingsValuePER =
         Number($("input#accountSavingsValue").val()) / 
-        Number($("input#totalAccountsValue").val()) 
-        * 100;
+        Number($("input#totalAccountsValue").val())  * 100;
     var accountCashValuePER =
         Number($("input#accountCashValue").val()) / 
-        Number($("input#totalAccountsValue").val()) 
-        * 100;
+        Number($("input#totalAccountsValue").val())  * 100;
     dataAccounts[0].values[0] = accountBankValuePER;
-    dataAccounts[0].values[1] = accountSavingsValuePER
-    dataAccounts[0].values[2] = accountCashValuePER
+    dataAccounts[0].values[1] = accountSavingsValuePER;
+    dataAccounts[0].values[2] = accountCashValuePER;
     Plotly.newPlot("accountsPieChart", dataAccounts, layoutAccounts, configAccounts );
 }
 
@@ -66,30 +63,24 @@ var layoutDebts = {
   },
 };
 
-var configDebts = {responsive: true}
+var configDebts = {responsive: true};
 
 /*INCOME PIE CHART DATA*/
 function debtsPieChart() {
     var debtLoanValuePER =
         Number($("input#debtLoanValue").val()) / 
-        Number($("input#totalDebtsValue").val()) 
-        * 100;
+        Number($("input#totalDebtsValue").val()) * 100;
     var debtAmexValuePER =
         Number($("input#debtAmexValue").val()) / 
-        Number($("input#totalDebtsValue").val()) 
-        * 100;
-    var debtMastercardValuePER =
-        Number($("input#debtMastercardValue").val()) / 
-        Number($("input#totalDebtsValue").val()) 
-        * 100;
-    var debtVisaValuePER =
-        Number($("input#debtVisaValue").val()) / 
-        Number($("input#totalDebtsValue").val()) 
-        * 100;
+        Number($("input#totalDebtsValue").val()) * 100;
+    var debtMastercardValuePER = Number($("input#debtMastercardValue").val()) / 
+        Number($("input#totalDebtsValue").val()) * 100;
+    var debtVisaValuePER = Number($("input#debtVisaValue").val()) / 
+        Number($("input#totalDebtsValue").val()) * 100;
     dataDebts[0].values[0] = debtLoanValuePER;
-    dataDebts[0].values[1] = debtAmexValuePER
-    dataDebts[0].values[2] = debtMastercardValuePER
-    dataDebts[0].values[3] = debtVisaValuePER
+    dataDebts[0].values[1] = debtAmexValuePER;
+    dataDebts[0].values[2] = debtMastercardValuePER;
+    dataDebts[0].values[3] = debtVisaValuePER;
     Plotly.newPlot("debtsPieChart", dataDebts, layoutDebts, configDebts );
 }
 
@@ -117,25 +108,22 @@ var layoutIncome = {
   },
 };
 
-var configIncome = {responsive: true}
+var configIncome = {responsive: true};
 
 /*INCOME PIE CHART DATA*/
 function incomePieChart() {
     var netSalaryPER =
         Number($("input#netSalary").val()) / 
-        Number($("input#totalIncomeValue").val()) 
-        * 100;
+        Number($("input#totalIncomeValue").val()) * 100;
     var bonusSalaryPER =
         Number($("input#bonusSalary").val()) / 
-        Number($("input#totalIncomeValue").val()) 
-        * 100;
+        Number($("input#totalIncomeValue").val()) * 100;
     var gigSalaryPER =
         Number($("input#gigSalary").val()) / 
-        Number($("input#totalIncomeValue").val()) 
-        * 100;
+        Number($("input#totalIncomeValue").val()) * 100;
     dataIncome[0].values[0] = netSalaryPER;
-    dataIncome[0].values[1] = bonusSalaryPER
-    dataIncome[0].values[2] = gigSalaryPER
+    dataIncome[0].values[1] = bonusSalaryPER;
+    dataIncome[0].values[2] = gigSalaryPER;
     Plotly.newPlot("incomePieChart", dataIncome, layoutIncome, configIncome );
 }
 
@@ -165,31 +153,26 @@ var layoutFixed = {
 };
 
 
-var configFixed = {responsive: true}
+var configFixed = {responsive: true};
 
 /*FIXED COSTS PIE CHART DATA*/
 
 function fixedCostsPieChart() {
     var totalHomeCostValuePER =
         Number($("input#totalHomeCostValue").val()) / 
-        Number($("input#totalFixedCostsValue").val()) 
-        * 100;
+        Number($("input#totalFixedCostsValue").val()) * 100;
     var totalTransportCostValuePER =
         Number($("input#totalTransportCostValue").val()) / 
-        Number($("input#totalFixedCostsValue").val()) 
-        * 100;
+        Number($("input#totalFixedCostsValue").val()) * 100;
     var totalInsuranceCostValuePER =
         Number($("input#totalInsuranceCostValue").val()) / 
-        Number($("input#totalFixedCostsValue").val()) 
-        * 100;
+        Number($("input#totalFixedCostsValue").val()) * 100;
     var totalSubscriptionCostValuePER =
         Number($("input#totalSubscriptionCostValue").val()) / 
-        Number($("input#totalFixedCostsValue").val()) 
-        * 100;
+        Number($("input#totalFixedCostsValue").val()) * 100;
     var totalCreditcardCostValuePER =
         Number($("input#totalCreditcardCostValue").val()) / 
-        Number($("input#totalFixedCostsValue").val()) 
-        * 100;
+        Number($("input#totalFixedCostsValue").val()) * 100;
     dataFixed[0].values[0] = totalHomeCostValuePER;
     dataFixed[0].values[1] = totalTransportCostValuePER;
     dataFixed[0].values[2] = totalInsuranceCostValuePER;
@@ -224,27 +207,23 @@ var layoutVariable = {
 };
 
 
-var configVariable = {responsive: true}
+var configVariable = {responsive: true};
 
 /*VARIABLE COSTS PIE CHART DATA*/
 
 function variableCostsPieChart() {
     var totalSupermarketCostValuePER =
         Number($("input#totalSupermarketCostValue").val()) / 
-        Number($("input#totalVariableCostsValue").val()) 
-        * 100;
+        Number($("input#totalVariableCostsValue").val()) * 100;
     var totalConsumablesCostValuePER =
         Number($("input#totalConsumablesCostValue").val()) / 
-        Number($("input#totalVariableCostsValue").val()) 
-        * 100;
+        Number($("input#totalVariableCostsValue").val()) * 100;
     var totalSocialisingFunCostValuePER =
         Number($("input#totalSocialisingFunCostValue").val()) / 
-        Number($("input#totalVariableCostsValue").val()) 
-        * 100;
+        Number($("input#totalVariableCostsValue").val()) * 100;
     var totalStuffCostValuePER =
         Number($("input#totalStuffCostValue").val()) / 
-        Number($("input#totalVariableCostsValue").val()) 
-        * 100;
+        Number($("input#totalVariableCostsValue").val()) * 100;
     dataVariable[0].values[0] = totalSupermarketCostValuePER;
     dataVariable[0].values[1] = totalConsumablesCostValuePER;
     dataVariable[0].values[2] = totalSocialisingFunCostValuePER;

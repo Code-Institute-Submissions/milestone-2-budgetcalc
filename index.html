@@ -11,10 +11,9 @@
 <!-- Internal stylesheet used to override bootstrap components -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 <!-- Email JS scripts -->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function(){
         emailjs.init("user_2JT9fHtbQGmYTwhSkdEwA");
     })();
@@ -23,7 +22,7 @@
 
 </head>
 <body>
-<!------------------------------ NAVBAR -->
+<!-- NAVBAR -->
 <!-- The following Navbar has been adapted from the Code Institute Bootcamp module. -->
     <nav class="navbar navbar-dark navbar-expand-sm">
             <a href="/" class="navbar-brand">BudgetCalc</a>
@@ -34,12 +33,12 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/report-bug.html">Report Bug / Request Feature</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="report-bug.html">Report Bug / Request Feature</a></li>
                 </ul>
             </div>
     </nav>
 
-<!------------------------------ HERO IMAGE -->
+<!-- HERO IMAGE -->
 <div class="container-fluid callout-container">
     <div class="opaque-overlay">&nbsp;</div>
     <div class="row">
@@ -47,13 +46,13 @@
             <section class="callout jumbotron text-center">
                 <h1 class="jumbotron-header">Ready to get control over your finances?</h1> 
                 <p class="lead">Use BudgetCalc to get a clear overview of your spending.</p>
-                <a href="#table-of-contents" type="button" class="btn btn-lg btn--hero btn--green" role="button" aria-pressed="true">Start Now!</a>
+                <a href="#table-of-contents"><button type="button" class="btn btn-lg btn--hero btn--green" aria-pressed="true">Start Now!</button></a>
             </section>
         </div>
     </div>
 </div>
 
-<!------------------------------ STICKY SIDEBAR -->
+<!-- STICKY SIDEBAR -->
 
 <div class="container-fluid">
     <div class="row">
@@ -73,7 +72,7 @@
         </div>
 
 
-<!------------------------------ MODAL SAVE -->
+<!-- MODAL SAVE -->
     <div id="modalSave" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -92,7 +91,7 @@
     </div>
 
 
-<!------------------------------ MODAL LOAD  -->
+<!-- MODAL LOAD  -->
     <div id="modalLoad" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -114,7 +113,7 @@
 
 <div class="col-8 padding-mobile">
 
-<!------------------------------ PAGE 0: INTRODUCTION -->
+<!-- PAGE 0: INTRODUCTION -->
 <div class="introduction">
     <div class="container-fluid container-fluid-main introduction-container" id="introduction">
         <div class="row"><h3 class="text-center ">Welcome to BudgetCalc</h3></div>
@@ -146,7 +145,7 @@
 </div>
 
 
-<!------------------------------ PAGE 1: NET WORTH OVERVIEW & CALCULATION -->
+<!-- PAGE 1: NET WORTH OVERVIEW & CALCULATION -->
 <div id="currentAccounts" class="hidden-navigation">
     <div class="container-fluid container-fluid-main current-accounts-container" id="current-accounts">
         <div class="row "><h3>Net Worth Overview</h3></div>
@@ -159,7 +158,7 @@
     </div>
 
 
-<!------------------------------ CURRENT ACCOUNTS CALCULATION -->
+<!-- CURRENT ACCOUNTS CALCULATION -->
     <div class="container-fluid container-fluid-main current-debts-container" id="current-debts">
         <div class="row"><h4>Current Accounts</h4></div>
         <div class="row input-item">
@@ -180,7 +179,7 @@
         </div>
     </div>
     
-<!------------------------------ CURRENT DEBT CALCULATION -->
+<!-- CURRENT DEBT CALCULATION -->
     <div class="container-fluid container-fluid-main current-debts-container" id="current-debts-calculation">
         <div class="row"><h4>Current Debts</h4></div>
             <div class="row input-item">
@@ -205,7 +204,7 @@
             </div>
     </div>
 
-<!------------------------------ CURRENT ACCOUNTS OVERVIEW -->
+<!-- CURRENT ACCOUNTS OVERVIEW -->
     <div class="container-fluid container-fluid-main fixed-budget-container" id="current-accounts-overview">
         <div class="row"><h4>Net Worth Overview</h4
         ></div>
@@ -221,20 +220,20 @@
                     <div class="col-md-6 col-sm-12 net-amount" id="net-worth">Net Worth Current</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netWorthValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
-<!------------------------------ PLOTLY PIE CHART - Debts -->
+<!-- PLOTLY PIE CHART - Debts -->
         <div class="col-12">
             <div class="plotly-formatting" id="accountsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
         </div>
 
 
-<!------------------------------ PLOTLY PIE CHART - Accounts -->
+<!-- PLOTLY PIE CHART - Accounts -->
         <div class="col-12">
             <div class="plotly-formatting" id="debtsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
         </div>
     </div>
 
 
-<!------------------------------ NAVIGATION PAGE 1 CURRENT ACCOUNTS -->
+<!-- NAVIGATION PAGE 1 CURRENT ACCOUNTS -->
     <div class="row on-page-navigation">
         <div class="col-6">
             <button type="button" class="btn--green btn--standard float-left" id="previous-introduction">Previous</button>
@@ -244,7 +243,7 @@
         </div>
     </div>
 </div>
-<!------------------------------ PAGE 2: MONTHLY INCOME CALCULATION -->
+<!-- PAGE 2: MONTHLY INCOME CALCULATION -->
 <div id="monthlyIncome" class="hidden-navigation">
     <div class="container-fluid container-fluid-main current-income-container" id="current-income">
         <div class="row "><h3>Income Overview</h3></div>
@@ -256,7 +255,7 @@
     </div>
 
 
-<!------------------------------ CURRENT INCOME CALCULATION -->
+<!-- CURRENT INCOME CALCULATION -->
     <div class="container-fluid container-fluid-main current-debts-container" id="income-debt">
         <div class="row"><h4> Income (Monthly)</h4>
         </div>
@@ -277,7 +276,7 @@
             <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalIncomeValue" readonly="readOnly" placeholder="0" step="0.01"></div>
         </div>
 
-<!------------------------------ PLOTLY PIE CHART - INCOME -->
+<!-- PLOTLY PIE CHART - INCOME -->
         <div class="col-12">
             <div class="plotly-formatting" id="incomePieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
         </div>
@@ -285,7 +284,7 @@
 
 
     
-<!------------------------------ NAVIGATION PAGE 2 INCOME -->
+<!-- NAVIGATION PAGE 2 INCOME -->
     <div class="row on-page-navigation">
         <div class="col-6">
             <button type="button" class="btn--green btn--standard float-left" id="previous-currentAccounts">Previous</button>
@@ -296,7 +295,7 @@
     </div>
 </div>
 
-<!------------------------------ PAGE 3: FIXED COSTS CALCULATION -->
+<!-- PAGE 3: FIXED COSTS CALCULATION -->
 
 <div id="fixedCosts" class="hidden-navigation">
     <div class="container-fluid container-fluid-main current-fixed-costs-container" id="current-fixed-costs">
@@ -307,7 +306,7 @@
             <p>At the bottom of the page a pie chart will be generated so you can visualise your fixed spending.</p>
         </div>
     </div>
-<!------------------------------ FIXED COSTS CALCULATION --- HOME-->
+<!-- FIXED COSTS CALCULATION - HOME-->
     <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-home">
         <div class="row"><h4>Home</h4></div>
             <div class="row input-item">
@@ -345,7 +344,7 @@
     </div>
             
 
-<!------------------------------ FIXED COSTS CALCULATION --- TRANSPORT -->
+<!-- FIXED COSTS CALCULATION - TRANSPORT -->
     <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-transport">
         <div class="row"><h4>Transport</h4></div>
             <div class="row input-item">
@@ -366,7 +365,7 @@
             </div>
     </div>
 
-<!------------------------------ FIXED COSTS CALCULATION --- INSURANCE -->
+<!-- FIXED COSTS CALCULATION - INSURANCE -->
     <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-insurance">
          <div class="row"><h4>Insurance</h4></div>
             <div class="row input-item">
@@ -395,7 +394,7 @@
             </div>
     </div>
 
-<!------------------------------ FIXED COSTS CALCULATION --- SUBSCRIPTIONS -->
+<!-- FIXED COSTS CALCULATION - SUBSCRIPTIONS -->
     <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-subscriptions">
         <div class="row"><h4>Subscriptions</h4></div>
             <div class="row input-item">
@@ -423,7 +422,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSubscriptionCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
-<!------------------------------ FIXED COSTS CALCULATION --- CREDITCARDS -->
+<!-- FIXED COSTS CALCULATION - CREDITCARDS -->
     <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-credit-card-payments">
             <div class="row"><h4>Credit Card Payment</h4></div>
             <div class="row input-item">
@@ -444,7 +443,7 @@
             </div>
     </div>
 
-<!------------------------------ TOTAL FIXED COSTS CALCULATION -->
+<!-- TOTAL FIXED COSTS CALCULATION -->
     <div class="container-fluid container-fluid-main current-debts-container" id="fixed-income-overview">
         <div class="row"><h4>Fixed Income Overview</h4></div>
                 <div class="row input-item">
@@ -461,12 +460,12 @@
                 </div>
     </div>
 
-<!------------------------------ PLOTLY PIE CHART - FIXED COSTS -->
+<!-- PLOTLY PIE CHART - FIXED COSTS -->
     <div class="col-12">
         <div class="plotly-formatting" id="fixedCostsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
     </div>
 
-<!------------------------------ NAVIGATION PAGE 3 FIXED COSTS -->
+<!-- NAVIGATION PAGE 3 FIXED COSTS -->
     <div class="row on-page-navigation">
         <div class="col-6">
             <button type="button" class="btn--green btn--standard float-left" id="previous-monthlyIncome">Previous</button>
@@ -478,7 +477,7 @@
 </div>
 
 
-<!------------------------------ PAGE 4: VARIABLE COSTS CALCULATION -->
+<!-- PAGE 4: VARIABLE COSTS CALCULATION -->
 
 <div id="variableCosts" class="hidden-navigation">
     <div class="container-fluid container-fluid-main current-variable-costs-container" id="current-variable-costs">
@@ -489,7 +488,7 @@
             <p>At the bottom of the page a pie chart will be generated so you can visualise your variable spending.</p>
         </div>
     </div>
-<!------------------------------ VARIABLE COSTS CALCULATION --- FOOD AND DRINK-->
+<!-- VARIABLE COSTS CALCULATION - FOOD AND DRINK-->
     <div class="container-fluid container-fluid-main current-debts-container" id="food-drink-costs">
         <div class="row"><h4>Food and Drink</h4></div>
             <div class="row input-item">
@@ -542,7 +541,7 @@
             </div>
     </div>
 
-<!------------------------------ VARIABLE COSTS CALCULATION --- CONSUMABLES-->
+<!-- VARIABLE COSTS CALCULATION - CONSUMABLES-->
     <div class="container-fluid container-fluid-main current-debts-container" id="consumables-costs">
         <div class="row"><h4>Consumables</h4></div>
             <div class="row input-item">
@@ -558,7 +557,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalConsumablesCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
-<!------------------------------ VARIABLE COSTS CALCULATION --- SOCIALISING / FUN-->
+<!-- VARIABLE COSTS CALCULATION - SOCIALISING / FUN-->
     <div class="container-fluid container-fluid-main current-debts-container" id="socialising-costs">
         <div class="row"><h4>Socialising / Fun</h4></div>
             <div class="row input-item">
@@ -586,7 +585,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSocialisingFunCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
-<!------------------------------ VARIABLE COSTS CALCULATION --- STUFF -->
+<!-- VARIABLE COSTS CALCULATION - STUFF -->
     <div class="container-fluid container-fluid-main current-debts-container" id="stuff-costs">
         <div class="row"><h4>Stuff</h4></div>
             <div class="row input-item">
@@ -619,7 +618,7 @@
             </div>
     </div>
                 
-<!------------------------------ TOTAL VARIABLE COSTS OVERVIEW -->
+<!-- TOTAL VARIABLE COSTS OVERVIEW -->
     <div class="container-fluid container-fluid-main current-debts-container" id="total-variable-costs">
         <div class="row"><h4>Total Variable Costs Overview</h4></div>
                 <div class="row input-item">
@@ -631,12 +630,12 @@
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSavingsValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
     </div>
-<!------------------------------ PLOTLY PIE CHART - VARIABLE COSTS -->
+<!-- PLOTLY PIE CHART - VARIABLE COSTS -->
     <div class="col-12">
         <div class="plotly-formatting" id="variableCostsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
     </div>
 
-<!------------------------------ NAVIGATION PAGE 4 VARIABLE COSTS -->
+<!-- NAVIGATION PAGE 4 VARIABLE COSTS -->
     <div class="row on-page-navigation">
         <div class="col-6">
             <button type="button" class="btn--green btn--standard float-left" id="previous-fixedCosts">Previous</button>
@@ -648,7 +647,7 @@
 </div>
             
 
-<!------------------------------ PAGE 5: BUDGET OVERVIEW -->
+<!-- PAGE 5: BUDGET OVERVIEW -->
 <div id="budgetOverview" class="hidden-navigation">
     <div class="container-fluid container-fluid-main budget-overview-container" id="budget-overview">
         <div class="row "><h3>Budget Overview</h3></div>
@@ -693,7 +692,7 @@
             </div>
     </div>
 
-<!------------------------------ NAVIGATION PAGE 5 BUDGET OVERVIEW -->
+<!-- NAVIGATION PAGE 5 BUDGET OVERVIEW -->
    <div class="row on-page-navigation">
         <div class="col-6">
             <button type="button" class="btn--green btn--standard float-left" id="previous-variableCosts">Previous</button>
@@ -711,11 +710,11 @@
 
 <!-- The following boostrap modal was adapted from the lesson at W3Schools. SRC: https://www.w3schools.com/bootstrap/bootstrap_modal.asp-->
 
-<!------------------------------ BUTTON TO TRIGGER REPORT GENERATION MODAL -->
+<!-- BUTTON TO TRIGGER REPORT GENERATION MODAL -->
     <div class="text-center">
         <button type="button" class="btn-block btn--green btn--rounded" data-toggle="modal" data-target="#modalGenerateReport">Generate Report</button>
     </div>
-<!------------------------------ MODAL FOR REPORT GENERATION -->
+<!-- MODAL FOR REPORT GENERATION -->
     <div id="modalGenerateReport" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
@@ -738,7 +737,8 @@
             </form>
         </div>
         <div class="modal-footer">
-            <p class="text-center small">Please check your <strong>spam folder</strong> if the report doesn't arrive in your inbox.</p>
+            <p class="text-center small">Please check your <strong>spam folder</strong> if the report doesn't arrive in your inbox.
+            <br> This report is being sent wil emailJS from a Gmail account</p>
         </div>
         </div>
 
@@ -756,7 +756,7 @@
 </div>
 </div>
 
-<!------------------------------ FOOTER -->
+<!-- FOOTER -->
 <footer>
     <div class="container-fluid container-fluid-main footer-container text-center">
         <div class="row footer-icons">
