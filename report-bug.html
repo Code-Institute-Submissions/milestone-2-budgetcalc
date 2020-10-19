@@ -33,8 +33,8 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
-                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/report-bug.html">Extra Info</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/report-bug.html">Report Bug / Request Feature</a></li>
                 </ul>
             </div>
     </nav>
@@ -42,11 +42,29 @@
 <!-- BODY CONTENT -->
 <div class="container-fluid report-bug">
     <div class="row">
-        <div class="col-12 text-center">
-            <h3>Report a Bug</h3>
+        <div class="col-2"></div>
+        <div class="col-8 text-center">
+            <h3>Report a Bug / Request a Feature</h3>
+            <p>If you happen to see any bugs while using BudgetClac or you would like to see new features, please contact me with the form below.</p>
+            <form onsubmit="return sendBugMail(this);">
+                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                <textarea rows="5" name="reportabug" id="reportabug" class="form-control" placeholder="Please describe the bug or the feature you would like to see here." required></textarea>
+                <div class="form-row text-center">
+                    <div class="col">
+                        <button type="submit" class="btn btn-secondary">Send Project Request</button>
+                    </div>
+                </div>
+            </form>
         </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+            
     </div>
 </div>
+
+
 
 <!------------------------------ FOOTER -->
 <footer>
