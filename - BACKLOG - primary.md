@@ -1,16 +1,15 @@
 # BACKLOG primary
 
-## CURRENT SPRINT (Highest priority is on top)
+## CURRENT SPRINT (Higher > Lower Priority)
 - [ ]!! Important: get charts to use variables locally
 
 - [ ] Add Net Worth data to budget overview
 
 - [ ] In modal > generate report - send error message to the user if the incorrect information is filled in. So only data target exit modal if the information entered is correct.
 
-!!! ASK MENTOR OR TUTOR !!!
-- [ ] Save information in web app - use across multiple pages? Possibly use show and hide sections in JavaScript????
-
 - [ ] Add variable costs to sendEmail.js and emailJS
+
+- [ ] Hide sidebar on mobile devices
 
 - [ ] Add net calulcations to sendEmail.js and emailJS
 
@@ -31,7 +30,7 @@
 - [ ] Cookies notification if saving data to the browser?
 
 - [ ] Add contact page and report a bug
-## BACKLOG (Highest priority is on top)
+## BACKLOG (Higher > Lower Priority)
 - [ ] Ask questions to user to decide what should be shown or not
 
 - [ ] Save data with time stamp in data, when loading data give the time stamp of the data that has been loaded.
@@ -57,8 +56,9 @@
 - [ ] Select the amount of people in the household 1 or 2
 - [ ] Add checkboxes next to elements for joint/shared costs or not
 
-## DONE (Latest done is on top)
+## DONE (Newest > Oldest)
 
+- [x] Save information in web app - use across multiple pages? Possibly use show and hide sections in JavaScript????
 - [x] Add other charts
 - [x] Add chart API
 - [x] !!IMPORTANT!! FIX BUDGET OVERVIEW, CALCULATION NOT WORKING
@@ -69,7 +69,7 @@
 - [x] Calulate Networth and Net fixed income
 - [x] Create JavaScript code for Fixed Overview
 - [x] Create Fixed Budget Overview
-- [ ] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
+- [x] Using vw for repsonsive font size on sidebar - check if this is the best method, otherwise set breakpoints: https://www.w3schools.com/howto/howto_css_responsive_text.asp
 - [x] Add sticky sidebar for navigation between sections
 - [x] Add placeholders instead of values for the input fields
 - [x] Add auto calculation method to all sections

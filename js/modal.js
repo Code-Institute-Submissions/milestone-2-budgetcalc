@@ -1,5 +1,6 @@
-$('#button').submit(function(e) {
+ $('#sendReport').submit(function(e) {
     e.preventDefault();
     // Coding
-    $('#IDModal').modal('toggle'); //or  $('#IDModal').modal('hide');
+    $('#modalGenerateReport').modal('hide');
+    return false;
 });
