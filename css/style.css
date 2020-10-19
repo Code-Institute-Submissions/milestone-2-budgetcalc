@@ -302,3 +302,8 @@ h5 {
 .input-item {
     margin-top: 10px;
 }
+
+/* ---------------------------------------------- REPORT BUG PAGE SPACER */
+.report-bug-white-spacer {
+    margin-bottom: 300px;
+}
