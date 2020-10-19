@@ -249,14 +249,21 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+This project is saved to a [BudgetCalc repository on GitHub](https://github.com/asforrest/milestone-2-budgetcalc) and as such is open to the public.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+This project has also been [published to GitHub Pages](https://asforrest.github.io/milestone-2-budgetcalc/) both for evaluation by Code Institute and so that users can access and use the Web App as intended. This is made possible by GitHub by going to the settings page and choosing a branch to publish.
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
+The branch currently being hosted is the master branch. The developement version is currently the same as the deployed version, however this project is a work in progress and will branched for continuous development while waiting for a final grade during Code Institues evaluation process. After the evaluation period has been completed any changes made to the project will then be commited back to the master branch and will be directly available to users.
+
+If you have any questions about this project or updates then you can contact the developer [Alexander Forrest via his GitHub user profile](https://github.com/asforrest) or alternatively you can send an email to [mailto](mailto:asforrest@icloud.com).
+
+### Running The Code Locally
+
+If you wish to download a copy of the code in order to run the code locally, this is also possible. To do this go to the [BudgetCalc repository on GitHub](https://github.com/asforrest/milestone-2-budgetcalc) click on 'Code' in the top right and select the method you want to use to donwload and run the code locally.
+
+### Running The Code Online In Your Own Environment
+
+If you wish to look at or work on the code in an online IDE, then it's recommended to use GitPot. If your using Google Chrome and you install the [Google Chrome GitPod extension](https://chrome.google.com/webstore/detail/gitpod-dev-environments-i/dodmmooeoklaejobgleioelladacbeki?hl=en) then you will see green 'Gitpod' button above [the repository](https://github.com/Code-Institute-Solutions/readme-template) and this will load the code into your own Gitpod environment.
 
 
 ## Credits
