@@ -72,7 +72,6 @@ document.getElementById('netSalary').addEventListener("input", function(){
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
-    incomeTEST();
     incomePieChart();
 });
 document.getElementById('bonusSalary').addEventListener("input", function(){
@@ -80,7 +79,6 @@ document.getElementById('bonusSalary').addEventListener("input", function(){
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
-    incomeTEST();
     incomePieChart();
 });
 document.getElementById('gigSalary').addEventListener("input", function(){
@@ -88,7 +86,6 @@ document.getElementById('gigSalary').addEventListener("input", function(){
     totalMonthlyIncomeValue();
     netFixedincomeValue();
     totalSavingsValue();
-    incomeTEST();
     incomePieChart();
 });
 
