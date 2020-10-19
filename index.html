@@ -33,19 +33,8 @@
 
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ml-auto">
-                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Input</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/generate-report.html">Report</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">A</a>
-                            <a class="dropdown-item" href="#">B</a>
-                            <a class="dropdown-item" href="#">C</a>
-                            <a class="dropdown-item" href="#">D</a>
-                        </div>
-                    </li>
+                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="/generate-report.html">Extra Info</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,7 +47,7 @@
             <section class="callout jumbotron text-center">
                 <h1 class="jumbotron-header">Ready to get control over your finances?</h1> 
                 <p class="lead">Use BudgetCalc to get a clear overview of your spending.</p>
-                <a href="#introduction" button class="btn btn-lg btn--hero btn--green" role="button" aria-pressed="true">Start Now!</a>
+                <a href="#table-of-contents" button class="btn btn-lg btn--hero btn--green" role="button" aria-pressed="true">Start Now!</a>
             </section>
         </div>
     </div>
@@ -71,16 +60,18 @@
 
 
 <div class="container-fluid sidebar col-4 sidebar-nav">
-    <h4>Table of Contents</h4>
+    <h4 id="table-of-contents">Table of Contents</h4>
     <button class="button-sidenav" id="sideNavIntroduction"><strong>Introduction</strong></button>
-    <button class="button-sidenav" id="sideNavCurrentAccounts" >Net Worth Overview</button>
-    <button class="button-sidenav" id="sideNavIncome">Income Overview</button>
+    <button class="button-sidenav" id="sideNavCurrentAccounts" >Net Worth</button>
+    <button class="button-sidenav" id="sideNavIncome">Income</button>
     <button class="button-sidenav" id="sideNavFixedCosts">Fixed Costs</button>
     <button class="button-sidenav" id="sideNavVariableCosts">Variable Costs</button>
     <button class="button-sidenav" id="sideNavBudgetOverview">Budget Overview</button>
-    <p class="small text-center">Locally store your filled in data by clicking save, to reload data click load.</p>
+    <br>
+    <p class="small text-center">Store your data locally by clicking save, to reload data click load.</p>
     <button type="button" class="btn--blue-sidenav btn--rounded" id="save" data-toggle="modal" data-target="#modalSave">Save</button>
     <button type="button" class="btn--blue-sidenav btn--rounded" id="load" data-toggle="modal" data-target="#modalLoad">Load</button>
+
 </div>
 
 
@@ -157,7 +148,7 @@
         <div class="row"><h4>Current Accounts</h4></div>
         <div class="row current-account-item">
             <div class="col-md-6 col-sm-12">Bank Accounts</div>
-            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountBankValue" placeholder="0" step="0.01"></div>
+            <div class="col-md-6 col-sm-12">€ <input type="number" id="accountBankValue" placeholder="0" step="0.01" data-type="currency"></div>
         </div>
         <div class="row current-account-item">
             <div class="col-md-6 col-sm-12">Savings Accounts</div>

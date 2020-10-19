@@ -70,7 +70,17 @@ h5 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .sidebar {
+     font-size: 12px;
+  }
+}
 
+@media screen and (max-width: 320px) {
+  .sidebar {
+     font-size: 10px;
+  }
+}
 
 .sidebar a {
     color: white;
@@ -89,7 +99,7 @@ h5 {
 }
 
 .button-sidenav {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /* ---------------------------------------------- Main Buttons */
