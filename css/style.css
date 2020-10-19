@@ -19,22 +19,33 @@ h5 {
 }
 
 /* ---------------------------------------------- Containers */
-
-.container-fluid {
-    background-color: #e6eeea;
+.container-fluid-sidebar {
     padding: 3vh 3vw;
 }
 
-@media screen and (max-width: 767px) {
-  .container-fluid {
+.container-fluid-main {
+    padding: 3vh 3vw;    
+}
+
+.container-fluid {
     background-color: #e6eeea;
+}
+/*
+@media screen and (max-width: 767px) {
+  .container-fluid-main {
     padding: 0vh 3vw;
     }
 }
 
 @media screen and (max-width: 767px) {
+  .container-fluid-sidebar {
+    padding: 0vh 3vw;
+    }
+}
+*/
+@media screen and (max-width: 767px) {
   .padding-mobile{
-    padding-top: 3vh;
+    padding-top: 20px;
     }
 }
 

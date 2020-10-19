@@ -56,21 +56,21 @@
 <!------------------------------ STICKY SIDEBAR -->
 
 <div class="container-fluid">
-<div class="row">
-    <div class="container-fluid sidebar col-4 sidebar-nav padding-mobile">
-        <h4 id="table-of-contents">Table of Contents</h4>
-        <hr>
-        <button class="button-sidenav" id="sideNavIntroduction"><strong>Introduction</strong></button>
-        <button class="button-sidenav" id="sideNavCurrentAccounts" >Net Worth</button>
-        <button class="button-sidenav" id="sideNavIncome">Income</button>
-        <button class="button-sidenav" id="sideNavFixedCosts">Fixed Costs</button>
-        <button class="button-sidenav" id="sideNavVariableCosts">Variable Costs</button>
-        <button class="button-sidenav" id="sideNavBudgetOverview">Budget Overview</button>
-        <hr>
-        <p class="small text-center">Store your data locally by clicking save, to reload data click load.</p>
-        <button type="button" class="btn--blue-sidenav btn--rounded" id="save" data-toggle="modal" data-target="#modalSave">Save</button>
-        <button type="button" class="btn--blue-sidenav btn--rounded" id="load" data-toggle="modal" data-target="#modalLoad">Load</button>
-    </div>
+    <div class="row">
+        <div class="container-fluid container-fluid-sidebar sidebar col-4 sidebar-nav padding-mobile">
+            <h4 id="table-of-contents">Table of Contents</h4>
+            <hr>
+            <button class="button-sidenav" id="sideNavIntroduction"><strong>Introduction</strong></button>
+            <button class="button-sidenav" id="sideNavCurrentAccounts" >Net Worth</button>
+            <button class="button-sidenav" id="sideNavIncome">Income</button>
+            <button class="button-sidenav" id="sideNavFixedCosts">Fixed Costs</button>
+            <button class="button-sidenav" id="sideNavVariableCosts">Variable Costs</button>
+            <button class="button-sidenav" id="sideNavBudgetOverview">Budget Overview</button>
+            <hr>
+            <p class="small text-center">Store your data locally by clicking save, to reload data click load.</p>
+            <button type="button" class="btn--blue-sidenav btn--rounded" id="save" data-toggle="modal" data-target="#modalSave">Save</button>
+            <button type="button" class="btn--blue-sidenav btn--rounded" id="load" data-toggle="modal" data-target="#modalLoad">Load</button>
+        </div>
 
 
 <!------------------------------ MODAL SAVE -->
@@ -112,33 +112,35 @@
 
 
 
-<div class="col-8">
+<div class="col-8 padding-mobile">
 
 <!------------------------------ PAGE 0: INTRODUCTION -->
 <div class="introduction">
-    <div class="container-fluid introduction-container" id="introduction">
-        <div class="row"><h3 class="text-center padding-mobile">Welcome to BudgetCalc</h3></div>
-        <h5>How does it work?</h5>
-        <p>This is a Web App created by Alexander Forrest to help you get <strong>control over your budget</strong> and see patterns in your spending.</p>
-        <p>On each page you will be asked to fill in information about your current financial information. The information will be used to calculate your totals for each section aswell as provide you with a global overview of your finances on the final page. The more information that you fill in, the more complete that this overview will be.</p>
-        <p>If you wish to skip a section that your Budget Overview will only take into account the parameters that have been filled in.</p>
-        <p>Pie charts will also be automatically generated on each page so that you can have a better understanding about where you spend your money and you can use this information to make structural choices about how you spend you money.</p>
-        <p>At the bottom of the Budget Overview you will also get the opportunity to <strong>generate a report</strong> which will be you can then send to yourself (or someone else) by email.</p>
-        <h5>Visualising Your Data</h5>
-        <p>When you fill in the inputs on each page your data will automatically be graphed at the bottom of each page with Plotly. Plotly also gives you an option to save an image of the graphs that are constructed.</p>
-        <h5>Navigation</h5>
-        <p>There are two methods for navigation throughout the calculator. At the bottom of each page you will see a next and previous button which you can use to move forwards and backwards throughout the calulator. Alternatively you can use the Table of Contents navigation sidebar to go straight to any page, at any time.</p>
-        <h5>How To Save Your Information For Future Use</h5>
-        <p>Once you've filled on all the relevant data it is also possible to save your inputs and retrieve the data at a later time. This information is all stored locally on your computer and not sent to a server or anyone else.</p>
-        <p>You can do this by making use of the <strong>Save</strong> and <strong>Load</strong> buttons on the bottom right of the sidebar navigation.</p>
-        <h5>Questions, Comments, Bugs and New Features</h5>
-        <p>If you would like to get in contact with BudgetCalc because you have a question, comment, have found a bug or would like to request a new feature, please you the contact form <a href="/report-bug.html">here</a>, alternatively you can acces the contact page at anytime from the navbar menu item in the top right: <a href="/report-bug.html">Report a Bug / Request a Feature</a>.</p>
-        <h5>Repsonsiveness</h5>
-        <p>This web app has been constructed to work on any internet capable device; desktop, laptop, tablet or mobile phone. Please note that if you save your infromation this information is only saved locally, and as such, it can only be loaded from the same device that you saved it on.</p>
-    </div>
-    <div class="row on-page-navigation">
-        <div class="col-12">
-            <button class="btn-block btn--green btn--rounded" id="next-currentAccounts">Enter BudgetCalc</button>
+    <div class="container-fluid container-fluid-main introduction-container" id="introduction">
+        <div class="row"><h3 class="text-center ">Welcome to BudgetCalc</h3></div>
+        <div class="row">
+            <h5>How does it work?</h5>
+            <p>This is a Web App created by Alexander Forrest to help you get <strong>control over your budget</strong> and see patterns in your spending.</p>
+            <p>On each page you will be asked to fill in information about your current financial information. The information will be used to calculate your totals for each section aswell as provide you with a global overview of your finances on the final page. The more information that you fill in, the more complete that this overview will be.</p>
+            <p>If you wish to skip a section that your Budget Overview will only take into account the parameters that have been filled in.</p>
+            <p>Pie charts will also be automatically generated on each page so that you can have a better understanding about where you spend your money and you can use this information to make structural choices about how you spend you money.</p>
+            <p>At the bottom of the Budget Overview you will also get the opportunity to <strong>generate a report</strong> which will be you can then send to yourself (or someone else) by email.</p>
+            <h5>Visualising Your Data</h5>
+            <p>When you fill in the inputs on each page your data will automatically be graphed at the bottom of each page with Plotly. Plotly also gives you an option to save an image of the graphs that are constructed.</p>
+            <h5>Navigation</h5>
+            <p>There are two methods for navigation throughout the calculator. At the bottom of each page you will see a next and previous button which you can use to move forwards and backwards throughout the calulator. Alternatively you can use the Table of Contents navigation sidebar to go straight to any page, at any time.</p>
+            <h5>How To Save Your Information For Future Use</h5>
+            <p>Once you've filled on all the relevant data it is also possible to save your inputs and retrieve the data at a later time. This information is all stored locally on your computer and not sent to a server or anyone else.</p>
+            <p>You can do this by making use of the <strong>Save</strong> and <strong>Load</strong> buttons on the bottom right of the sidebar navigation.</p>
+            <h5>Questions, Comments, Bugs and New Features</h5>
+            <p>If you would like to get in contact with BudgetCalc because you have a question, comment, have found a bug or would like to request a new feature, please you the contact form <a href="/report-bug.html">here</a>, alternatively you can acces the contact page at anytime from the navbar menu item in the top right: <a href="/report-bug.html">Report a Bug / Request a Feature</a>.</p>
+            <h5>Repsonsiveness</h5>
+            <p>This web app has been constructed to work on any internet capable device; desktop, laptop, tablet or mobile phone. Please note that if you save your infromation this information is only saved locally, and as such, it can only be loaded from the same device that you saved it on.</p>
+        </div>
+        <div class="row on-page-navigation">
+            <div class="col-12">
+                <button class="btn-block btn--green btn--rounded" id="next-currentAccounts">Enter BudgetCalc</button>
+            </div>
         </div>
     </div>
 </div>
@@ -146,8 +148,8 @@
 
 <!------------------------------ PAGE 1: NET WORTH OVERVIEW & CALCULATION -->
 <div id="currentAccounts" class="hidden-navigation">
-    <div class="container-fluid current-accounts-container" id="current-accounts">
-        <div class="row"><h3>Net Worth Overview</h3></div>
+    <div class="container-fluid container-fluid-main current-accounts-container" id="current-accounts">
+        <div class="row "><h3>Net Worth Overview</h3></div>
         <div class="row page-explination">
             <p>In this section you will get an overview of your currently available funds and currently outstanding debts. By filling in this information you can have a clear overview of your <strong>current net worth </strong>.</p>
             <p>Please note that having a large amount of outstanding debt (due to a mortgage, car loan, etc.) filling this in does not influence your monthly budget calculations. This section is meant to create aweareness so that you all the tools you need to make clear financial planning decisions for the future.</p>
@@ -158,7 +160,7 @@
 
 
 <!------------------------------ CURRENT ACCOUNTS CALCULATION -->
-    <div class="container-fluid current-debts-container" id="current-debts">
+    <div class="container-fluid container-fluid-main current-debts-container" id="current-debts">
         <div class="row"><h4>Current Accounts</h4></div>
         <div class="row input-item">
             <div class="col-md-6 col-sm-12">Bank Accounts</div>
@@ -179,7 +181,7 @@
     </div>
     
 <!------------------------------ CURRENT DEBT CALCULATION -->
-    <div class="container-fluid current-debts-container" id="current-debts-calculation">
+    <div class="container-fluid container-fluid-main current-debts-container" id="current-debts-calculation">
         <div class="row"><h4>Current Debts</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Loans</div>
@@ -204,7 +206,7 @@
     </div>
 
 <!------------------------------ CURRENT ACCOUNTS OVERVIEW -->
-    <div class="container-fluid fixed-budget-container" id="current-accounts-overview">
+    <div class="container-fluid container-fluid-main fixed-budget-container" id="current-accounts-overview">
         <div class="row"><h4>Net Worth Overview</h4
         ></div>
                 <div class="row input-item">
@@ -244,8 +246,8 @@
 </div>
 <!------------------------------ PAGE 2: MONTHLY INCOME CALCULATION -->
 <div id="monthlyIncome" class="hidden-navigation">
-    <div class="container-fluid current-income-container" id="current-income">
-        <div class="row"><h3>Income Overview</h3></div>
+    <div class="container-fluid container-fluid-main current-income-container" id="current-income">
+        <div class="row "><h3>Income Overview</h3></div>
         <div class="row page-explination">
             <p>Please fill in your projected income information for the <strong>current</strong> or <strong>upcoming month</strong>, depending on which months budget you would like to calculate.</p>
             <p>This information will be used to calculate your budget based on the fixed and variable costs that you will fill in on the next pages of BudgetCalc.</p>
@@ -255,7 +257,7 @@
 
 
 <!------------------------------ CURRENT INCOME CALCULATION -->
-    <div class="container-fluid current-debts-container" id="income-debt">
+    <div class="container-fluid container-fluid-main current-debts-container" id="income-debt">
         <div class="row"><h4> Income (Monthly)</h4>
         </div>
         <div class="row income-item">
@@ -297,8 +299,8 @@
 <!------------------------------ PAGE 3: FIXED COSTS CALCULATION -->
 
 <div id="fixedCosts" class="hidden-navigation">
-    <div class="container-fluid current-fixed-costs-container" id="current-fixed-costs">
-        <div class="row"><h3>Fixed Costs</h3></div>
+    <div class="container-fluid container-fluid-main current-fixed-costs-container" id="current-fixed-costs">
+        <div class="row "><h3>Fixed Costs</h3></div>
         <div class="row page-explination">
             <p>Please use this page to fill in your fixed monthly costs.</p>
             <p>These are costs that need to be paid and are usually recurring costs. Often these costs are automatically deducted from your bank account and are costs to do with your home, transport, insurance, subscription and credit card payments.</p>
@@ -306,7 +308,7 @@
         </div>
     </div>
 <!------------------------------ FIXED COSTS CALCULATION --- HOME-->
-    <div class="container-fluid current-debts-container" id="fixed-costs-home">
+    <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-home">
         <div class="row"><h4>Home</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Drinking Water</div>
@@ -344,7 +346,7 @@
             
 
 <!------------------------------ FIXED COSTS CALCULATION --- TRANSPORT -->
-    <div class="container-fluid current-debts-container" id="fixed-costs-transport">
+    <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-transport">
         <div class="row"><h4>Transport</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Car Payments (Loan, Lease)</div>
@@ -365,7 +367,7 @@
     </div>
 
 <!------------------------------ FIXED COSTS CALCULATION --- INSURANCE -->
-    <div class="container-fluid current-debts-container" id="fixed-costs-insurance">
+    <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-insurance">
          <div class="row"><h4>Insurance</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Car Insurance</div>
@@ -394,7 +396,7 @@
     </div>
 
 <!------------------------------ FIXED COSTS CALCULATION --- SUBSCRIPTIONS -->
-    <div class="container-fluid current-debts-container" id="fixed-costs-subscriptions">
+    <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-subscriptions">
         <div class="row"><h4>Subscriptions</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Donations</div>
@@ -422,7 +424,7 @@
             </div>
     </div>
 <!------------------------------ FIXED COSTS CALCULATION --- CREDITCARDS -->
-    <div class="container-fluid current-debts-container" id="fixed-costs-credit-card-payments">
+    <div class="container-fluid container-fluid-main current-debts-container" id="fixed-costs-credit-card-payments">
             <div class="row"><h4>Credit Card Payment</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">American Express</div>
@@ -443,7 +445,7 @@
     </div>
 
 <!------------------------------ TOTAL FIXED COSTS CALCULATION -->
-    <div class="container-fluid current-debts-container" id="fixed-income-overview">
+    <div class="container-fluid container-fluid-main current-debts-container" id="fixed-income-overview">
         <div class="row"><h4>Fixed Income Overview</h4></div>
                 <div class="row input-item">
                     <div class="col-md-6 col-sm-12" id="total-fixed-income">Total Fixed Income (Monthly)</div>
@@ -479,8 +481,8 @@
 <!------------------------------ PAGE 4: VARIABLE COSTS CALCULATION -->
 
 <div id="variableCosts" class="hidden-navigation">
-    <div class="container-fluid current-variable-costs-container" id="current-variable-costs">
-        <div class="row"><h3>Variable Costs</h3></div>
+    <div class="container-fluid container-fluid-main current-variable-costs-container" id="current-variable-costs">
+        <div class="row "><h3>Variable Costs</h3></div>
         <div class="row page-explination">
             <p>Please use this page to fill in your variable costs</p>
             <p>These are costs that change month-to-month depending on what you have bought or are planning to buy. Often these costs are based on personal choices about where you want to spend you money. These costs include; Food and Drink, Consumables, Socialising/Fun and Stuff.</p>
@@ -488,7 +490,7 @@
         </div>
     </div>
 <!------------------------------ VARIABLE COSTS CALCULATION --- FOOD AND DRINK-->
-    <div class="container-fluid current-debts-container" id="food-drink-costs">
+    <div class="container-fluid container-fluid-main current-debts-container" id="food-drink-costs">
         <div class="row"><h4>Food and Drink</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Supermarket - Abert Heijn</div>
@@ -541,7 +543,7 @@
     </div>
 
 <!------------------------------ VARIABLE COSTS CALCULATION --- CONSUMABLES-->
-    <div class="container-fluid current-debts-container" id="consumables-costs">
+    <div class="container-fluid container-fluid-main current-debts-container" id="consumables-costs">
         <div class="row"><h4>Consumables</h4></div>
             <div class="row input-item">
                     <div class="col-md-6 col-sm-12">Flowers</div>
@@ -557,7 +559,7 @@
             </div>
     </div>
 <!------------------------------ VARIABLE COSTS CALCULATION --- SOCIALISING / FUN-->
-    <div class="container-fluid current-debts-container" id="socialising-costs">
+    <div class="container-fluid container-fluid-main current-debts-container" id="socialising-costs">
         <div class="row"><h4>Socialising / Fun</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Bars</div>
@@ -585,7 +587,7 @@
             </div>
     </div>
 <!------------------------------ VARIABLE COSTS CALCULATION --- STUFF -->
-    <div class="container-fluid current-debts-container" id="stuff-costs">
+    <div class="container-fluid container-fluid-main current-debts-container" id="stuff-costs">
         <div class="row"><h4>Stuff</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Clothes</div>
@@ -618,7 +620,7 @@
     </div>
                 
 <!------------------------------ TOTAL VARIABLE COSTS OVERVIEW -->
-    <div class="container-fluid current-debts-container" id="total-variable-costs">
+    <div class="container-fluid container-fluid-main current-debts-container" id="total-variable-costs">
         <div class="row"><h4>Total Variable Costs Overview</h4></div>
                 <div class="row input-item">
                     <div class="col-md-6 col-sm-12">Total Variable Costs</div>
@@ -648,15 +650,15 @@
 
 <!------------------------------ PAGE 5: BUDGET OVERVIEW -->
 <div id="budgetOverview" class="hidden-navigation">
-    <div class="container-fluid budget-overview-container" id="budget-overview">
-        <div class="row"><h3>Budget Overview</h3></div>
+    <div class="container-fluid container-fluid-main budget-overview-container" id="budget-overview">
+        <div class="row "><h3>Budget Overview</h3></div>
             <div class="row page-explination">
                 <p>This is your complete budget overview.</p>
                 <p>On this page you can see your current Net Worth for future planning as well as your budget for this month or the upcoming month (depending on the parameters you decided to fill in).</p>
                 <p>The data for this page is a combination of data from the previous pages. If you want to go back and change any of your inputs please use either the previous and next buttons at the bottom of the page or alternatively you can use the sidebar navigation to jump straight to a particular page.</p>
             </div>
     </div>
-    <div class="container-fluid budget-overview-container" id="net-worth-overview">
+    <div class="container-fluid container-fluid-main budget-overview-container" id="net-worth-overview">
             <div class="row"><h4>Net Worth Overview</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Current Accounts</div>
@@ -671,7 +673,7 @@
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netWorthValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
     </div>
-    <div class="container-fluid current-debts-container" id="month-budget-overview">
+    <div class="container-fluid container-fluid-main current-debts-container" id="month-budget-overview">
             <div class="row"><h4>Month Budget Overview</h4></div>
             <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Income</div>
@@ -756,7 +758,7 @@
 
 <!------------------------------ FOOTER -->
 <footer>
-    <div class="container-fluid footer-container text-center">
+    <div class="container-fluid container-fluid-main footer-container text-center">
         <div class="row footer-icons">
             <div class="col-12 block padding-mobile">
                     <a href="https://github.com/asforrest/" target="_blank"><i class="fa fa-github"></i></a>

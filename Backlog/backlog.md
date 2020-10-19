@@ -3,6 +3,8 @@
 ## CURRENT SPRINT (Higher > Lower Priority)
 - [ ] readme.md finish deployment and testing
 
+- [ ] Possibly change contain-fluid CSS into a new class to seperate main content from other content
+
 - [ ] readme.md check spelling and sentance structure
 
 - [ ] emailJS create top 3 variable costs
