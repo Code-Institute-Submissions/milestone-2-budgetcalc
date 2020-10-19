@@ -23,7 +23,7 @@
 
 </head>
 <body>
-<!------------------------------ NAVBAR -->
+<!-- NAVBAR -->
 <!-- The following Navbar has been adapted from the Code Institute Bootcamp module. -->
     <nav class="navbar navbar-dark navbar-expand-sm">
             <a href="/" class="navbar-brand">BudgetCalc</a>
@@ -43,16 +43,19 @@
 <div class="container-fluid report-bug">
     <div class="row">
         <div class="col-md-2 col-sm-12"></div>
-        <div class="col-md-8 col-sm-12 text-center">
+        <div class="col-md-8 col-sm-12 text-center container-fluid-main">
             <h3>Report a Bug / Request a Feature</h3>
             <p>If you happen to see any bugs while using BudgetClac or you would like to see new features, please contact me with the form below.</p>
             <form onsubmit="return sendBugMail(this);">
                 <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                <br>
                 <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                <br>
                 <textarea rows="5" name="reportabug" id="reportabug" class="form-control" placeholder="Please describe the bug or the feature you would like to see here." required></textarea>
                 <div class="form-row text-center">
                     <div class="col">
-                        <button type="submit" id="submitFormContact" class="btn btn-secondary">Send Project Request</button>
+                        <br>
+                        <button type="submit" id="submitFormContact" class="button btn--green btn--standard">Send</button>
                     </div>
                 </div>
             </form>
@@ -67,11 +70,11 @@
 
 
 
-<!------------------------------ FOOTER -->
+<!-- FOOTER -->
 <footer>
-    <div class="container-fluid footer-container text-center">
+    <div class="container-fluid container-fluid-main footer-container text-center">
         <div class="row footer-icons">
-            <div class="col-12 block">
+            <div class="col-12 block padding-mobile">
                     <a href="https://github.com/asforrest/" target="_blank"><i class="fa fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/alexanderforrest/" target="_blank"><i class="fa fa-linkedin"></i></a>
                     <a href="https://www.youtube.com/channel/UCO6gDGgZgjtRyAXnpne3WfQ" target="_blank"><i class="fa fa-youtube"></i></a>
