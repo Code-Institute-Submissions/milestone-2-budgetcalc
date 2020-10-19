@@ -197,6 +197,15 @@ Testing consisted of:
     -   Mozilla Firefox Mobile
     -   Mozilla Firefox Tablet
 
+### Code Validation
+The CSS code was validated without any issues.
+![CSS Validation](images/readme-images/validation-css.png "CSS Validationn")
+
+The HTML code was validated with 1 error that wasn't fixed. This is due to other mewthods not being able to target an ID on the same page. This is touched on further in the section bellow 'Interesting and Ongoing Bugs'.
+![HTML Validation](images/readme-images/validation-HTML.png "HTML Validationn")
+
+The JavaScript code was validated with a few insignifcant errors due to the variables referencing APIs which are not locally stored in the repository. Also there was one error about the usage of a global variable 'use strict', however this was used expressly as to help catch any mistakes during the development process and stop browser from incorretly interpretting JavaScript code.
+![JavaScript Validation](images/readme-images/validation-javascript.png "JavaScript Validationn")
 
 ### GitHubs Role In Testing
 When looking at the GitHub commits there is a pattern of the commits getting better and more consistent as the project went on. 
