@@ -9,16 +9,19 @@ document.getElementById('accountBankValue').addEventListener("input", function()
     totalAccountsValue();
     totalCurrentAccountsValue();
     netWorthValue();
+    accountsPieChart();
 });
 document.getElementById('accountSavingsValue').addEventListener("input", function(){
     totalAccountsValue();
     totalCurrentAccountsValue();
     netWorthValue();
+    accountsPieChart();
 });
 document.getElementById('accountCashValue').addEventListener("input", function(){
     totalAccountsValue();
     totalCurrentAccountsValue();
     netWorthValue();
+    accountsPieChart();
 });
 
 
@@ -37,21 +40,25 @@ document.getElementById('debtLoanValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
     netWorthValue();
+    debtsPieChart();
 });
 document.getElementById('debtAmexValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
     netWorthValue();
+    debtsPieChart();
 });
 document.getElementById('debtMastercardValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
     netWorthValue();
+    debtsPieChart();
 });
 document.getElementById('debtVisaValue').addEventListener("input", function(){
     totalDebtsValue();
     totalCurrentDebtsValue();
     netWorthValue();
+    debtsPieChart();
 });
 
 function totalDebtsValue() {

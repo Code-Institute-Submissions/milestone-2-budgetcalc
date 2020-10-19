@@ -75,3 +75,7 @@ function sendBugMail(contactForm) {
 $("#submitFormContact").click(function() {
    alert("The Form has been submitted and a copy has been sent to your email address.");
 });
+
+$("#sendReport").click(function() {
+   alert("The report has been generated and sent to you by email.");
+});

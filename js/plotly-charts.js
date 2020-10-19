@@ -1,10 +1,107 @@
 /* The following charts were created with Plotly and bugs were solved by using the documentation and tutor support SRC: https://plotly.com/javascript/pie-charts/# */
 
+/*CURRENT ACCOUNTS CHART VARS*/
+var dataAccounts = [{
+values: [],
+labels: ["Bank Accounts", "Savings Accounts", "Cash-on-hand"],
+type: "pie"
+}];
+
+var layoutAccounts = {
+    title: "Current Accounts<br>Overview",
+    font: {size: 10},
+    paper_bgcolor:"#ade7ba",
+    margin: {
+    l: 5,
+    r: 5,
+    b: 20,
+    t: 100,
+    pad: 0
+  },
+};
+
+var configAccounts = {responsive: true}
+
+/*INCOME PIE CHART DATA*/
+function accountsPieChart() {
+    var accountBankValuePER =
+        Number($("input#accountBankValue").val()) / 
+        Number($("input#totalAccountsValue").val()) 
+        * 100;
+    var accountSavingsValuePER =
+        Number($("input#accountSavingsValue").val()) / 
+        Number($("input#totalAccountsValue").val()) 
+        * 100;
+    var accountCashValuePER =
+        Number($("input#accountCashValue").val()) / 
+        Number($("input#totalAccountsValue").val()) 
+        * 100;
+    dataAccounts[0].values[0] = accountBankValuePER;
+    dataAccounts[0].values[1] = accountSavingsValuePER
+    dataAccounts[0].values[2] = accountCashValuePER
+    Plotly.newPlot("accountsPieChart", dataAccounts, layoutAccounts, configAccounts );
+}
+
+
+
+
+
+/*INCOME PIE CHART VARS*/
+var dataDebts = [{
+values: [],
+labels: ["Loans", "American Expres", "Visa", "Mastercard"],
+type: "pie"
+}];
+
+var layoutDebts = {
+    title: "Current Debts<br>Overview",
+    font: {size: 10},
+    paper_bgcolor:"#ade7ba",
+    margin: {
+    l: 5,
+    r: 5,
+    b: 20,
+    t: 100,
+    pad: 0
+  },
+};
+
+var configDebts = {responsive: true}
+
+/*INCOME PIE CHART DATA*/
+function debtsPieChart() {
+    var debtLoanValuePER =
+        Number($("input#debtLoanValue").val()) / 
+        Number($("input#totalDebtsValue").val()) 
+        * 100;
+    var debtAmexValuePER =
+        Number($("input#debtAmexValue").val()) / 
+        Number($("input#totalDebtsValue").val()) 
+        * 100;
+    var debtMastercardValuePER =
+        Number($("input#debtMastercardValue").val()) / 
+        Number($("input#totalDebtsValue").val()) 
+        * 100;
+    var debtVisaValuePER =
+        Number($("input#debtVisaValue").val()) / 
+        Number($("input#totalDebtsValue").val()) 
+        * 100;
+    dataDebts[0].values[0] = debtLoanValuePER;
+    dataDebts[0].values[1] = debtAmexValuePER
+    dataDebts[0].values[2] = debtMastercardValuePER
+    dataDebts[0].values[3] = debtVisaValuePER
+    Plotly.newPlot("debtsPieChart", dataDebts, layoutDebts, configDebts );
+}
+
+
+
+
+
 /*INCOME PIE CHART VARS*/
 var dataIncome = [{
 values: [],
-labels: ['Salary', 'Bonuses', 'Gigs'],
-type: 'pie'
+labels: ["Salary", "Bonuses", "Gigs"],
+type: "pie"
 }];
 
 var layoutIncome = {
@@ -39,7 +136,7 @@ function incomePieChart() {
     dataIncome[0].values[0] = netSalaryPER;
     dataIncome[0].values[1] = bonusSalaryPER
     dataIncome[0].values[2] = gigSalaryPER
-    Plotly.newPlot('incomePieChart', dataIncome, layoutIncome, configIncome );
+    Plotly.newPlot("incomePieChart", dataIncome, layoutIncome, configIncome );
 }
 
 

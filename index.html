@@ -205,7 +205,19 @@
                     <div class="col-md-6 col-sm-12 net-amount" id="net-worth">Net Worth Current</div>
                     <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="netWorthValue" readonly="readOnly" placeholder="0" step="0.01"></div>
                 </div>
+<!------------------------------ PLOTLY PIE CHART - Debts -->
+        <div class="col-12">
+            <div class="plotly-formatting" id="accountsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
+        </div>
+
+
+<!------------------------------ PLOTLY PIE CHART - Accounts -->
+        <div class="col-12">
+            <div class="plotly-formatting" id="debtsPieChart"><!-- Plotly chart will be drawn inside this DIV --></div>
+        </div>
     </div>
+
+
 <!------------------------------ NAVIGATION PAGE 1 CURRENT ACCOUNTS -->
     <div class="row on-page-navigation">
         <div class="col-6">
@@ -357,7 +369,7 @@
                 <div class="col-md-6 col-sm-12">Legal Insurance</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="insuranceLegalValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL INSURANCE COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalInsuranceCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
@@ -386,7 +398,7 @@
                 <div class="col-md-6 col-sm-12">Streaming Services (Netflix, etc)</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="subscriptionsStreamingValue" placeholder="0" step="0.01"></div>
             </div>
-            <div class="row">
+            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">TOTAL SUBSCRIPTION COSTS </div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalSubscriptionCostValue" readonly="readOnly" placeholder="0" step="0.01"></div>
             </div>
@@ -452,8 +464,7 @@
     <div class="container-fluid current-variable-costs-container" id="current-variable-costs">
         <div class="row"><h3>Variable Costs</h3></div>
         <div class="row page-explination">
-            <p>On this page you can enter your variable costs. These are costs that change month-to-month depending on what you have bought or are planning to buy.</p>
-            <p>After subtracting your fixed costs from your fixed income there is a net monthly income of <span id="netMonthlyIncomeForVariablePage"></span> to spend.</p>
+            <p>On this page you can enter your variable costs. These are costs that change month-to-month depending on what you have bought or are planning to buy. Costs such as food and drink, socialising and things you've purchased or are planning to purchase fall into this category.</p>
         </div>
     </div>
 <!------------------------------ VARIABLE COSTS CALCULATION --- FOOD AND DRINK-->
@@ -618,8 +629,10 @@
 <!------------------------------ PAGE 5: BUDGET OVERVIEW -->
 <div id="budgetOverview" class="hidden-navigation">
     <div class="container-fluid budget-overview-container" id="budget-overview">
-        <div class="row"><h4>Budget Overview</h4>
-        </div>
+        <div class="row"><h4>Budget Overview</h4></div>
+            <div class="row page-explination">
+                <p>In this complete budget overview you can see an overview of the end totals of each page. If you want to go back and change any of your inputs please use either the previous and next buttons at the bottom of the page or alternatively you can use the sidebar navigation to jump straight to a particular page.</p>
+            </div>
            <div class="row input-item">
                 <div class="col-md-6 col-sm-12">Total Income</div>
                 <div class="col-md-6 col-sm-12">€ <input type="number" class="input-width" id="totalIncomeValue-BudgetOverview" readonly="readOnly" placeholder="0" step="0.01"></div>
@@ -643,11 +656,6 @@
         <div class="col-6">
             <button class="btn--green btn--standard float-left" id="previous-variableCosts">Previous</button>
         </div>
-<!-- CURRENTLY NOT USED
-        <div class="col-6">
-            <button class="btn--green btn--standard float-right" id="next-GRAPHS">Next</button>
-        </div>
--->
     </div>
 
 <br>
